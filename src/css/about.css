@@ -1,0 +1,11 @@
+@import "./reset.css";
+
+/*seção sobre mim*/
+.sobre{
+display: flex;
+flex-direction: row;
+width: 100%;
+margin: 0 2em;
+background-color: aliceblue;
+
+}

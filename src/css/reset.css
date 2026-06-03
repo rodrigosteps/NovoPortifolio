@@ -1,0 +1,66 @@
+
+/*estilos gerais*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+}
+
+/*variaveis*/
+:root {
+  --fontSize:2em;
+  --radiusNav: 50px;
+  --margin: 1em auto ;
+  --fontColor: #1d1f20;
+  --panelColor: ;
+  --trasition: all 0.3s ease;
+}
+
+/*Fonte Telma*/
+
+@font-face {
+  font-family: 'Telma';
+  src: url('/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff2') format('woff2'),
+       url('/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff') format('woff'),
+       url('/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/*Fonte Quilon*/
+@font-face {
+  font-family: 'Quilone';
+  src: url('/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff2') format('woff2'),
+       url('/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff') format('woff'),
+       url('/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.ttf') format('truetype');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/*Fonte Synonym*/
+@font-face {
+  font-family: 'Synonym';
+  src: url('/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff2') format('woff2'),
+       url('/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff') format('woff'),
+       url('/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+/*estilos para os links*/
+
+a:visited{
+  color: inherit;
+}
+/*estilos do body*/
+body{
+  background-color: #45644a;
+}

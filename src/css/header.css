@@ -1,0 +1,29 @@
+@import "reset.css";
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 30%;
+  width: 40%;
+  height: 3em;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  font-weight: bold;
+  color: #f3ede3;
+  border-radius: var(--radiusNav);
+  background: #0b2604e1;
+  z-index: 2;
+}
+
+.menu a {
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+
+.menu a:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,25 @@
+@import './reset.css';
+
+
+.perfil{
+    width: 100%;
+    height: 100vh;
+font-family: 'telma';
+}
+
+.perfil h1{
+    text-transform:uppercase;
+    font-size: 7em;
+    position: absolute;
+    left: 2%;
+    bottom: 10%;
+}
+
+.perfil p{
+    font-family: 'Archivo';
+
+    font-size: 3em;
+    position: absolute;
+    bottom: 8%;
+    left: 40%;
+}
