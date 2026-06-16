@@ -12,12 +12,13 @@
 
 /*variaveis*/
 :root {
+  --fontQuilone:"Quilone";
+    --fontSynonym:"Synonym";
   --fontSize:2em;
   --radiusNav: 50px;
   --margin: 1em auto ;
   --fontColor: #1d1f20;
-  --panelColor: ;
-  --trasition: all 0.3s ease;
+  --trasition: all 0.3s ease-in-out;
 }
 
 /*Fonte Telma*/
@@ -63,4 +64,5 @@ a:visited{
 /*estilos do body*/
 body{
   background-color: #45644a;
+
 }

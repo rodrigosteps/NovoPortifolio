@@ -4,8 +4,39 @@
 .sobre{
 display: flex;
 flex-direction: row;
-width: 100%;
-margin: 0 2em;
-background-color: aliceblue;
+width: 70em;
+padding: 0 2em;
+  font-family: var(--fontQuilone);
+  margin: 10em auto;
+      gap: 4em;
 
+
+}
+
+.me{
+    width: 40em;
+    
+    h3{
+        font-size: 2em;
+margin: 1em;
+    }
+
+    p{
+    font-size: 1.5em;
+
+    }
+}
+
+
+.aside{
+    width: 40em;
+    height: 50em;
+
+    img{
+        width: 40em;
+    border-radius: 1em;
+    transform: rotate(2deg);
+    object-fit: contain;
+    border: 8px solid whitesmoke;
+    }
 }

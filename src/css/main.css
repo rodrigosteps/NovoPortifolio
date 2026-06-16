@@ -1,25 +1,183 @@
-@import './reset.css';
+@import "./reset.css";
 
+/*primeira tela nome*/
+.name{
+  width: 100%;
+  height: 100vh;
+  font-family: "Telma";
 
-.perfil{
-    width: 100%;
-    height: 100vh;
-font-family: 'telma';
+  h1 {
+  font-size: 14em;
+  letter-spacing: -10px;
+  position: absolute;
+  left: 2%;
+  bottom: 10%;
 }
 
-.perfil h1{
-    text-transform:uppercase;
-    font-size: 7em;
-    position: absolute;
-    left: 2%;
-    bottom: 10%;
+ p {
+  font-family: var(--fontSynonym);
+  font-size: 2em;
+  position: absolute;
+  bottom: 12%;
+  left: 2%;
+  color: #bed6ac;
 }
 
-.perfil p{
-    font-family: 'Archivo';
+img{
+    width: 20em;
+}
+}
 
-    font-size: 3em;
-    position: absolute;
-    bottom: 8%;
-    left: 40%;
+
+/*seção dos projetos*/
+.projetos {
+  width: 100%;
+  font-family: var(--fontQuilone);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8em;
+
+  h2 {
+    letter-spacing: -4px;
+    font-size: 4em;
+    margin: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0em 0em 0em;
+  }
+}
+
+/*container com as imagens dos projetos*/
+.projetosCases {
+display: flex;
+flex-wrap: wrap;
+width: 70em;
+padding: 0 2em;
+justify-content:space-evenly;
+gap: 2em 4em;
+
+  /*>>>>> posições dos projetos no container*/
+.case1{
+    position: relative;
+    top: 1em;
+    left: 6em;
+    transform: rotate(-2deg);
+}
+
+.case2{
+    position: relative;
+    top: 10em;
+    left: 0em;
+        transform: rotate(2deg);
+}
+
+.case3{
+    position: relative;
+    top: 0em;
+    left: 0em;
+        transform: rotate(2deg);
+}
+
+.case4{
+    position: relative;
+    top: 10em;
+    left: -6em; 
+        transform: rotate(-2deg);
+}
+
+.case5{
+    position: relative;
+    top: 0em;
+    left: 0m; 
+        transform: rotate(2deg);
+}
+.case6{
+    position: relative;
+    top: 12em;
+    left: 0em; 
+        transform: rotate(2deg);
+}
+.case7{
+    position: relative;
+    top: -8em;
+    left: 6em; 
+        transform: rotate(2deg);
+}
+
+
+  /*posições dos projetos no container <<<<<<<<*/
+
+/*>>>>>>> Hover das imagens*/
+.case3 img:hover,
+.case1 img:hover,
+.case5 img:hover,
+.case6 img:hover {
+  transform: rotate(3deg);
+  transition: var(--trasition);
+}
+
+.case2 img:hover,
+.case3 img:hover,
+.case4 img:hover,
+.case7 img:hover {
+  transform: rotate(-3deg);
+  transition: var(--trasition);
+}
+/*Hover das imagens <<<<<<<<*/
+}
+
+/*cards com imagem e titulo*/
+.projetosCard {
+  margin: 1.5em;
+  width: min-content;
+  
+  span {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    font-weight: 900;
+    width: max-content;
+  }
+
+  /*tamanho das imagens*/
+   img {
+    border-radius: 16px;
+    width: 24em;
+    object-fit: cover;
+    border: 8px solid whitesmoke;
+    }
+
+    .tag{
+      display: inline-block;
+      background-color: rgba(60, 167, 72, 0.574);
+      color: rgba(144, 232, 152, 0.81);
+      padding: 0.2em 0.5em;
+      margin: 0.5em 0.5em 0.5em 0.5em;
+      border-radius: 4px;
+      font-size: 0.8em;
+    }
+}    
+
+
+
+/*Mais Projetos*/
+.maisProjetos{
+  font-family: var(--fontQuilone);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+
+  span {
+    letter-spacing: -4px;
+    font-size: 4em;
+  }
+
+  img{
+    width: 10em;
+    border-bottom: 2px solid olivedrab;
+  }
 }
