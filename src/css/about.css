@@ -9,8 +9,6 @@ padding: 0 2em;
   font-family: var(--fontQuilone);
   margin: 10em auto;
       gap: 4em;
-
-
 }
 
 .me{
@@ -40,3 +38,23 @@ margin: 1em;
     border: 8px solid whitesmoke;
     }
 }
+
+
+.conectar {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 70em;
+  font-family: var(--fontQuilone);
+  margin-top: 20em;
+      gap: 4em;
+
+h2{
+    font-size: 4em;
+}
+}
+
+.conectar img{
+    width: 10em;
+}
+
