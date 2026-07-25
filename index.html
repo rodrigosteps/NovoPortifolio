@@ -9,13 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo%20Black:wght@400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Covered%20By%20Your%20Grace:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Covered%20By%20Your%20Grace:wght@400&display=swap"
+    rel="stylesheet">
   <meta name="author" content="Rodrigo Passos" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
   <link rel="styleSheet" href="./src/css/reset.css" />
   <link rel="styleSheet" href="./src/css/header.css" />
   <link rel="styleSheet" href="./src/css/main.css" />
+  <link rel="styleSheet" href="./src/css/links.css" />
   <link rel="styleSheet" href="./src/css/about.css" />
   <link rel="styleSheet" href="./src/css/footer.css" />
 
@@ -23,20 +25,25 @@
 </head>
 
 <body>
+
+  <div class="backgroundCamada"></div><!--apenas para efeito granulado-->
+
   <!--##################### NAVEGAÇÃO DO SITE #####################-->
   <nav class="nav"> </nav><!--apenas para efeito blur-->
 
   <ul class="menu">
-  <a href="#inicio">Inicio</a>
-  <a href="#projetos">Projetos</a> 
-  <a href="#timeline">Linha do tempo</a>
-  <a href="#contato">Contato</a>
-</ul>
+    <a href="#inicio">Inicio</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#timeline">Linha do tempo</a>
+    <a href="#processo">Processo</a>
+    <a href="#contato">Contato</a>
+  </ul>
 
   <!--##################### HERO SECTION DO SITE #####################-->
 
   <section class="name" id="inicio">
     <div class="nameCard">
+      <img src="/NovoPortifolio/assets/image/footprint_5831098.png" alt="perfil" />
       <h1>rodrigo P.</h1>
       <p>Desenvolvedor Web e Designer</p>
     </div>
@@ -45,7 +52,9 @@
   <!--##################### PROJETOS DO SITE #####################-->
 
   <main class="projetos" id="projetos">
+
     <h2>Projetos Recentes</h2>
+    <span id="projetosDescription"> cada projeto é unico</span>
     <article class="projetosCases">
       <div class="projetosCard case1">
         <img src="/NovoPortifolio/assets/image/thursday.social.png" alt="site" />
@@ -60,6 +69,7 @@
         <span class="tag">Desenvolvimento</span>
         <span class="tag">Design</span>
       </div>
+
       <div class="projetosCard case3">
         <img src="/NovoPortifolio/assets/image/optimus.png" alt="site" />
         <h3>OptimusTech</h3>
@@ -105,7 +115,7 @@
   <!--##################### SEÇÃO "LINHA DO TEMPO" DO SITE #####################-->
   <section class="timeline" id="timeline">
     <h2>Linha do Tempo</h2>
-    <span class="timelineDescription"> Minha jornada de aprendizado e desenvolvimento</span>
+    <span id="Description"> Minha jornada de aprendizado e desenvolvimento</span>
     <div class="timelineContainer">
 
       <div class="timelineItem">
@@ -124,7 +134,7 @@
         <div class="item">
           <img src="./assets/image/estacio.svg" alt="logo estacio" />
           <span class="timelineDate">2023</span>
-          <p>Analise e<br/> Desenvolvimento <br/> de Sistema</p>
+          <p>Analise e<br /> Desenvolvimento <br /> de Sistema</p>
         </div>
 
         <div class="item">
@@ -155,25 +165,122 @@
       </div>
 
     </div>
+
+    <!--##################### SEÇÃO "processo" DO SITE #####################-->
+    <div class="processo" id="processo">
+      <h2> Construindo coisa legais </h2>
+
+      <div class="processoCase Direita">
+        <div class="processoimage">
+          <img src="/NovoPortifolio/assets/image/flyer.png" alt="perfil" />
+        </div>
+
+        <div class="processoTexto">
+          <span> "Nada de layout generico" </span>
+        </div>
+      </div>
+
+      <div class="processoCase Esquerda">
+
+        <div class="processoTexto">
+          <span>
+            "Comunicação rapida <br> e feedbacks"
+          </span>
+        </div>
+
+        <div class="processoimage">
+          <img src="/NovoPortifolio/assets/image/emails.jpeg " alt="perfil" />
+        </div>
+
+      </div>/
+
+      <div class="processoCase Direita">
+        
+        <div class="processoimage">
+          <img src="/NovoPortifolio/assets/image/flyer.png" alt="perfil" />
+        </div>
+
+        <div class="processoTexto">
+          <span>
+            "Quanto menos IA melhor"
+          </span>
+        </div>
+      </div>
+
+      <div class="processoCase Esquerda">
+        <div class="processoTexto">
+          <span>
+            "entender a demanda,<br> entregar a solução"
+          </span>
+        </div>
+
+        <div class="processoimage">
+          <img src="/NovoPortifolio/assets/image/flyer.png" alt="perfil" />
+        </div>
+      </div>
+
+    </div>
+    <img src="/NovoPortifolio/assets/image/Slice 2.png" id="seta" alt="perfil" />
+
   </section>
 
   <!--##################### SEÇÃO "SOBRE" DO SITE #####################-->
 
   <section class="sobre" id="contato">
+    <h2>Por trás da tela</h2>
+
     <div class="me">
-      <h3>Sobre Mim</h3>
-      <p>
-        Sou um desenvolvedor web e designer apaixonado por criar experiências
-        digitais envolventes. Com uma sólida formação em desenvolvimento
-        front-end e design gráfico, tenho trabalhado em diversos projetos que
-        vão desde sites corporativos até aplicativos móveis. Minha abordagem é
-        centrada no usuário, buscando sempre entregar soluções que sejam não
-        apenas visualmente atraentes, mas também funcionais e acessíveis.
-      </p>
+
+      <div class="meParagrafo">
+        <p>
+          Sou um desenvolvedor web e designer apaixonado por criar experiências
+          digitais envolventes.
+        </p>
+        <p>
+          Com uma sólida formação em desenvolvimento
+          front-end e design gráfico, tenho trabalhado em diversos projetos que
+          vão desde sites corporativos até aplicativos móveis.
+        </p>
+        <p>
+          Minha abordagem é
+          centrada no usuário, buscando sempre entregar soluções que sejam não
+          apenas visualmente atraentes, mas também funcionais e acessíveis.
+        </p>
+      </div>
+
+      <div class="meFoto">
+        <img src="/NovoPortifolio/assets/image/sketch.png" alt="perfil" />
+      </div>
+
     </div>
-    <div class="aside">
-      <img src="/NovoPortifolio/assets/image/perfil.png" alt="" />
+
+    <div class="divisao"></div>
+
+    <div class="gostos">
+
+      <div class="Foto">
+        <img src="/NovoPortifolio/assets/image/sketch.png" alt="perfil" />
+      </div>
+      <div class="meParagrafo">
+        <p>
+          Sou um desenvolvedor web e designer apaixonado por criar experiências
+          digitais envolventes.
+        </p>
+        <p>
+          Com uma sólida formação em desenvolvimento
+        </p>
+        <p>
+          Minha abordagem é
+          apenas visualmente atraentes, mas também funcionais e acessíveis.
+        </p>
+      </div>
+
+
+
+
     </div>
+
+
   </section>
 
   <section class="conectar">

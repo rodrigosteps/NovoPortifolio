@@ -2,13 +2,16 @@
 
 /*primeira tela nome*/
 .name {
-  width: 100%;
+  width: var(--containerWidth);
   height: 100vh;
   font-family: "Telma";
+  display: flex;
+  justify-content: center;
+  margin: var(--centerMargin);
 
   h1 {
     font-size: 14em;
-    letter-spacing: -10px;
+    letter-spacing: -4px;
     position: absolute;
     left: 2%;
     bottom: 10%;
@@ -24,23 +27,26 @@
   }
 
   img {
-    width: 20em;
+    margin-top: 8em;
+    width: 24em;
+    height: 24em;
+    transform: rotate(40deg);
   }
 }
 
 /*seção dos projetos*/
 .projetos {
-  width: 100%;
+  width: var(--containerWidth);
   font-family: var(--fontQuilone);
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin-top: 8em;
+  align-items: center;
+  margin: var(--centerMargin);
 
   h2 {
     letter-spacing: -4px;
     font-size: 4em;
-    margin: 1em;
+    margin-top: 2em;
   }
 
   h3 {
@@ -49,13 +55,24 @@
   }
 }
 
+#projetosDescription {
+  margin-left: 16em;
+  width: 16em;
+  text-align: center;
+  font-family: "covered by your grace";
+  font-size: 32px;
+  color: rgb(155, 187, 132);
+  transform: rotate(-5deg);
+}
+
 /*container com as imagens dos projetos*/
 .projetosCases {
   display: flex;
   flex-wrap: wrap;
-  width: 70em;
+  width: 100%;
   padding: 0 2em;
-  justify-content: space-evenly;
+  justify-content: center;
+
   gap: 2em 4em;
 
   /*>>>>> posições dos projetos no container*/
@@ -165,12 +182,12 @@
   align-items: center;
   flex-direction: column;
   margin: 1em;
-  
+
   span {
     letter-spacing: -4px;
     font-size: 4em;
   }
-  
+
   img {
     width: 10em;
     border-bottom: 2px solid olivedrab;
@@ -179,10 +196,10 @@
 
 /*Linha do tempo*/
 .timeline {
-  width: 100%;
+  width: var(--containerWidth);
   display: flex;
   flex-direction: column;
-  margin-top: 8em;
+  margin: var(--centerMargin);
 
   h2 {
     font-family: var(--fontQuilone);
@@ -191,46 +208,53 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1em;
+    margin-top: 2em;
   }
 
   span {
     font-family: var(--fontSynonym);
     font-size: 1em;
   }
-  
-  p{
+
+  p {
     font-family: var(--fontQuilone);
     font-size: 1.1em;
   }
 }
 
-.timelineDescription{
-  font-family: covered by your grace;
-  font-size: 1.5em;
-  margin-bottom: 2em;
+#Description {
+  margin: var(--centerMargin);
+  width: 16em;
+  text-align: center;
+  font-family: var(--fontHandWrite);
+  font-size: 24px;
+  color: rgb(155, 187, 132);
+  transform: rotate(5deg);
 }
 
 .timelineContainer {
   display: flex;
   flex-direction: column;
 }
-.timelineItem{
+.timelineItem {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 2em;
 }
-
-.item img{
-  width: 8em;
-}
-.item img:hover{
-transform: rotate(5deg) translateY(-5px);  
-transition: var(--trasition);
+.timelineDate {
+  display: none;
 }
 
-.item{
+.item img {
+  width: 6em;
+}
+.item img:hover {
+  transform: rotate(5deg) translateY(-5px);
+  transition: var(--trasition);
+}
+
+.item {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -244,5 +268,45 @@ transition: var(--trasition);
   object-fit: cover;
 }
 
+/* seção processo */
 
+.processo {
+  width: var(--containerWidth);
+  display: flex;
+  flex-direction: column;
 
+  span {
+    font-family: var(--fontQuilone);
+    font-size: 2.5em;
+  }
+
+  h2 {
+    margin: var(--margin);
+  }
+}
+
+.processoCase img {
+  width: 14em;
+  object-fit: contain;
+}
+
+.Direita {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+  padding-right: 10em;
+}
+
+.Esquerda {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+  padding-left: 10em;
+}
+.processoTexto {
+  width: 40em;
+}

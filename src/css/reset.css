@@ -1,4 +1,3 @@
-
 /*estilos gerais*/
 * {
   margin: 0;
@@ -7,27 +6,33 @@
   text-decoration: none;
   font-size: 16px;
   scroll-behavior: smooth;
-
 }
 
 /*variaveis*/
 :root {
-  --fontQuilone:"Quilone";
-    --fontSynonym:"Synonym";
-  --fontSize:2em;
+  --fontQuilone: "Quilone";
+  --fontSynonym: "Synonym";
+  --fontHandWrite: "covered by your grace";
+  --fontSize: 2em;
   --radiusNav: 50px;
-  --margin: 1em auto ;
+  --margin: 2em auto;
+  --centerMargin: 0 auto;
   --fontColor: #1d1f20;
   --trasition: all 0.3s ease-in-out;
+  --containerWidth: 70em;
 }
 
 /*Fonte Telma*/
 
 @font-face {
-  font-family: 'Telma';
-  src: url('/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff2') format('woff2'),
-       url('/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff') format('woff'),
-       url('/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.ttf') format('truetype');
+  font-family: "Telma";
+  src:
+    url("/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff2")
+      format("woff2"),
+    url("/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff")
+      format("woff"),
+    url("/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.ttf")
+      format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -35,10 +40,14 @@
 
 /*Fonte Quilon*/
 @font-face {
-  font-family: 'Quilone';
-  src: url('/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff2') format('woff2'),
-       url('/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff') format('woff'),
-       url('/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.ttf') format('truetype');
+  font-family: "Quilone";
+  src:
+    url("/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff2")
+      format("woff2"),
+    url("/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff")
+      format("woff"),
+    url("/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.ttf")
+      format("truetype");
   font-weight: 200 900;
   font-display: swap;
   font-style: normal;
@@ -46,23 +55,37 @@
 
 /*Fonte Synonym*/
 @font-face {
-  font-family: 'Synonym';
-  src: url('/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff2') format('woff2'),
-       url('/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff') format('woff'),
-       url('/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.ttf') format('truetype');
+  font-family: "Synonym";
+  src:
+    url("/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff2")
+      format("woff2"),
+    url("/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff")
+      format("woff"),
+    url("/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.ttf")
+      format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
 }
 
-
 /*estilos para os links*/
 
-a:visited{
+a:visited {
   color: inherit;
 }
 /*estilos do body*/
-body{
+body {
   background-color: #45644a;
+}
 
+.backgroundCamada {
+  background-image: url(/NovoPortifolio/assets/image/granulado.png);
+  opacity: 0.3;
+  position: fixed;
+  filter: contrast(0%) brightness(5%);
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
