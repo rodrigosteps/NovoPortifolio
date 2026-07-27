@@ -1,38 +1,6 @@
 @import "./reset.css";
 
-/*primeira tela nome*/
-.name {
-  width: var(--containerWidth);
-  height: 100vh;
-  font-family: "Telma";
-  display: flex;
-  justify-content: center;
-  margin: var(--centerMargin);
 
-  h1 {
-    font-size: 14em;
-    letter-spacing: -4px;
-    position: absolute;
-    left: 2%;
-    bottom: 10%;
-  }
-
-  p {
-    font-family: var(--fontSynonym);
-    font-size: 2em;
-    position: absolute;
-    bottom: 12%;
-    left: 2%;
-    color: #bed6ac;
-  }
-
-  img {
-    margin-top: 8em;
-    width: 24em;
-    height: 24em;
-    transform: rotate(40deg);
-  }
-}
 
 /*seção dos projetos*/
 .projetos {
@@ -46,7 +14,7 @@
   h2 {
     letter-spacing: -4px;
     font-size: 4em;
-    margin-top: 2em;
+    margin-top: 0.5em;
   }
 
   h3 {
@@ -72,7 +40,6 @@
   width: 100%;
   padding: 0 2em;
   justify-content: center;
-
   gap: 2em 4em;
 
   /*>>>>> posições dos projetos no container*/
@@ -181,7 +148,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 1em;
+  margin: 1em auto 6em auto;
 
   span {
     letter-spacing: -4px;
@@ -208,7 +175,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 0.5em;
   }
 
   span {
@@ -281,7 +248,7 @@
   }
 
   h2 {
-    margin: var(--margin);
+    margin: 1em 0 2em 0;
   }
 }
 

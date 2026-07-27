@@ -1,0 +1,83 @@
+@import "./reset.css";
+
+.modal-container {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  z-index: 90;
+}
+
+.modal-content {
+  margin: 4em auto 0 auto;
+  width: var(--containerWidth);
+  background-color: #e6ffeb;
+  border-radius: var(--radiusNav);
+}
+
+.modalImage img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.modalImage {
+  display: flex;
+  flex-direction: column;
+}
+
+.Left,
+.right {
+  padding: 8em;
+}
+.modalTexto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  width: 80%;
+  margin: var(--centerMargin);
+  padding: 1em;
+}
+
+.modalTexto span {
+  font-size: 6em;
+  font-family: var(--fontQuilone);
+}
+.modalTexto p {
+  font-size: 2em;
+  color: rgb(149, 177, 132);
+  font-family: var(--fontSynonym);
+}
+
+/*estilo do nav*/
+.modalMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: sticky;
+  bottom: 2%;
+  left: 0%;
+  right: 0%;
+  width: 14em;
+  height: 4em;
+  align-items: center;
+  margin: 0em auto;
+  font-weight: bold;
+  color: #f3ede3;
+  border-radius: var(--radiusNav);
+  background: #0b2604e1;
+  z-index: 95;
+  font-family: var(--fontHandWrite);
+}
+
+.modalMenu a {
+  font-size: 4em;
+  opacity: 0.5;
+}
+
+.modalMenu a:hover {
+  opacity: 0.9;
+}

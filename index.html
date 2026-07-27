@@ -11,12 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo%20Black:wght@400&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Covered%20By%20Your%20Grace:wght@400&display=swap"
     rel="stylesheet">
-  <meta name="author" content="Rodrigo Passos" />
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg" href="./assets/icon/favicon.svg" />
+    <meta name="author" content="Rodrigo Passos" />
 
   <link rel="styleSheet" href="./src/css/reset.css" />
   <link rel="styleSheet" href="./src/css/header.css" />
   <link rel="styleSheet" href="./src/css/main.css" />
+  <link rel="styleSheet" href="./src/css/modal.css" />
   <link rel="styleSheet" href="./src/css/links.css" />
   <link rel="styleSheet" href="./src/css/about.css" />
   <link rel="styleSheet" href="./src/css/footer.css" />
@@ -29,9 +31,9 @@
   <div class="backgroundCamada"></div><!--apenas para efeito granulado-->
 
   <!--##################### NAVEGAÇÃO DO SITE #####################-->
-  <nav class="nav"> </nav><!--apenas para efeito blur-->
+  <nav class="nav" id="nav"> </nav><!--apenas para efeito blur-->
 
-  <ul class="menu">
+  <ul class="menu" id="menu">
     <a href="#inicio">Inicio</a>
     <a href="#projetos">Projetos</a>
     <a href="#timeline">Linha do tempo</a>
@@ -42,12 +44,51 @@
   <!--##################### HERO SECTION DO SITE #####################-->
 
   <section class="name" id="inicio">
+    <img src="/NovoPortifolio/assets/image/19.svg" alt="perfil" />
     <div class="nameCard">
-      <img src="/NovoPortifolio/assets/image/footprint_5831098.png" alt="perfil" />
-      <h1>rodrigo P.</h1>
-      <p>Desenvolvedor Web e Designer</p>
+      <h1>Rodrigo Passos</h1>
+      <p>Dev Web e Designer</p>
     </div>
   </section>
+
+
+  
+  <!--##################### teste DO SITE #####################-->
+  <div class="modal-container" id="modal">
+
+      <div class="modal-content">
+
+        <div class="modalTexto">
+          <span>LANDING PAGE </span>
+          <p>Development of a clean, professional landing page concept for a visual effects startup, 
+            with focus on usability, brand presentation, and responsiveness across devices.
+          Mobile-First Design, Scalable Across All Devices.</p>
+        </div>
+
+        <div class="modalImage">
+          <div class="gridModal Left">
+            <img src="/NovoPortifolio/assets/image/modal/1.webp" alt="perfil" />
+            <img src="/NovoPortifolio/assets/image/modal/5.webp" alt="perfil" />
+            <img src="/NovoPortifolio/assets/image/modal/2.webp" alt="perfil" />
+            <img src="/NovoPortifolio/assets/image/modal/3.webp" alt="perfil" />
+            
+          </div>
+          <div class="gridModal right">
+            <img src="/NovoPortifolio/assets/image/modal/6.webp" alt="perfil" />
+          </div>
+
+        </div>
+
+      </div>
+
+<ul class="closemodal" id="closemodal">
+   <span>X</span>  
+  </ul>
+
+
+    </div>
+
+
 
   <!--##################### PROJETOS DO SITE #####################-->
 
@@ -55,14 +96,15 @@
 
     <h2>Projetos Recentes</h2>
     <span id="projetosDescription"> cada projeto é unico</span>
-    <article class="projetosCases">
-      <div class="projetosCard case1">
-        <img src="/NovoPortifolio/assets/image/thursday.social.png" alt="site" />
+    <article class="projetosCases" >
+
+      <div class="projetosCard case1" id="case1">
+        <img src="/NovoPortifolio/assets/image/thursday.social.png" id="site" />
         <h3>Sux UI</h3>
         <span class="tag">Landing Page</span> <span class="tag">UI/UX</span>
       </div>
 
-      <div class="projetosCard case2">
+      <div class="projetosCard case2" id="case2">
         <img src="/NovoPortifolio/assets/image/browser.png" alt="site" />
         <h3>Dashboard</h3>
 
@@ -107,7 +149,9 @@
     </article>
   </main>
 
-  <section class="maisProjetos">
+ 
+
+  <section class="maisProjetos" id="maisProjetos">
     <img src="./assets/icon/toolbox.png" alt="" />
     <span>Mais Projetos em breve </span>
   </section>
@@ -197,7 +241,7 @@
       <div class="processoCase Direita">
         
         <div class="processoimage">
-          <img src="/NovoPortifolio/assets/image/flyer.png" alt="perfil" />
+          <img src="/NovoPortifolio/assets/image/noia.jpg" alt="perfil" />
         </div>
 
         <div class="processoTexto">
@@ -220,7 +264,6 @@
       </div>
 
     </div>
-    <img src="/NovoPortifolio/assets/image/Slice 2.png" id="seta" alt="perfil" />
 
   </section>
 
@@ -283,12 +326,12 @@
 
   </section>
 
-  <section class="conectar">
+  <section class="conectar" id="conectar">
     <h2>Vamos Criar ?</h2>
     <img src="" alt="conect">
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <a class="footerLogo" href="https://linktr.ee/rodrigosteps" target="_blank">
       <svg width="541" height="121" viewBox="0 0 541 121" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -359,6 +402,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./src/js/js.js"></script>
 </body>
 
 </html>

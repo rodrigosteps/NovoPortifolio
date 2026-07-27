@@ -2,9 +2,9 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 8em 1em 0em 1em;
+  margin: 4em auto 4em auto;
   padding-top: 2em;
 }
 
