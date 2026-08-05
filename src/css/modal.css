@@ -1,49 +1,72 @@
 @import "./reset.css";
 
-.modal-container {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.modal-container:focus {
   top: 0;
-  left: 0;
-  backdrop-filter: blur(10px);
-  z-index: 90;
 }
 
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background: #e6ffeb;
+  transition: all ease-in 300ms;
+  animation: fadeSlide 0.5s ease-out normal forwards;
+}
+
+@keyframes fadeSlide {
+  0% {
+    transform: translatey(10em);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: 0;
+  }
+}
 .modal-content {
-  margin: 4em auto 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
   width: var(--containerWidth);
-  background-color: #e6ffeb;
-  border-radius: var(--radiusNav);
+  margin: var(--centerMargin);
+  padding: 0 1em;
 }
 
 .modalImage img {
   width: 100%;
   object-fit: contain;
+  
 }
 
 .modalImage {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .Left,
 .right {
-  padding: 8em;
+  padding: 2em 6em;
 }
 .modalTexto {
   display: flex;
   flex-direction: column;
-  margin-top: 4em;
   width: 80%;
   margin: var(--centerMargin);
   padding: 1em;
 }
 
 .modalTexto span {
-  font-size: 6em;
+  font-size: 4em;
   font-family: var(--fontQuilone);
 }
 .modalTexto p {
@@ -53,31 +76,32 @@
 }
 
 /*estilo do nav*/
-.modalMenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.closeModal {
   position: sticky;
   bottom: 2%;
   left: 0%;
-  right: 0%;
-  width: 14em;
-  height: 4em;
-  align-items: center;
-  margin: 0em auto;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 20em;
   color: #f3ede3;
   border-radius: var(--radiusNav);
-  background: #0b2604e1;
+  background-color: #45644a;
   z-index: 95;
   font-family: var(--fontHandWrite);
+  margin: var(--centerMargin);
+  gap: 10em;
 }
 
-.modalMenu a {
-  font-size: 4em;
-  opacity: 0.5;
+.closeModal span {
+
+  font-size: 2em;
 }
 
-.modalMenu a:hover {
-  opacity: 0.9;
+.closeModal:hover {
+
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px black;
+  transition: all ease-in 200ms;
 }

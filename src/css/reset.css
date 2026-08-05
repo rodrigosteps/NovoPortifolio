@@ -6,6 +6,8 @@
   text-decoration: none;
   font-size: 16px;
   scroll-behavior: smooth;
+  user-select: none;
+  caret-color: transparent;
 }
 
 /*variaveis*/
@@ -68,6 +70,8 @@
   font-display: swap;
   font-style: normal;
 }
+
+
 
 /*estilos para os links*/
 
