@@ -44,6 +44,7 @@
 .modalImage img {
   width: 100%;
   object-fit: contain;
+  border-radius: 16px;
   
 }
 
@@ -55,7 +56,7 @@
 
 .Left,
 .right {
-  padding: 2em 6em;
+  padding: 0em 10em;
 }
 .modalTexto {
   display: flex;
@@ -83,12 +84,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 20em;
+  width: 16em;
   color: #f3ede3;
   border-radius: var(--radiusNav);
   background-color: #45644a;
   z-index: 95;
-  font-family: var(--fontHandWrite);
+  font-family: var(--fontSynonym);
   margin: var(--centerMargin);
   gap: 10em;
 }
@@ -98,10 +99,14 @@
   font-size: 2em;
 }
 
-.closeModal:hover {
+.closeModal:hover  {
 
   scale: 1.1;
   cursor: pointer;
   box-shadow: 1px 1px 10px black;
-  transition: all ease-in 200ms;
+  transition: all ease-in 200ms; 
+  
+  
 }
+  
+ 
