@@ -103,20 +103,18 @@
   .case1 img:hover,
   .case5 img:hover,
   .case6 img:hover {
-    transform: rotate(3deg);
+    transform: rotate(3deg) scale(1.04);
     transition: var(--trasition);
         cursor: pointer;
-
   }
 
   .case2 img:hover,
   .case3 img:hover,
   .case4 img:hover,
   .case7 img:hover {
-    transform: rotate(-3deg);
+    transform: rotate(-3deg) scale(1.04);
     transition: var(--trasition);
         cursor: pointer;
-
   }
   /*Hover das imagens <<<<<<<<*/
 }

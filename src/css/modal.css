@@ -71,9 +71,10 @@
   font-family: var(--fontQuilone);
 }
 .modalTexto p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: rgb(149, 177, 132);
   font-family: var(--fontSynonym);
+  text-align:start;
 }
 
 /*estilo do nav*/
@@ -85,9 +86,10 @@
   justify-content: center;
   text-align: center;
   width: 16em;
-  color: #f3ede3;
   border-radius: var(--radiusNav);
-  background-color: #45644a;
+  background-color: #02af1f42;
+  border: 2px solid #02450d45;
+  backdrop-filter: blur(40px);
   z-index: 95;
   font-family: var(--fontSynonym);
   margin: var(--centerMargin);
@@ -95,8 +97,9 @@
 }
 
 .closeModal span {
-
+  color: #f3ede3;
   font-size: 2em;
+  text-shadow: 2px 2px 8px black;;
 }
 
 .closeModal:hover  {
