@@ -53,8 +53,6 @@
     top: 1em;
     left: 6em;
     transform: rotate(-2deg);
-
-    
   }
 
   .case2 {
@@ -117,6 +115,7 @@
         cursor: pointer;
   }
   /*Hover das imagens <<<<<<<<*/
+
 }
 
 /*cards com imagem e titulo*/
@@ -184,7 +183,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 0.5em;
+    margin: 0.5em;
   }
 
   span {
@@ -198,28 +197,41 @@
   }
 }
 
-#Description {
+#Description2 {
   margin: var(--centerMargin);
   width: 16em;
   text-align: center;
   font-family: var(--fontHandWrite);
   font-size: 24px;
   color: rgb(155, 187, 132);
-  transform: rotate(5deg);
+  transform: rotate(-5deg);
 }
 
 .timelineContainer {
   display: flex;
   flex-direction: column;
 }
-.timelineItem {
+
+.timelineItemUp {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 2em;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 22em;
+  position: relative;
+  top: 50px;
 }
+
+.timelineItemDown{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-right: 18em;
+
+}
+
 .timelineDate {
-  display: none;
+  display: flex;
 }
 
 .item img {
@@ -238,10 +250,69 @@
   gap: 0.5em;
 }
 
-.trilha img {
+.LinhaDoTempo{
   width: 100%;
-  mix-blend-mode: multiply;
-  object-fit: cover;
+  height: 12em;
+  background-image: url(/NovoPortifolio/assets/image/Pegadas.svg);
+  background-repeat:repeat-x;
+  background-size:contain;
+  background-position:center;
+}
+
+.trilha img {
+  width: 18em;
+}
+
+/* seção skills */
+
+.skillsContainer{
+  width: var(--containerWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: var(--centerMargin);
+  padding-top: 4em;
+
+  h3 {
+    font-family: var(--fontQuilone);
+    font-size: 2em;
+    margin: 1em;
+  }
+
+  span {
+    font-family: var(--fontSynonym);
+    font-size: 1em;
+  }
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10em;
+  margin: var(--centerMargin);
+}
+
+.skills img{
+  width: 80px;
+}
+
+
+.hard, .soft{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.hardSkills, .softSkills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5em;
+  width: 20em;
 }
 
 /* seção processo */
@@ -257,13 +328,20 @@
   }
 
   h2 {
-    margin: 1em 0 2em 0;
+    margin-top: 1em;
+    text-align: center;
   }
+#Description{
+margin-top: -2em;
+margin-left: 0em;
+rotate: -20deg;
+}
 }
 
 .processoCase img {
   width: 14em;
   object-fit: contain;
+  border-radius: 18px;
 }
 
 .Direita {
@@ -286,3 +364,14 @@
 .processoTexto {
   width: 40em;
 }
+
+#Description3 {
+  margin: var(--centerMargin);
+  width: 16em;
+  text-align: center;
+  font-family: var(--fontHandWrite);
+  font-size: 24px;
+  color: rgb(155, 187, 132);
+  transform: rotate(-5deg);
+}
+

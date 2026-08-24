@@ -20,18 +20,6 @@
   animation: fadeSlide 0.5s ease-out normal forwards;
 }
 
-@keyframes fadeSlide {
-  0% {
-    transform: translatey(10em);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    transform: 0;
-  }
-}
 .modal-content {
   flex-direction: row;
   flex-wrap: wrap;

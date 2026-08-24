@@ -41,11 +41,17 @@
 .menu a {
   font-size: 1.4em;
   opacity: 0.5;
+      padding:0 0.8em;
+
 }
 
 .menu a:hover {
   opacity: 0.9;
-}
+    background-color:#4b6644e1 ;
+    overflow: hidden;
+    border-radius: 14px;
+    transition: all ease 0.1s;
+  }
 
 
 /*primeira tela nome*/
@@ -57,6 +63,8 @@
   flex-direction: row;
   align-items:center ;
   justify-content:space-around;
+  animation: rota  ease forwards 8s ;
+  overflow: hidden;
   
   h1 {
     font-size:8vw;
@@ -66,7 +74,7 @@
   p {
     font-family: var(--fontSynonym);
     font-size:4vw;
-    color: #bed6ac;
+  color: #9bbb84;
   }
   
 }
