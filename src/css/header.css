@@ -34,7 +34,6 @@
   border-radius: var(--radiusNav);
   background: #0b2604e1;
   z-index: 80;
-  animation: pop 300s 10s forwards ease-in;
 }
 
 
@@ -56,15 +55,17 @@
 
 /*primeira tela nome*/
 .name {
-  width: 100%;
-  min-height: 100vh;
+  width: 80%;
+  min-height: 100dvh;
   font-family:var(--fontAclonica);
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items:center ;
   justify-content:space-around;
-  animation: rota  ease forwards 8s ;
-  overflow: hidden;
+  animation: nameSteps  steps(4) forwards 2000ms;
+  margin: var(--centerMargin);
+overflow: hidden;
   
   h1 {
     font-size:8vw;
@@ -80,6 +81,5 @@
 }
 
 .name img {
-    width: 16vw;
+    width: 14vw;
 }
-

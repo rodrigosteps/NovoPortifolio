@@ -22,13 +22,17 @@
   <link rel="styleSheet" href="./src/css/links.css" />
   <link rel="styleSheet" href="./src/css/about.css" />
   <link rel="styleSheet" href="./src/css/footer.css" />
+  <link rel="styleSheet" href="./src/css/animations.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
 
   <title>Rodrigo Passos - Portifolio 2026</title>
 </head>
 
-<body  oncontextmenu="return false;">
+<body oncontextmenu="return false;">
 
   <main class="container" id="container">
+
     <div class="backgroundCamada"></div><!--apenas para efeito granulado-->
 
     <!--##################### NAVEGAÇÃO DO SITE #####################-->
@@ -45,7 +49,7 @@
     <!--##################### HERO SECTION DO SITE #####################-->
 
     <section class="name" id="inicio">
-      <img src="/NovoPortifolio/assets/image/19.svg" alt="perfil" />
+      <img src="/NovoPortifolio/assets/image/logo.svg" loading="lazy" alt="perfil" />
       <div class="nameCard">
         <h1>Rodrigo Passos</h1>
         <p>Dev Web e Designer</p>
@@ -62,13 +66,16 @@
       <span id="projetosDescription"> cada projeto é unico</span>
       <article class="projetosCases">
 
-        <div class="projetosCard case1" id="case1">
+        <div class="show case1" id="case1">
           <img src="/NovoPortifolio/assets/image/thursday.social.png" id="site" />
           <h3>Sux UI</h3>
-          <span class="tag">Landing Page</span> <span class="tag">UI/UX</span>
+
+          <span class="tag">Landing Page</span>
+          <span class="tag">UI/UX</span>
+        </div>
         </div>
 
-        <div class="projetosCard case2" id="case2">
+        <div class="show case2" id="case2">
           <img src="/NovoPortifolio/assets/image/browser.png" alt="site" />
           <h3>Dashboard</h3>
 
@@ -76,36 +83,36 @@
           <span class="tag">Design</span>
         </div>
 
-        <div class="projetosCard case3" id="case3">
+        <div class="show case3" id="case3">
           <img src="/NovoPortifolio/assets/image/optimus.png" alt="site" />
           <h3>OptimusTech</h3>
 
           <span class="tag">Landing Page</span> <span class="tag">UI/UX</span>
         </div>
 
-        <div class="projetosCard case4" id="case4">
+        <div class="show case4" id="case4">
           <img src="/NovoPortifolio/assets/image/todo.png" alt="site" />
           <h3>Cool Do List</h3>
 
           <span class="tag">Web App</span> <span class="tag">UI/UX</span>
         </div>
 
-        <div class="projetosCard case5" id="case5">
-          <img src="/NovoPortifolio/assets/image/tela.jpeg" alt="site" />
+        <div class="show case5" id="case5">
+          <img src="/NovoPortifolio/assets/image/PORT.png" alt="site" />
           <h3>Portifolio</h3>
 
           <span class="tag">Web Desing</span>
           <span class="tag">Desenvolvimento</span>
         </div>
 
-        <div class="projetosCard case6" id="case6">
+        <div class="show case6" id="case6">
           <img src="/NovoPortifolio/assets/image/tarot.png" alt="site" />
           <h3>Filum Fati</h3>
 
           <span class="tag">Web App</span> <span class="tag">Web Desing</span>
         </div>
 
-        <div class="projetosCard case7" id="case7">
+        <div class="show case7" id="case7">
           <img src="/NovoPortifolio/assets/image/POTRAIT.png" alt="site" />
           <h3>Card de Perfil</h3>
 
@@ -114,252 +121,272 @@
       </article>
     </section>
 
-          <!--##################### MODAL DO SITE #####################-->
-      <section class="modal-container" id="caseModal1">
-    
+    <!--##################### MODAL DO SITE #####################-->
+    <section>
+      <div class="modal-container" id="caseModal1">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
             <span>LANDING PAGE </span>
             <p>Development of a clean, professional landing page concept for a visual effects startup,
               with focus on usability, brand presentation, and responsiveness across devices.
               Mobile-First Design, Scalable Across All Devices.</p>
           </div>
-    
+
           <div class="modalImage">
             <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/land1.png" alt="perfil" />    
-              <img src="/NovoPortifolio/assets/image/modal/land2.png" alt="perfil" />    
-              <img src="/NovoPortifolio/assets/image/modal/land3.png" alt="perfil" />    
+              <img src="/NovoPortifolio/assets/image/modal/land1.png" loading="lazy" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/land2.png" loading="lazy" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/land3.png" loading="lazy" loading="lazy" alt="perfil" />
             </div>
             <div class="gridModal right">
-              <img src="/NovoPortifolio/assets/image/modal/land4.png" alt="perfil" />    
-              <img src="/NovoPortifolio/assets/image/modal/land5.png" alt="perfil" />    
+              <img src="/NovoPortifolio/assets/image/modal/land4.png" loading="lazy" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/land5.png" loading="lazy" loading="lazy" alt="perfil" />
             </div>
-    
+
           </div>
-    
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal1">
+
+
+        <a class="closeModal" id="closeModal1">
 
           <span>Voltar</span>
         </a>
-    
-    
-      </section>
-    
-       <section class="modal-container" id="caseModal2">
-    
+
+
+      </div>
+
+      <div class="modal-container" id="caseModal2">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
             <span>Chess Dashboard </span>
-            <p>Development of a clean, professional landing page concept for a visual effects startup,
-              with focus on usability, brand presentation, and responsiveness across devices.
-              Mobile-First Design, Scalable Across All Devices.</p>
-          </div>
-    
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/chess1.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/chess2.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/chess3.png" alt="perfil" />
-              
-            </div>
-            <div class="gridModal right">
-              <img src="/NovoPortifolio/assets/image/modal/chess4.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/chess5.png" alt="perfil" />
-            </div>
-    
+            <p>Uma interface de usuário rica e dinâmica projetada para simular o painel de controle de uma plataforma de
+              xadrez online em um layout limpo,
+              analítico e altamente visual, proporcionando uma experiência imersiva e intuitiva para o jogador.</p>
           </div>
 
-    
+          <div class="modalImage">
+            <div class="gridModal Left">
+              <img src="/NovoPortifolio/assets/image/modal/chess1.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/chess2.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/chess3.png" loading="lazy" alt="perfil" />
+
+            </div>
+            <div class="gridModal right">
+              <img src="/NovoPortifolio/assets/image/modal/chess4.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/chess5.png" loading="lazy" alt="perfil" />
+            </div>
+
+          </div>
+
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal2">
-                            
+
+
+        <a class="closeModal" id="closeModal2">
+
           <span> Voltar</span>
         </a>
-    
-    
-      </section>
-    
-       <section class="modal-container" id="caseModal3">
-    
+
+
+      </div>
+
+      <div class="modal-container" id="caseModal3">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
             <span>Optimus Tech </span>
-            <p> Uma Landing Page responsiva desenvolvida para simular a vitrine de uma plataforma de cursos focada em habilidades digitais (Web Design, Data Science, UI/UX e Cloud Security). O objetivo deste projeto foi aplicar conceitos modernos de desenvolvimento front-end, focando na construção de uma interface limpa, estruturação semântica e usabilidade.</p>
+            <p> Uma Landing Page responsiva desenvolvida para simular a vitrine de uma plataforma de cursos focada em
+              habilidades digitais (Web Design, Data Science, UI/UX e Cloud Security). O objetivo deste projeto foi
+              aplicar conceitos modernos de desenvolvimento front-end, focando na construção de uma interface limpa,
+              estruturação semântica e usabilidade.</p>
           </div>
-    
+
           <div class="modalImage">
             <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/optimus1.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/optimus2.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/optimus3.png" alt="perfil" />
-    
+              <img src="/NovoPortifolio/assets/image/modal/optimus1.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/optimus2.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/optimus3.png" loading="lazy" alt="perfil" />
+
             </div>
             <div class="gridModal right">
-              <img src="/NovoPortifolio/assets/image/modal/optimus4.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/optimus5.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/optimus6.png" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/optimus4.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/optimus5.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/optimus6.png" loading="lazy" alt="perfil" />
             </div>
-    
+
           </div>
-    
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal3">
+
+
+        <a class="closeModal" id="closeModal3">
           <span>Voltar</span>
         </a>
-    
-    
-      </section>
-    
-       <section class="modal-container" id="caseModal4">
-    
+
+
+      </div>
+
+      <div class="modal-container" id="caseModal4">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
             <span>Cool to do List</span>
-            <p>Development of a clean, professional landing page concept for a visual effects startup,
-              with focus on usability, brand presentation, and responsiveness across devices.
-              Mobile-First Design, Scalable Across All Devices.</p>
+            <p>O CoolToDo foi desenvolvido para simplificar a organização diária através de uma interface prática e
+              dinâmica.
+              <br>
+              A aplicação tem conceitos modernos, garantindo que a interação com as tarefas ocorra sem atritos.
+              A interface foi construída para oferecer a mesma qualidade visual e de navegação tanto em dispositivos
+              móveis quanto em desktops com
+              um layout limpo e intuitivo para as ações do usuário.
+            </p>
           </div>
-    
+
           <div class="modalImage">
-            
+
             <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/todo.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/todo1.png" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/todo.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/todo1.png" loading="lazy" alt="perfil" />
             </div>
-            
+
             <div class="gridModal right">
-              <img src="/NovoPortifolio/assets/image/modal/todo4.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/todo6.png" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/todo4.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/todo6.png" loading="lazy" alt="perfil" />
             </div>
-    
+
           </div>
-    
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal4">
+
+
+        <a class="closeModal" id="closeModal4">
           <span>Voltar</span>
         </a>
-    
-    
-      </section>
-    
-       <section class="modal-container" id="caseModal5">
-    
+
+
+      </div>
+
+      <div class="modal-container" id="caseModal5">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
-            <span>LANDING PAGE </span>
-            <p>Development of a clean, professional landing page concept for a visual effects startup,
-              with focus on usability, brand presentation, and responsiveness across devices.
-              Mobile-First Design, Scalable Across All Devices.</p>
+            <span>SITE PORTIFOLIO</span>
+            <p>Galeria digital imersiva projetada para exibir trabalhos de design e arte digital de forma limpa e
+              direta.
+              O projeto atua como uma vitrine profissional para um artista freelancer, evidenciando o aspecto visual das
+              obras</p>
           </div>
-    
+
           <div class="modalImage">
             <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/1.webp" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/5.webp" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/2.webp" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/3.webp" alt="perfil" />
-    
+              <img src="/NovoPortifolio/assets/image/modal/PORT1.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/PORT2.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/PORT3.png" loading="lazy" alt="perfil" />
+
             </div>
             <div class="gridModal right">
-              <img src="/NovoPortifolio/assets/image/modal/6.webp" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/PORT4.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/PORT5.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/PORT6.png" loading="lazy" alt="perfil" />
             </div>
-    
+
           </div>
-    
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal5">
+
+
+        <a class="closeModal" id="closeModal5">
           <span>Voltar</span>
         </a>
-    
-    
-      </section>
-    
-       <section class="modal-container" id="caseModal6">
-    
+
+
+      </div>
+
+      <div class="modal-container" id="caseModal6">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
             <span> FILUM FATI </span>
-            <p>Uma aplicação web interativa que simula um oráculo de tarot focado na leitura de três cartas (passado, presente e futuro). A lógica da aplicação utiliza estruturas de arrays para gerenciar o baralho completo, controlando o sorteio dinâmico das cartas e exibindo suas respectivas interpretações dentro de um layout místico e imersivo..</p>
+            <p>Uma aplicação web interativa que simula um oráculo de tarot focado na leitura de três cartas (passado,
+              presente e futuro). A lógica da aplicação utiliza estruturas de arrays para gerenciar o baralho completo,
+              controlando o sorteio dinâmico das cartas e exibindo suas respectivas interpretações dentro de um layout
+              místico e imersivo..</p>
           </div>
-    
+
           <div class="modalImage">
             <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/filu1.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/filu2.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/filu3.png" alt="perfil" />
-        
-    
+              <img src="/NovoPortifolio/assets/image/modal/filu1.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/filu2.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/filu3.png" loading="lazy" alt="perfil" />
+
+
             </div>
             <div class="gridModal right">
-              <img src="/NovoPortifolio/assets/image/modal/filu4.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/filu5.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/filu6.png" alt="perfil" />
-              <img src="/NovoPortifolio/assets/image/modal/filu7.png" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/filu4.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/filu5.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/filu6.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/filu7.png" loading="lazy" alt="perfil" />
             </div>
-    
+
           </div>
-    
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal6">
+
+
+        <a class="closeModal" id="closeModal6">
           <span>Voltar</span>
         </a>
-    
-    
-      </section>
-    
-       <section class="modal-container" id="caseModal7">
-    
+
+
+      </div>
+
+      <div class="modal-container" id="caseModal7">
+
         <div class="modal-content">
-    
+
           <div class="modalTexto">
             <span>CARD DE PERFIL </span>
-            <p>Development of a clean, professional landing page concept for a visual effects startup,
-              with focus on usability, brand presentation, and responsiveness across devices.
-              Mobile-First Design, Scalable Across All Devices.</p>
+            <p>Publicado originalmente como conceito visual, este projeto ilustra a capacidade de organizar dados em um
+              espaço reduzido,
+              equilibrando hierarquia de informações e identidade visual.
+              Ele serve perfeitamente como um elemento modular pronto para integrar aplicações web ou mobile mais
+              complexas,
+              atuando como um cartão de visita digital interativo.</p>
           </div>
-    
+
           <div class="modalImage">
             <div class="gridModal Left">
-              <img src="/NovoPortifolio/assets/image/modal/CARD1.png" alt="perfil" />   
-              <img src="/NovoPortifolio/assets/image/modal/CARD2.png" alt="perfil" />   
+              <img src="/NovoPortifolio/assets/image/modal/CARD1.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/CARD2.png" loading="lazy" alt="perfil" />
             </div>
             <div class="gridModal right">
-  <img src="/NovoPortifolio/assets/image/modal/CARD3.png" alt="perfil" />   
-              <img src="/NovoPortifolio/assets/image/modal/CARD4.png" alt="perfil" />             </div>
-    
+              <img src="/NovoPortifolio/assets/image/modal/CARD3.png" loading="lazy" alt="perfil" />
+              <img src="/NovoPortifolio/assets/image/modal/CARD4.png" loading="lazy" alt="perfil" />
+            </div>
+
           </div>
-    
+
         </div>
-    
-    
-        <a  class="closeModal" id="closeModal7">
+
+
+        <a class="closeModal" id="closeModal7">
           <span>Voltar</span>
         </a>
-    
-    
-      </section>
 
 
+      </div>
+
+    </section>
+
+    <!--##################### SEÇÃO "MAIS PROJETOS" DO SITE #####################-->
     <section class="maisProjetos" id="maisProjetos">
       <img src="./assets/icon/toolbox.png" alt="" />
       <span>Mais Projetos em breve </span>
@@ -368,10 +395,35 @@
     <!--##################### SEÇÃO "LINHA DO TEMPO" DO SITE #####################-->
     <section class="timeline" id="timeline">
       <h2>Linha do Tempo</h2>
-      <span id="Description"> Minha jornada de aprendizado e desenvolvimento</span>
+      <span id="Description2"> Minha jornada de aprendizado e desenvolvimento</span>
       <div class="timelineContainer">
 
-        <div class="timelineItem">
+        <div class="timelineItemUp">
+
+          <div class="item">
+            <img src="./assets/icon/alison-seeklogo.svg" style="width: 200px;" alt="">
+            <span class="timelineDate">2019</span>
+            <p>Designer</p>
+          </div>
+
+
+          <div class="item">
+            <img src="./assets/icon/coding.png" alt="logo estacio" />
+            <span class="timelineDate">Hoje</span>
+            <p>Criando coisas incriveis</p>
+          </div>
+        </div>
+
+        <!--##################### ICONES ACIMA #####################-->
+
+        <div class="LinhaDoTempo">
+          <div class="trilha">
+          </div>
+        </div>
+
+        <!--##################### ICONES ABAIXO #####################-->
+
+        <div class="timelineItemDown">
           <div class="item">
             <img src="./assets/image/image-9iSf9bvlKAMKSc1j4tYpRJKbRj82fv.png" alt="logo estacio" />
             <span class="timelineDate">Desde Sempre</span>
@@ -379,57 +431,110 @@
           </div>
 
           <div class="item">
-            <img src="./assets/icon/photoshop-original.svg" alt="">
-            <span class="timelineDate">2019</span>
-            <p>Photoshop</p>
-          </div>
-
-          <div class="item">
             <img src="./assets/image/estacio.svg" alt="logo estacio" />
             <span class="timelineDate">2023</span>
-            <p>Analise e<br /> Desenvolvimento <br /> de Sistema</p>
+            <p>Analise e Desenvolvimento <br /> de Sistema</p>
           </div>
-
-          <div class="item">
-            <img src="./assets/icon/front.svg" alt="logo estacio" />
-            <span class="timelineDate">2024</span>
-            <p>Web <br /> Tools</p>
-          </div>
-
-          <div class="item">
-            <img src="./assets/icon/tools.svg" alt="logo estacio" />
-            <span class="timelineDate">2025</span>
-            <p>Design <br /> Tools</p>
-          </div>
-
-          <div class="item">
-            <img src="./assets/icon/coding.png" alt="logo estacio" />
-            <span class="timelineDate">Hoje</span>
-            <p>Criando <br />coisas <br /> incriveis</p>
-          </div>
-
 
         </div>
-
-        <div class="LinhaDoTempo">
-          <div class="trilha">
-            <img src="./assets/image/pegadas.png" alt="" />
-          </div>
-        </div>
-
       </div>
+
+
+      <!--##################### SEÇÃO "skills" DO SITE #####################-->
+      <section class="skillsContainer">
+
+        <h2>SKILLS</h2>
+
+
+        <div class="skills">
+
+          <div class="hard">
+
+            <div class="skillTitle1">
+              <h3>O Que eu uso:</h3>
+            </div>
+
+            <div class="hardSkills">
+              <div class="item">
+                <img src="./assets/icon/figma-original.svg" alt="logo estacio" />
+                <span>FIGMA</span>
+              </div>
+  
+              <div class="item">
+                <img src="./assets/icon/photoshop-original.svg" alt="logo estacio" />
+                <span>PHOTOSHOP</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/github.svg" alt="logo estacio" />
+                <span>GIT & GITHUB</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/vscode-original-wordmark.svg" alt="logo estacio" />
+                <span>VSCODE</span>
+              </div>
+                            <div class="item">
+                <img src="./assets/icon/claude-brands-solid.svg" alt="logo estacio" />
+                <span>CLAUDE CODE </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="soft">
+            <div class="skillTitle2">
+              <h3>O que eu faço:</h3>
+            </div>
+            <div class="softSkills">
+              <div class="item">
+                <img src="./assets/icon/front.svg" alt="logo estacio" />
+                <span>FRONT-END</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/browser.svg" alt="logo estacio" />
+                <span>WEB DESIGNER</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/pen-nib-solid.svg" alt="logo estacio" />
+                <span>LOGO E BRAND DESIGNER</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/ux.png" alt="logo estacio" />
+                <span>UI/UX </span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
 
       <!--##################### SEÇÃO "processo" DO SITE #####################-->
       <div class="processo" id="processo">
         <h2> Construindo coisa legais </h2>
+        <span id="Description3"> Projetos Passo a Passo</span>
+
+        <div class="processoCase Direita">
+          <div class="processoTexto">
+            <span> "Uma xícara de café" </span>
+          </div>
+
+          <div class="processoimage">
+            <img src="/NovoPortifolio/assets/image/cafe.jpeg" loading="lazy" alt="perfil" />
+          </div>
+
+        </div>
 
         <div class="processoCase Direita">
           <div class="processoimage">
-            <img src="/NovoPortifolio/assets/image/flyer.png" alt="perfil" />
+            <img src="/NovoPortifolio/assets/image/webbad.jpg" loading="lazy" alt="perfil" />
           </div>
 
           <div class="processoTexto">
-            <span> "Nada de layout generico" </span>
+            <span> "Sem de layout generico" </span>
           </div>
         </div>
 
@@ -437,38 +542,27 @@
 
           <div class="processoTexto">
             <span>
-              "Comunicação rapida <br> e feedbacks"
+              "Comunicação rápida <br> e feedbacks"
             </span>
           </div>
 
           <div class="processoimage">
-            <img src="/NovoPortifolio/assets/image/emails.jpeg " alt="perfil" />
+            <img src="/NovoPortifolio/assets/image/emails.jpg" loading="lazy" alt="perfil" />
           </div>
 
-        </div>/
-
-        <div class="processoCase Direita">
-
-          <div class="processoimage">
-            <img src="/NovoPortifolio/assets/image/noia.jpg" alt="perfil" />
-          </div>
-
-          <div class="processoTexto">
-            <span>
-              "Quanto menos IA melhor"
-            </span>
-          </div>
         </div>
 
-        <div class="processoCase Esquerda">
+
+        <div class="processoCase Direita">
+          
+          <div class="processoimage">
+            <img src="/NovoPortifolio/assets/image/jobdone.jpg" loading="lazy" alt="perfil" />
+          </div>
+
           <div class="processoTexto">
             <span>
               "entender a demanda,<br> entregar a solução"
             </span>
-          </div>
-
-          <div class="processoimage">
-            <img src="/NovoPortifolio/assets/image/flyer.png" alt="perfil" />
           </div>
         </div>
 
@@ -477,7 +571,6 @@
     </section>
 
     <!--##################### SEÇÃO "SOBRE" DO SITE #####################-->
-
     <section class="sobre" id="contato">
       <h2>Por trás da tela</h2>
 
@@ -485,23 +578,23 @@
 
         <div class="meParagrafo">
           <p>
-            Sou um desenvolvedor web e designer apaixonado por criar experiências
-            digitais envolventes.
+            E ai! <br> Eu Sou o Rodrigo.
           </p>
           <p>
-            Com uma sólida formação em desenvolvimento
-            front-end e design gráfico, tenho trabalhado em diversos projetos que
-            vão desde sites corporativos até aplicativos móveis.
+            Na infância, descobri que desenhar era a melhor forma de dar vida ao que eu imaginava, hoje em dia descobrir
+            onde posso fazer exatamente o que fazia quando criança,
+            o desenvolvimento web, criando sites, ícones e ilustrações seja criando ferramentas do dia a dia ou
+            desenvolvendo experiências temáticas e imersivas.
           </p>
           <p>
-            Minha abordagem é
-            centrada no usuário, buscando sempre entregar soluções que sejam não
-            apenas visualmente atraentes, mas também funcionais e acessíveis.
+                      Meu foco é entregar experiências digitais únicas, visualmente incríveis, funcionais e totalmente acessíveis.
+Criar projetos incríveis é o que me move.
+
           </p>
         </div>
 
         <div class="meFoto">
-          <img src="/NovoPortifolio/assets/image/sketch.png" alt="perfil" />
+          <img src="/NovoPortifolio/assets/image/sketch.png" loading="lazy" alt="perfil" />
         </div>
 
       </div>
@@ -511,19 +604,18 @@
       <div class="gostos">
 
         <div class="Foto">
-          <img src="/NovoPortifolio/assets/image/sketch.png" alt="perfil" />
+          <img src="/NovoPortifolio/assets/image/sketch.png" loading="lazy" alt="perfil" />
         </div>
         <div class="meParagrafo">
           <p>
-            Sou um desenvolvedor web e designer apaixonado por criar experiências
-            digitais envolventes.
+            Sou um desenvolvedor web e designer apaixonado por construir experiências digitais que realmente cativem
+            quem as utiliza.
           </p>
           <p>
-            Com uma sólida formação em desenvolvimento
-          </p>
+            Como uma mente criativa, busco referências nas culturas, artes e em pessoas que fazem a diferença.
           <p>
-            Minha abordagem é
-            apenas visualmente atraentes, mas também funcionais e acessíveis.
+            Trago uma visão focada em estruturar fluxos lógicos e eficientes para garantir que cada interface de App ou
+            layout não seja apenas visualmente atraente, mas acima de tudo, única e funcional.
           </p>
         </div>
 
@@ -535,6 +627,7 @@
 
     </section>
 
+    <!--##################### SEÇÃO "CONECTAR" DO SITE #####################-->
     <section class="conectar" id="conectar">
 
       <h2>Vamos Criar ?</h2>
@@ -542,9 +635,6 @@
     </section>
 
   </main>
-
-
-    
 
 
   <!--##################### script DO SITE #####################-->

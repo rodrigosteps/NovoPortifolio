@@ -136,3 +136,40 @@ caseModal7.addEventListener('click', () => {
     });
 })
 
+//animacões dos projetos
+
+/*const myObserver = new IntersectionObserver((entrada)=>{
+    
+    entrada.forEach( (novo)=>{
+        if(novo.isIntersecting){
+            novo.target.classList.add('show')
+        }
+    })
+    
+},{ threshold: 0.6 })
+
+const cards = document.querySelectorAll('.hidden')
+
+cards.forEach(cards => myObserver.observe(cards))
+*/
+
+// Verifica a condição da tela antes de rodar o código principal
+
+
+  
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(ScrollTrigger)
+
+  gsap.to(".show", {
+    scrollTrigger: {
+        trigger:".show",
+        toggleActions: "play reverse pause pause",
+        start: "center 0%", 
+        scrub: 1, 
+    }, 
+  y: 800,
+    duration: 3,
+ }) 
+ 
+});
+
