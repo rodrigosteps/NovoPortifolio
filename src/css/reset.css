@@ -4,10 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-size: 16px;
-  scroll-behavior: smooth;
   user-select: none;
   caret-color: transparent;
+  list-style:none;
 }
 
 /*variaveis*/
@@ -21,7 +20,7 @@
   --margin: 2em auto;
   --centerMargin: 0 auto;
   --fontColor: #1d1f20;
-  --trasition: all 0.3s ease-in-out;
+  --transition: all 0.3s ease-in-out;
   --containerWidth: 70em;
 }
 
@@ -78,19 +77,26 @@
 a:visited {
   color: inherit;
 }
-/*estilos do body*/
+/*estilos html e body*/
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
 body {
-  background-color: #45644a;
+  background-color: #436e4a;
 }
 
 .backgroundCamada {
-  background-image: url(/NovoPortifolio/assets/image/granulado.png);
-  opacity: 0.3;
+  background-image: url(../../assets/image/granulado.png);
+  opacity: 0.2;
+  filter: blur(40px);
   position: fixed;
-  filter: contrast(0%) brightness(5%);
+  filter: contrast(0%) brightness(0%);
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: -2;
+  z-index: -1;
+  pointer-events: none;
 }

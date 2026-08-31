@@ -1,175 +1,109 @@
-const caseModal1 = document.getElementById('case1');
-const caseModal2 = document.getElementById('case2');
-const caseModal3 = document.getElementById('case3');
-const caseModal4 = document.getElementById('case4');
-const caseModal5 = document.getElementById('case5');
-const caseModal6 = document.getElementById('case6');
-const caseModal7 = document.getElementById('case7');
+// Funções gerais
 
-const closeModal1 = document.getElementById('closeModal1')
-const closeModal2 = document.getElementById('closeModal2')
-const closeModal3 = document.getElementById('closeModal3')
-const closeModal4 = document.getElementById('closeModal4')
-const closeModal5 = document.getElementById('closeModal5')
-const closeModal6 = document.getElementById('closeModal6')
-const closeModal7 = document.getElementById('closeModal7')
+function openModal(modal) {
+
+  if (!modal) return;
+  modal.style.display = "block";
+  modal.scrollTop = 0;
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(modal) {
+  if (!modal) return;
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+}
+
+
+//  Abrir modais
+
+document.querySelectorAll('.projeto[id^="case"]').forEach((card) => {
+
+  card.addEventListener('click', () => {
+    const caseIndex = card.id.replace('case', '');
+    const targetModal = document.getElementById(`caseModal${caseIndex}`);
+    openModal(targetModal);
+  });
+
+});
 
 
 
-//função para abrir o modal do case 1 
-caseModal1.addEventListener('click', () => {
+// Fechar modais 
 
-    document.getElementById("caseModal1").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal1').scrollTop = 0;
-    
-    //função para fechar o modal do case 1
+document.querySelectorAll('.closeModal').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal-container');
+    closeModal(modal);
+  });
 
-    closeModal1.addEventListener('click', () => {
-    
-        document.getElementById("caseModal1").style.display = "none";
-        document.body.style.overflow = "";
-    
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Observer reutilizável
+  const observer = new IntersectionObserver((entries, observerInstance) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+
+        // classe correspondente ao tipo de elemento
+        if (el.classList.contains("projeto")) el.classList.add("projetoAtivo");
+        if (el.classList.contains("item")) el.classList.add("itemAtivo");
+       if (el.classList.contains("titulo")) el.classList.add("tituloAtivo");
+        if (el.classList.contains("Description")) el.classList.add("spanativo");
+
+        // Trava o elemento no estado final e desliga a observação
+        observerInstance.unobserve(el);
+      }
     });
-})
+  }, { 
+    threshold: 0.8 
+  });
 
-
-
-//função para abrir o modal do case 2
-caseModal2.addEventListener('click', () => {
-
-    document.getElementById("caseModal2").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal2').scrollTop = 0;
-    
-    
-    //função para fechar o modal do case 2
-    closeModal2.addEventListener('click', () => {
-    
-        document.getElementById("caseModal2").style.display = "none";
-        document.body.style.overflow = "";
-    
-    });
-})
-
-//função para abrir o modal do case 3
-caseModal3.addEventListener('click', () => {
-
-    document.getElementById("caseModal3").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal3').scrollTop = 0;
-    
-    
-    //função para fechar o modal do case 2
-    closeModal3.addEventListener('click', () => {
-    
-        document.getElementById("caseModal3").style.display = "none";
-        document.body.style.overflow = "";
-    
-    });
-})
-
-//função para abrir o modal do case 4
-caseModal4.addEventListener('click', () => {
-
-    document.getElementById("caseModal4").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal4').scrollTop = 0;
-    
-    
-    //função para fechar o modal do case 2
-    closeModal4.addEventListener('click', () => {
-    
-        document.getElementById("caseModal4").style.display = "none";
-        document.body.style.overflow = "";
-    
-    });
-})
-
-//função para abrir o modal do case 5
-caseModal5.addEventListener('click', () => {
-
-    document.getElementById("caseModal5").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal5').scrollTop = 0;
-    
-    
-    //função para fechar o modal do case 2
-    closeModal5.addEventListener('click', () => {
-    
-        document.getElementById("caseModal5").style.display = "none";
-        document.body.style.overflow = "";
-    
-    });
-})
-
-//função para abrir o modal do case 6
-caseModal6.addEventListener('click', () => {
-
-    document.getElementById("caseModal6").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal6').scrollTop = 0;
-    
-    
-    //função para fechar o modal do case 2
-    closeModal6.addEventListener('click', () => {
-    
-        document.getElementById("caseModal6").style.display = "none";
-        document.body.style.overflow = "";
-    
-    });
-})
-//função para abrir o modal do case 4
-caseModal7.addEventListener('click', () => {
-
-    document.getElementById("caseModal7").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById('caseModal7').scrollTop = 0;
-    
-    
-    //função para fechar o modal do case 2
-    closeModal7.addEventListener('click', () => {
-    
-        document.getElementById("caseModal7").style.display = "none";
-        document.body.style.overflow = "";
-    
-    });
-})
-
-//animacões dos projetos
-
-/*const myObserver = new IntersectionObserver((entrada)=>{
-    
-    entrada.forEach( (novo)=>{
-        if(novo.isIntersecting){
-            novo.target.classList.add('show')
-        }
-    })
-    
-},{ threshold: 0.6 })
-
-const cards = document.querySelectorAll('.hidden')
-
-cards.forEach(cards => myObserver.observe(cards))
-*/
-
-// Verifica a condição da tela antes de rodar o código principal
-
+  //  o mesmo observer
+  const elementos = document.querySelectorAll(".projeto, .item, h2, .Description");
+  elementos.forEach((el) => observer.observe(el));
+});
 
   
  document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
 
-  gsap.to(".show", {
+  gsap.to(".stcTop", {
     scrollTrigger: {
-        trigger:".show",
+        trigger:".stcTop",
         toggleActions: "play reverse pause pause",
-        start: "center 0%", 
+        start: "top 84%", 
         scrub: 1, 
     }, 
-  y: 800,
-    duration: 3,
+  y: -100,
+    duration: 2,
+    opacity:1
  }) 
- 
-});
+
+  gsap.to(".stc", {
+    scrollTrigger: {
+        trigger:".stc",
+        toggleActions: "play reverse pause pause",
+        start: "center 90%", 
+        scrub: 1, 
+    }, 
+  rotate:10,
+    duration: 8,
+    
+ }) 
+  gsap.to(".stcDown", {
+    scrollTrigger: {
+        trigger:".stcDown",
+        toggleActions: "play reverse pause pause",
+        start: "top 84%", 
+        scrub: 1, 
+    }, 
+  y: 100,
+    duration:8,
+ })
+
+}
+)
 

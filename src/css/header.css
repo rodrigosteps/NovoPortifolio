@@ -1,8 +1,5 @@
-@import "reset.css";
-
-
 /* apenas para efeito blur do menu */
-.nav{                           
+.nav {
   position: fixed;
   bottom: 0em;
   left: 0;
@@ -12,8 +9,8 @@
   justify-content: center;
   align-items: center;
   background-color: #8afa9c23;
-  backdrop-filter: blur(10.7px);
-  mask-image: linear-gradient(to top, rgb(47, 174, 19) 25%, transparent 100%);
+  backdrop-filter: blur(20px);
+  mask-image: linear-gradient(to top, rgb(142, 197, 129) 10%, transparent 100%);
   z-index: 80;
 }
 
@@ -21,65 +18,61 @@
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center; 
   position: fixed;
-  bottom: 1%;
-  left: 24%;
-  right: 24%;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%);
   width: 44em;
   margin: 0em auto;
   padding: 0.5em;
   font-weight: bold;
   color: #f3ede3;
   border-radius: var(--radiusNav);
-  background: #0b2604e1;
-  z-index: 80;
+  background: #72a465e1;
+  z-index: 90;
 }
-
 
 .menu a {
   font-size: 1.4em;
   opacity: 0.5;
-      padding:0 0.8em;
-
+  padding: 0 0.8em;
+  transition: var(--transition);
 }
 
 .menu a:hover {
   opacity: 0.9;
-    background-color:#4b6644e1 ;
-    overflow: hidden;
-    border-radius: 14px;
-    transition: all ease 0.1s;
-  }
-
+  background-color: #205b11e1;
+  overflow: hidden;
+  border-radius: 14px;
+}
 
 /*primeira tela nome*/
 .name {
-  width: 80%;
+  width: 60em;
   min-height: 100dvh;
-  font-family:var(--fontAclonica);
+  font-family: var(--fontAclonica);
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items:center ;
-  justify-content:space-around;
-  animation: nameSteps  steps(4) forwards 2000ms;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: var(--centerMargin);
-overflow: hidden;
-  
+  white-space: none;
+  animation: nameSteps steps(4) forwards 2s;
+
   h1 {
-    font-size:8vw;
+    font-size: 8vw;
     letter-spacing: -8px;
   }
 
   p {
     font-family: var(--fontSynonym);
-    font-size:4vw;
-  color: #9bbb84;
+    font-size: 4vw;
+    color: #9bbb84;
   }
-  
 }
 
 .name img {
-    width: 14vw;
+  width: 14vw;
 }

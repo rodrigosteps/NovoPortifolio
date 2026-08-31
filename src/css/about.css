@@ -1,14 +1,12 @@
-@import "./reset.css";
 
 /*seção sobre mim*/
 .sobre {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: var(--containerWidth);
-  padding: 0 2em;
-  font-family: var(--fontQuilone);
   margin: var(--margin);
+  width: var(--containerWidth);
+  font-family: var(--fontQuilone);
   gap: 10em;
   
   h2 {
@@ -27,6 +25,8 @@
   justify-content: space-around;
   height: 18em;
   margin-top: 4em;
+  margin-bottom: 10em;
+  
 }
 
 .meParagrafo {
@@ -43,50 +43,48 @@
 }
 
 .meFoto {
-  width: 40em;
+  width: 70em;
   height: auto;
   animation: turn1 2s ease forwards;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .meFoto img {
-  width: 50em;
+  width: 60em;
   object-fit: contain;
-  margin: 0 0 6em 8em;
+  margin: 8em 0em 4em 6em;
   transform: rotate(-5deg);
 }
 
 .Foto {
-  width: 40em;
+  width: 70em;
   height: auto;
   animation: turn1 2s ease forwards;
   overflow: hidden;
 }
+
 .Foto img {
-  width: 50em;
+  width: 60em;
   object-fit: contain;
-  margin: 0 0em 4em -22em;
+  margin:0 0 2em -28em;
   transform: rotate(5deg);
+  border-radius: 14px;
+  position: relative;
 }
 
-.divisao {
-  width: 24em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
-}
 
 .conectar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: 70em;
   font-family: var(--fontQuilone);
   margin: var(--margin);
-  margin-top: 20em;
+  margin-top: 8em;
   gap: 4em;
 
   h2 {
     font-size: 4em;
-    margin: var(--margin);
   }
 }
 
@@ -94,11 +92,174 @@
   width: 10em;
 }
 
-#seta {
+.email{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: var(--containerWidth);
+  margin: var(--margin);
+  margin-top: -5em;
+
+  a{
+    margin-left: 4em;
+    background-color: transparent;
+    border: none;
+  }
+
+  a:hover{
+    	        animation: jello-vertical 0.9s both;
+
+  }
+}
+
+@-webkit-keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.stickers{
   position: absolute;
-  top: 238em;
-  left: 62em;
+}
+.stickers img:nth-child(){
+      width: 10em;
+}
+
+.stickers img:nth-child(1){
+        position: relative;
+                top: -1em;
+                left: 20em;
+                width: 10em;
+                mix-blend-mode: multiply;
+}
+.stickers img:nth-child(2){
+      position: relative;
+                top: 19em;
+                left: 12em;
+                width: 8em;
+                mix-blend-mode: multiply;
+}
+
+.stickers img:nth-child(3) {
+     position: relative;
+                top: 19em;
+                left: 20em;
+                width: 6em;
+                mix-blend-mode: multiply;
+}
+
+
+.stickers img:nth-child(4){
+     position: relative;
+                top: -12em;
+                right: -14em;
+                width: 6em;
+                mix-blend-mode: multiply;
+}
+
+
+.stickers img{
+  animation: shake 2s steps(2, end) infinite both;
+}
+
+
+.Foto img:nth-child(2){
+width: 10em;
+position: relative;
+top: -20em;
+right: -10em;
+}
+
+.Foto img:nth-child(3) {
   width: 16em;
-  transform: rotate(-20deg);
-  display: none;
+  position: relative;
+  top: -10em;
+  right: -22em;
+  rotate: 25deg;
+  z-index: 2;
+}
+
+
+.Foto img:nth-child(4){
+width: 10em;
+position: relative;
+top: -16em;
+right: -30em;
+rotate: -25deg;
+z-index: 1;
+}
+
+
+.Foto img:nth-child(5){
+width: 10em;
+position: relative;
+top: -10em;
+right: -46em;
+rotate: 45deg;
+z-index: 2;
+}
+
+.Foto img:nth-child(6){
+width: 14em;
+position: relative;
+top: -10em;
+right: -74em;
+rotate: -25deg;
+z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.social img {
+  width: 40px;
+  filter: invert(100%);
+}
+
+.social img:hover {
+  filter: invert(85%);
+  transform: rotate(-10deg) scale(1.1);
+}
+.footerLogo img {
+  width: 180px;
 }

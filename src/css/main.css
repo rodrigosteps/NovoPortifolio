@@ -1,8 +1,32 @@
-@import "./reset.css";
+
+/*estilo do Container*/
 
 .container{
   display:block;
-  flex-direction: column;
+
+  /*Estilo de todos H2*/
+.titulo{
+    margin-top: 1em;
+  opacity: 0;
+  font-family: var(--fontQuilone);
+  text-align: center;
+  align-items: center;
+  letter-spacing: -4px;
+  font-size: 6em;
+  color: #e1f3e4;
+}
+
+.tituloAtivo{
+    opacity: 1;
+    animation: textfade  0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*Estilo de todos H3*/
+  h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0em 0em 0em;
+  }
+
 }
 
 /*seção dos projetos*/
@@ -13,28 +37,29 @@
   flex-direction: column;
   align-items: center;
   margin: var(--centerMargin);
-  
-
-  h2 {
-    letter-spacing: -4px;
-    font-size: 4em;
-    margin-top: 0.5em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    margin: 0.5em 0em 0em 0em;
-  }
 }
 
-#projetosDescription {
-  margin-left: 16em;
-  width: 16em;
-  text-align: center;
+.projetos img{
+  transition: var(--transition);  
+}
+
+.Description {
+opacity: 0;
+}
+
+.Description.spanativo {
+  opacity: 1;
+  white-space: nowrap;
+  width: 50%;
+  height: 4em;
+  margin-left: 6em;
   font-family: var(--fontHandWrite);
-  font-size: 32px;
+  font-size: 2.5em;
   color: rgb(155, 187, 132);
-  transform: rotate(-5deg);
+  overflow: hidden;
+    animation: spanfade 3s steps(40);
+  transform:rotate(-10deg);
+
 }
 
 /*container com as imagens dos projetos*/
@@ -53,6 +78,7 @@
     top: 1em;
     left: 6em;
     transform: rotate(-2deg);
+    
   }
 
   .case2 {
@@ -79,14 +105,16 @@
   .case5 {
     position: relative;
     top: 0em;
-    left: 0m;
+    left: 0em;
     transform: rotate(2deg);
   }
+
   .case6 {
     position: relative;
     top: 6em;
     left: 0em;
   }
+
   .case7 {
     position: relative;
     top: -8em;
@@ -102,36 +130,37 @@
   .case5 img:hover,
   .case6 img:hover {
     transform: rotate(3deg) scale(1.04);
-    transition: var(--trasition);
         cursor: pointer;
+
   }
 
   .case2 img:hover,
-  .case3 img:hover,
   .case4 img:hover,
   .case7 img:hover {
     transform: rotate(-3deg) scale(1.04);
-    transition: var(--trasition);
         cursor: pointer;
+
   }
   /*Hover das imagens <<<<<<<<*/
 
 }
 
-/*cards com imagem e titulo*/
-.projetosCard {
+
+/* Estado Inicial */
+.projetoAtivo {
+  opacity: 1;
+      animation: FadeIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+      
+}
+
+.projeto {
+    opacity: 0;
   margin: 1.5em;
-  width: min-content;
+  width: min-content; 
 
-  span {
-    font-size: 1.5em;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-    font-weight: 900;
-    width: max-content;
-  }
+ 
 
-  /*tamanho das imagens*/
   img {
     border-radius: 16px;
     width: 24em;
@@ -144,11 +173,12 @@
     background-color: rgba(60, 167, 72, 0.574);
     color: rgba(144, 232, 152, 0.81);
     padding: 0.2em 0.5em;
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.5em;
     border-radius: 4px;
     font-size: 0.8em;
   }
 }
+
 
 /*Mais Projetos*/
 .maisProjetos {
@@ -176,38 +206,14 @@
   flex-direction: column;
   margin: var(--centerMargin);
 
-  h2 {
-    font-family: var(--fontQuilone);
-    font-size: 4em;
-    letter-spacing: -4px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0.5em;
-  }
-
-  span {
-    font-family: var(--fontSynonym);
-    font-size: 1em;
-  }
 
   p {
     font-family: var(--fontQuilone);
     font-size: 1.1em;
   }
 }
-
-#Description2 {
-  margin: var(--centerMargin);
-  width: 16em;
-  text-align: center;
-  font-family: var(--fontHandWrite);
-  font-size: 24px;
-  color: rgb(155, 187, 132);
-  transform: rotate(-5deg);
-}
-
 .timelineContainer {
+  opacity: 1;
   display: flex;
   flex-direction: column;
 }
@@ -236,28 +242,44 @@
 
 .item img {
   width: 6em;
+    transition: var(--transition);
 }
+
 .item img:hover {
-  transform: rotate(5deg) translateY(-5px);
-  transition: var(--trasition);
+  transform: translateY(-15px) 
+  scale(1.1);
 }
 
 .item {
+opacity: 0;
+
+}
+
+.itemAtivo {
+  opacity: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 0.5em;
+  animation: fadeUp 2s ease-out normal forwards;
+
 }
 
 .LinhaDoTempo{
-  width: 100%;
+  width: var(--containerWidth);
   height: 12em;
-  background-image: url(/NovoPortifolio/assets/image/Pegadas.svg);
+  background-image: url(../../assets/image/Pegadas.svg);
   background-repeat:repeat-x;
   background-size:contain;
   background-position:center;
+  overflow: hidden;
+
+  animation: trilha 4s forwards ease;
+  animation-timeline:view();
+  animation-range: entry 40% cover 40%;
 }
+
 
 .trilha img {
   width: 18em;
@@ -288,9 +310,8 @@
 .skills{
   display: flex;
   flex-direction: row;
-    flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
+  align-items: start;
   gap: 10em;
   margin: var(--centerMargin);
 }
@@ -299,20 +320,24 @@
   width: 80px;
 }
 
-
 .hard, .soft{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
+
+  h3{
+    text-align: center;
+  }
 }
 
 .hardSkills, .softSkills{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5em;
-  width: 20em;
+  flex-wrap: wrap;
+  width: 22em;
+  gap: 2em;
 }
 
 /* seção processo */
@@ -321,22 +346,15 @@
   width: var(--containerWidth);
   display: flex;
   flex-direction: column;
+  margin: var(--centerMargin);
 
-  span {
+  .texto {
     font-family: var(--fontQuilone);
     font-size: 2.5em;
   }
+}
 
-  h2 {
-    margin-top: 1em;
-    text-align: center;
-  }
-#Description{
-margin-top: -2em;
-margin-left: 0em;
-rotate: -20deg;
-}
-}
+
 
 .processoCase img {
   width: 14em;
@@ -365,13 +383,4 @@ rotate: -20deg;
   width: 40em;
 }
 
-#Description3 {
-  margin: var(--centerMargin);
-  width: 16em;
-  text-align: center;
-  font-family: var(--fontHandWrite);
-  font-size: 24px;
-  color: rgb(155, 187, 132);
-  transform: rotate(-5deg);
-}
 
