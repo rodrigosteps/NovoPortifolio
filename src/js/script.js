@@ -67,43 +67,38 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
   
- document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger)
+ gsap.registerPlugin(ScrollTrigger);
 
   gsap.to(".stcTop", {
-    scrollTrigger: {
-        trigger:".stcTop",
-        toggleActions: "play reverse pause pause",
-        start: "top 84%", 
-        scrub: 1, 
-    }, 
+  scrollTrigger: {
+    trigger: ".stcTop",
+    start: "top 80%",
+    end: "top 30%", 
+    scrub: 1,
+  },
   y: -100,
-    duration: 2,
-    opacity:1
- }) 
+  opacity: 1
+});
 
-  gsap.to(".stc", {
-    scrollTrigger: {
-        trigger:".stc",
-        toggleActions: "play reverse pause pause",
-        start: "center 90%", 
-        scrub: 1, 
-    }, 
-  rotate:10,
-    duration: 8,
-    
- }) 
-  gsap.to(".stcDown", {
-    scrollTrigger: {
-        trigger:".stcDown",
-        toggleActions: "play reverse pause pause",
-        start: "top 84%", 
-        scrub: 1, 
-    }, 
+gsap.to(".stc", {
+  scrollTrigger: {
+    trigger: ".stc",
+    start: "center 90%",
+    end: "center 40%",
+    scrub: 1,
+  },
+  rotate: 10,
+});
+
+gsap.to(".stcDown", {
+  scrollTrigger: {
+    trigger: ".stcDown",
+    start: "top 80%",
+    end: "top 30%",
+    scrub: 1,
+  },
   y: 100,
-    duration:8,
- })
+  x:-20,
+});
 
-}
-)
 
