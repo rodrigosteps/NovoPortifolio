@@ -1,596 +1,766 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="Rodrigo Passos, Portfólio, Desenvolvedor Web, Designer, Projetos, Habilidades"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo%20Black:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Covered%20By%20Your%20Grace:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica:wght@400&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oregano:ital@0;1&display=swap" rel="stylesheet">    <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="keywords" content="Rodrigo Passos, Portifolio, Desenvolvedor Web, Designer, Projetos, Habilidades" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo%20Black:wght@400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Covered%20By%20Your%20Grace:wght@400&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Aclonica:wght@400&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg" />
-  <meta name="author" content="Rodrigo Passos" />
+    <meta name="author" content="Rodrigo Passos" />
 
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/header.css" />
-  <link rel="stylesheet" href="./src/css/main.css" />
-  <link rel="stylesheet" href="./src/css/modal.css" />
-  <link rel="stylesheet" href="./src/css/about.css" />
-  <link rel="stylesheet" href="./src/css/footer.css" />
-  <link rel="stylesheet" href="./src/css/animations.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/modal.css" />
+    <link rel="stylesheet" href="./src/css/about.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="stylesheet" href="./src/css/animations.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
 
-  <title>Rodrigo P. - Portifólio 2026</title>
-</head>
+        <!--##################### script pluggins do Gsap #####################-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"  defer></script>
+   
+    <!--##################### script DO SITE #####################-->
+    <script src="./src/js/script.js" defer></script>
 
-<body>
-  <main class="container" id="container">
-    <div class="backgroundCamada"></div>
-    <!--apenas para efeito granulado-->
+    <title>Rodrigo P. - Portfólio 2026</title>
+  </head>
 
-    <!--##################### NAVEGAÇÃO DO SITE #####################-->
-    <nav class="nav" id="nav"></nav>
-    <!--apenas para efeito blur-->
+  <body>
+    <main class="container" id="container">
 
-    <ul class="menu" id="menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#timeline">Linha do tempo</a></li>
-      <li><a href="#processo">Processo</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-    </ul>
+      <!--apenas para efeito granulado-->
+      <div class="backgroundCamada"></div>
+      
+      <!--apenas para efeito blur-->
+      <div class="nav" id="nav"> </div>
 
-    <!--##################### HERO SECTION DO SITE #####################-->
+      <!--##################### NAVEGAÇÃO DO SITE #####################-->
+      <nav class="menu" id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#timeline">Linha do tempo</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </nav>
 
-    <section class="name" id="inicio">
-      <img src="./assets/image/logo.svg" loading="lazy" alt="perfil" />
-      <div class="nameCard">
-        <h1>Rodrigo Passos</h1>
-        <p>Dev Web e Designer</p>
-      </div>
-    </section>
 
-    <!--##################### PROJETOS DO SITE #####################-->
+      <!--##################### HERO SECTION DO SITE #####################-->
 
-    <section class="projetos" id="projetos">
-      <h2 class="titulo">Projetos Recentes</h2>
+      <section class="name" id="inicio">
+        <img src="./assets/image/logo.svg" loading="lazy" alt="perfil" />
+        <div class="nameCard">
+          <h1>Rodrigo Passos</h1>
+          <div class="sub">
+          <p id="dev">Dev Web </p> <p>&</p> <p id="designer">Designer</p>
+        </div>
+        </div>
+      </section>
 
-      <span class="Description"> cada projeto é unico e incriveeeeeeeel</span>
-      <article class="projetosCases">
-        <div class="projeto case1" id="case1" data-modal="caseModal1">
-          <img src="./assets/image/thursday.social.png" alt="site" />
-          <h3>Sux UI</h3>
+      <!--##################### PROJETOS DO SITE #####################-->
 
-          <span class="tag">Landing Page</span>
-          <span class="tag">UI/UX</span>
+      <section class="projetos" id="projetos">
+        <h2 class="titulo">Projetos Recentes</h2 class="titulo">
+
+        <span class="Description"> cada projeto é unico e incriveeeeeeeel</span>
+        <article class="projetosCases">
+          <div class="projeto case1" id="case1" data-modal="caseModal1">
+            <img src="./assets/image/thursday.social.png" alt="site" />
+            <h3>Sux UI</h3>
+
+            <span class="tag">Landing Page</span>
+            <span class="tag">UI/UX</span>
+          </div>
+
+          <div class="projeto case2" id="case2" data-modal="caseModal2">
+            <img src="./assets/image/browser.png" alt="site" />
+            <h3>Dashboard</h3>
+
+            <span class="tag">Desenvolvimento</span>
+            <span class="tag">Design</span>
+          </div>
+
+          <div class="projeto case3" id="case3" data-modal="caseModal3">
+            <img src="./assets/image/optimus.png" alt="site" />
+            <h3>OptimusTech</h3>
+
+            <span class="tag">Landing Page</span> <span class="tag">UI/UX</span>
+          </div>
+
+          <div class="projeto case4" id="case4" data-modal="caseModal4">
+            <img src="./assets/image/todo.png" alt="site" />
+            <h3>Cool Do List</h3>
+
+            <span class="tag">Web App</span> <span class="tag">UI/UX</span>
+          </div>
+
+          <div class="projeto case5" id="case5" data-modal="caseModal5">
+            <img src="./assets/image/PORT.png" alt="site" />
+            <h3>Portfólio</h3>
+
+            <span class="tag">Web Design</span>
+            <span class="tag">Desenvolvimento</span>
+          </div>
+
+          <div class="projeto case6" id="case6" data-modal="caseModal6">
+            <img src="./assets/image/tarot.png" alt="site" />
+            <h3>Filum Fati</h3>
+
+            <span class="tag">Web App</span> <span class="tag">Web Design</span>
+          </div>
+
+          <div class="projeto case7" id="case7" data-modal="caseModal7">
+            <img src="./assets/image/POTRAIT.png" alt="site" />
+            <h3>Card de Perfil</h3>
+
+            <span class="tag">Design</span> <span class="tag">UI/UX</span>
+          </div>
+        </article>
+      </section>
+
+      <!--##################### MODAL DO SITE #####################-->
+      <section class="modais">
+        <div class="modal-container" id="caseModal1">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span>LANDING PAGE </span>
+              <p>
+                Desenvolvimento de um conceito de landing page moderno e
+                profissional para uma startup de efeitos visuais, com foco em
+                usabilidade, apresentação da marca e responsividade entre
+                dispositivos. Design Mobile-First, escalável para todos os
+                dispositivos.
+              </p>
+            </div>
+
+            <div class="modalImage">
+              <div class=" Left">
+                <img src="./assets/image/modal/land1.png" alt="perfil" />
+                <img src="./assets/image/modal/land2.png" alt="perfil" />
+                <img src="./assets/image/modal/land3.png" alt="perfil" />
+              </div>
+              <div class=" right">
+                <img
+                  src="./assets/image/modal/land4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/land5.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal1" data-close>
+            <span>Voltar</span>
+          </button>
         </div>
 
-        <div class="projeto case2" id="case2" data-modal="caseModal2">
-          <img src="./assets/image/browser.png" alt="site" />
-          <h3>Dashboard</h3>
+        <div class="modal-container" id="caseModal2">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span>Chess Dashboard </span>
+              <p>
+                Uma interface de usuário rica e dinâmica projetada para simular
+                o painel de controle de uma plataforma de xadrez online em um
+                layout limpo, analítico e altamente visual, proporcionando uma
+                experiência imersiva e intuitiva para o jogador.
+              </p>
+            </div>
 
-          <span class="tag">Desenvolvimento</span>
-          <span class="tag">Design</span>
+            <div class="modalImage">
+              <div class="Left">
+                <img src="./assets/image/modal/chess1.png" alt="perfil" />
+                <img src="./assets/image/modal/chess2.png" alt="perfil" />
+                <img src="./assets/image/modal/chess3.png" alt="perfil" />
+              </div>
+              <div class="right">
+                <img
+                  src="./assets/image/modal/chess4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/chess5.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal2" data-close>
+            <span> Voltar</span>
+          </button>
         </div>
 
-        <div class="projeto case3" id="case3" data-modal="caseModal3">
-          <img src="./assets/image/optimus.png" alt="site" />
-          <h3>OptimusTech</h3>
+        <div class="modal-container" id="caseModal3">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span>Optimus Tech </span>
+              <p>
+                Uma Landing Page responsiva desenvolvida para simular a vitrine
+                de uma plataforma de cursos focada em habilidades digitais (Web
+                Design, Data Science, UI/UX e Cloud Security). O objetivo deste
+                projeto foi aplicar conceitos modernos de desenvolvimento
+                front-end, focando na construção de uma interface limpa,
+                estruturação semântica e usabilidade.
+              </p>
+            </div>
 
-          <span class="tag">Landing Page</span> <span class="tag">UI/UX</span>
+            <div class="modalImage">
+              <div class="Left">
+                <img src="./assets/image/modal/optimus1.png" alt="perfil" />
+                <img src="./assets/image/modal/optimus2.png" alt="perfil" />
+                <img src="./assets/image/modal/optimus3.png" alt="perfil" />
+              </div>
+              <div class="right">
+                <img
+                  src="./assets/image/modal/optimus4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/optimus5.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/optimus6.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal3" data-close>
+            <span>Voltar</span>
+          </button>
         </div>
 
-        <div class="projeto case4" id="case4" data-modal="caseModal4">
-          <img src="./assets/image/todo.png" alt="site" />
-          <h3>Cool Do List</h3>
+        <div class="modal-container" id="caseModal4">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span>Cool to do List</span>
+              <p>
+                O CoolToDo foi desenvolvido para simplificar a organização
+                diária através de uma interface prática e dinâmica.
+                <br />
+                A aplicação tem conceitos modernos, garantindo que a interação
+                com as tarefas ocorra sem atritos. A interface foi construída
+                para oferecer a mesma qualidade visual e de navegação tanto em
+                dispositivos móveis quanto em desktops com um layout limpo e
+                intuitivo para as ações do usuário.
+              </p>
+            </div>
 
-          <span class="tag">Web App</span> <span class="tag">UI/UX</span>
+            <div class="modalImage">
+              <div class="Left">
+                <img src="./assets/image/modal/todo.png" alt="perfil" />
+                <img src="./assets/image/modal/todo1.png" alt="perfil" />
+              </div>
+
+              <div class="right">
+                <img
+                  src="./assets/image/modal/todo4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/todo6.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal4" data-close>
+            <span>Voltar</span>
+          </button>
         </div>
 
-        <div class="projeto case5" id="case5" data-modal="caseModal5">
-          <img src="./assets/image/PORT.png" alt="site" />
-          <h3>Portifolio</h3>
+        <div class="modal-container" id="caseModal5">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span>SITE Portfólio</span>
+              <p>
+                Galeria digital imersiva projetada para exibir trabalhos de
+                design e arte digital de forma limpa e direta. O projeto atua
+                como uma vitrine profissional para um artista freelancer,
+                evidenciando o aspecto visual das obras
+              </p>
+            </div>
 
-          <span class="tag">Web Design</span>
-          <span class="tag">Desenvolvimento</span>
+            <div class="modalImage">
+              <div class="Left">
+                <img src="./assets/image/modal/PORT1.png" alt="perfil" />
+                <img src="./assets/image/modal/PORT2.png" alt="perfil" />
+                <img src="./assets/image/modal/PORT3.png" alt="perfil" />
+              </div>
+              <div class="right">
+                <img
+                  src="./assets/image/modal/PORT4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/PORT5.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/PORT6.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal5" data-close>
+            <span>Voltar</span>
+          </button>
         </div>
 
-        <div class="projeto case6" id="case6" data-modal="caseModal6">
-          <img src="./assets/image/tarot.png" alt="site" />
-          <h3>Filum Fati</h3>
+        <div class="modal-container" id="caseModal6">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span> FILUM FATI </span>
+              <p>
+                Uma aplicação web interativa que simula um oráculo de tarot
+                focado na leitura de três cartas (passado, presente e futuro). A
+                lógica da aplicação utiliza estruturas de arrays para gerenciar
+                o baralho completo, controlando o sorteio dinâmico das cartas e
+                exibindo suas respectivas interpretações dentro de um layout
+                místico e imersivo.
+              </p>
+            </div>
 
-          <span class="tag">Web App</span> <span class="tag">Web Design</span>
+            <div class="modalImage">
+              <div class="Left">
+                <img src="./assets/image/modal/filu1.png" alt="perfil" />
+                <img src="./assets/image/modal/filu2.png" alt="perfil" />
+                <img src="./assets/image/modal/filu3.png" alt="perfil" />
+              </div>
+              <div class="right">
+                <img
+                  src="./assets/image/modal/filu4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/filu5.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/filu6.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/filu7.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal6" data-close>
+            <span>Voltar</span>
+          </button>
         </div>
 
-        <div class="projeto case7" id="case7" data-modal="caseModal7">
-          <img src="./assets/image/POTRAIT.png" alt="site" />
-          <h3>Card de Perfil</h3>
+        <div class="modal-container" id="caseModal7">
+          <div class="modal-content">
+            <div class="modalTexto">
+              <span>CARD DE PERFIL </span>
+              <p>
+                Publicado originalmente como conceito visual, este projeto
+                ilustra a capacidade de organizar dados em um espaço reduzido,
+                equilibrando hierarquia de informações e identidade visual. Ele
+                serve perfeitamente como um elemento modular pronto para
+                integrar aplicações web ou mobile mais complexas, atuando como
+                um cartão de visita digital interativo.
+              </p>
+            </div>
 
-          <span class="tag">Design</span> <span class="tag">UI/UX</span>
+            <div class="modalImage">
+              <div class="Left">
+                <img src="./assets/image/modal/CARD1.png" alt="perfil" />
+                <img src="./assets/image/modal/CARD2.png" alt="perfil" />
+              </div>
+              <div class="right">
+                <img
+                  src="./assets/image/modal/CARD3.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+                <img
+                  src="./assets/image/modal/CARD4.png"
+                  loading="lazy"
+                  alt="perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="closeModal" id="closeModal7" data-close>
+            <span>Voltar</span>
+          </button>
         </div>
-      </article>
-    </section>
+      </section>
 
-    <!--##################### MODAL DO SITE #####################-->
-    <section>
-      <div class="modal-container" id="caseModal1">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span>LANDING PAGE </span>
+      <!--##################### SEÇÃO "MAIS PROJETOS" DO SITE #####################-->
+      <section class="maisProjetos" id="maisProjetos">
+        <img src="./assets/icon/toolbox.png" alt="" />
+        <h3>Mais Projetos em breve... </h3>
+      </section>
+
+      <!--##################### SEÇÃO "LINHA DO TEMPO" DO SITE #####################-->
+      <section class="timeline" id="timeline">
+        <h2 class="titulo" class="titulo">Linha do Tempo</h2 class="titulo">
+        <span class="Description"> Minha jornada até aqui</span>
+        <div class="timelineContainer">
+          <div class="timelineItemUp">
+            <div class="item">
+              <img
+                src="./assets/icon/alison-seeklogo.svg"
+                style="width: 200px"
+                alt="ícone Alison"
+              />
+              <span class="timelineDate">2019</span>
+              <p>Designer</p>
+            </div>
+
+            <div class="item">
+              <img src="./assets/icon/coding.png" alt="ícone de código" />
+              <span >Hoje</span>
+              <p>Criando coisas incriveis</p>
+            </div>
+          </div>
+
+          <!--##################### ICONES ACIMA #####################-->
+
+          <div class="LinhaDoTempo">
+            <div class="trilha"></div>
+          </div>
+
+          <!--##################### ICONES ABAIXO #####################-->
+
+          <div class="timelineItemDown">
+            <div class="item">
+              <img
+                src="./assets/image/image-9iSf9bvlKAMKSc1j4tYpRJKbRj82fv.png"
+                alt="ícone de arte"
+              />
+              <span class="timelineDate">Desde Sempre</span>
+              <p>Art</p>
+            </div>
+
+            <div class="item">
+              <img src="./assets/image/estacio.svg" alt="logo estacio" />
+              <span class="timelineDate">2023</span>
+              <p>
+                Analise e Desenvolvimento <br />
+                de Sistema
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--##################### SEÇÃO "skills" DO SITE #####################-->
+      <section class="skillsContainer">
+        <h2 class="titulo" class="titulo">SKILLS</h2 class="titulo">
+        <span class="Description"> Meus Superpoderes</span>
+
+        <div class="skills">
+          <div class="hard">
+            <div class="skilltitulo1">
+              <h3>O Que eu uso:</h3>
+            </div>
+
+            <div class="hardSkills">
+              <div class="item">
+                <img src="./assets/icon/figma-original.svg" alt="logo Figma" />
+                <span>FIGMA</span>
+              </div>
+
+              <div class="item">
+                <img
+                  src="./assets/icon/photoshop-original.svg"
+                  alt="logo Photoshop"
+                />
+                <span>PHOTOSHOP</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/github.svg" alt="logo Git e GitHub" />
+                <span>GIT & GITHUB</span>
+              </div>
+              <div class="item">
+                <img
+                  src="./assets/icon/vscode-original-wordmark.svg"
+                  alt="logo VSCode"
+                />
+                <span>VSCODE</span>
+              </div>
+              <div class="item">
+                <img
+                  src="./assets/icon/claude-brands-solid.svg"
+                  alt="logo Claude Code"
+                />
+                <span>CLAUDE CODE </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft">
+            <div class="skilltitulo2">
+              <h3>O que eu faço:</h3>
+            </div>
+            <div class="softSkills">
+              <div class="item">
+                <img src="./assets/icon/front.svg" alt="ícone de front-end" />
+                <span>FRONT-END</span>
+              </div>
+              <div class="item">
+                <img
+                  src="./assets/icon/browser.svg"
+                  alt="ícone de navegador/web designer"
+                />
+                <span>WEB DESIGNER</span>
+              </div>
+              <div class="item">
+                <img
+                  src="./assets/icon/pen-nib-solid.svg"
+                  alt="ícone de caneta de design"
+                />
+                <span>LOGO/BRAND <br />DESIGNER</span>
+              </div>
+              <div class="item">
+                <img src="./assets/icon/ux.png" alt="ícone de UI/UX" />
+                <span>UI/UX </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--##################### SEÇÃO "processo" DO SITE #####################-->
+      <section class="processo" id="processo">
+        <h2 class="titulo" class="titulo">Construindo Projetos Incriveis</h2 class="titulo">
+        <span class="Description"> O Passo a Passo</span>
+
+        <div class="processoCase Direita">
+          <div class="processoTexto">
+            <span class="texto"> "Uma pequena xícara de café" </span>
+          </div>
+
+          <div class="processoimage">
+            <img src="./assets/image/cafe.jpeg" loading="lazy" alt="perfil" />
+          </div>
+        </div>
+
+        <div class="processoCase Direita">
+          <div class="processoimage">
+            <img src="./assets/image/webbad.jpg" loading="lazy" alt="perfil" />
+          </div>
+
+          <div class="processoTexto">
+            <span class="texto"> "Sem layout genérico" </span>
+          </div>
+        </div>
+
+        <div class="processoCase Esquerda">
+          <div class="processoTexto">
+            <span class="texto">
+              "Comunicação rápida <br />
+              e feedbacks"
+            </span>
+          </div>
+
+          <div class="processoimage">
+            <img src="./assets/image/emails.jpg" loading="lazy" alt="perfil" />
+          </div>
+        </div>
+
+        <div class="processoCase Direita">
+          <div class="processoimage">
+            <img src="./assets/image/jobdone.jpg" loading="lazy" alt="perfil" />
+          </div>
+
+          <div class="processoTexto">
+            <span class="texto"
+              >"entender a demanda, <br />
+              entregar a solução"</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--##################### SEÇÃO "SOBRE" DO SITE #####################-->
+
+      <section class="sobre" id="sobre">
+        <h2 class="titulo" class="titulo">Por trás da tela</h2 class="titulo">
+
+        <div class="me">
+          <div class="meParagrafo">
             <p>
-              Desenvolvimento de um conceito de landing page moderno e
-              profissional para uma startup de efeitos visuais, com foco em
-              usabilidade, apresentação da marca e responsividade entre
-              dispositivos. Design Mobile-First, escalável para todos os
-              dispositivos.
+              E ai! <br />
+              Eu Sou o Rodrigo.
+            </p>
+            <p>
+              Na infância, descobri que desenhar era a melhor forma de dar vida
+              ao que eu imaginava, hoje em dia descobrir onde posso fazer
+              exatamente o que fazia quando criança, o desenvolvimento web,
+              criando sites, ícones e ilustrações seja criando ferramentas do
+              dia a dia ou desenvolvendo experiências temáticas e imersivas.
+            </p>
+            <p>
+              Meu foco é entregar experiências digitais únicas, visualmente
+              incríveis, funcionais e totalmente acessíveis. Criar projetos
+              incríveis é o que me move.
             </p>
           </div>
 
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/land1.png" alt="perfil" />
-              <img src="./assets/image/modal/land2.png" alt="perfil" />
-              <img src="./assets/image/modal/land3.png" alt="perfil" />
-            </div>
-            <div class="gridModal right">
-              <img src="./assets/image/modal/land4.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/land5.png" loading="lazy" alt="perfil" />
-            </div>
+          <div class="meFoto">
+            <img src="./assets/image/sketch2.png" loading="lazy" alt="perfil" />
+          </div>
+          <div class="stickers">
+            <img src="./assets/image/fone.png" loading="lazy" alt="perfil" />
+            <img src="./assets/image/cafe1.png" loading="lazy" alt="perfil" />
+            <img src="./assets/image/cafe2.png" loading="lazy" alt="perfil" />
+            <img src="./assets/image/coroa.svg" loading="lazy" alt="perfil" />
+            <img src="./assets/image/cafe.png" loading="lazy" alt="perfil" />
           </div>
         </div>
 
-        <button class="closeModal" id="closeModal1" data-close>
-          <span>Voltar</span>
-        </button>
-      </div>
+        <h2 class="titulo" class="titulo">Por trás do codigo</h2 class="titulo">
 
-      <div class="modal-container" id="caseModal2">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span>Chess Dashboard </span>
+        <div class="gostos">
+          <div class="Foto">
+            <img src="./assets/image/sketch2.png" alt="perfil" />
+            <img class="stcTop" src="./assets/image/moon.jpg" alt="perfil" />
+            <img class="stc" src="./assets/image/Thriller.jpg" alt="perfil" />
+            <img class="stcTop" src="./assets/image/racionais.jpeg" alt="perfil"/>
+            <img class="stcDown" src="./assets/image/ps3.png" alt="perfil" />
+            <img class="stcDown" src="./assets/image/One_Piece_Logo.png" alt="perfil"/>
+          </div>
+
+          <div class="meParagrafo">
             <p>
-              Uma interface de usuário rica e dinâmica projetada para simular
-              o painel de controle de uma plataforma de xadrez online em um
-              layout limpo, analítico e altamente visual, proporcionando uma
-              experiência imersiva e intuitiva para o jogador.
+              Sou um desenvolvedor web e designer apaixonado por construir
+              experiências digitais que realmente cativem quem as utiliza.
             </p>
-          </div>
-
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/chess1.png" alt="perfil" />
-              <img src="./assets/image/modal/chess2.png" alt="perfil" />
-              <img src="./assets/image/modal/chess3.png" alt="perfil" />
-            </div>
-            <div class="gridModal right">
-              <img src="./assets/image/modal/chess4.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/chess5.png" loading="lazy" alt="perfil" />
-            </div>
-          </div>
-        </div>
-
-        <button class="closeModal" id="closeModal2" data-close>
-          <span> Voltar</span>
-        </button>
-      </div>
-
-      <div class="modal-container" id="caseModal3">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span>Optimus Tech </span>
             <p>
-              Uma Landing Page responsiva desenvolvida para simular a vitrine
-              de uma plataforma de cursos focada em habilidades digitais (Web
-              Design, Data Science, UI/UX e Cloud Security). O objetivo deste
-              projeto foi aplicar conceitos modernos de desenvolvimento
-              front-end, focando na construção de uma interface limpa,
-              estruturação semântica e usabilidade.
+              Como uma mente criativa, busco referências nas culturas, artes e
+              em pessoas que fazem a diferença.
             </p>
-          </div>
-
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/optimus1.png" alt="perfil" />
-              <img src="./assets/image/modal/optimus2.png" alt="perfil" />
-              <img src="./assets/image/modal/optimus3.png" alt="perfil" />
-            </div>
-            <div class="gridModal right">
-              <img src="./assets/image/modal/optimus4.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/optimus5.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/optimus6.png" loading="lazy" alt="perfil" />
-            </div>
-          </div>
-        </div>
-
-        <button class="closeModal" id="closeModal3" data-close>
-          <span>Voltar</span>
-        </button>
-      </div>
-
-      <div class="modal-container" id="caseModal4">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span>Cool to do List</span>
             <p>
-              O CoolToDo foi desenvolvido para simplificar a organização
-              diária através de uma interface prática e dinâmica.
-              <br />
-              A aplicação tem conceitos modernos, garantindo que a interação
-              com as tarefas ocorra sem atritos. A interface foi construída
-              para oferecer a mesma qualidade visual e de navegação tanto em
-              dispositivos móveis quanto em desktops com um layout limpo e
-              intuitivo para as ações do usuário.
-            </p>
-          </div>
-
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/todo.png" alt="perfil" />
-              <img src="./assets/image/modal/todo1.png" alt="perfil" />
-            </div>
-
-            <div class="gridModal right">
-              <img src="./assets/image/modal/todo4.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/todo6.png" loading="lazy" alt="perfil" />
-            </div>
-          </div>
-        </div>
-
-        <button class="closeModal" id="closeModal4" data-close>
-          <span>Voltar</span>
-        </button>
-      </div>
-
-      <div class="modal-container" id="caseModal5">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span>SITE PORTIFOLIO</span>
-            <p>
-              Galeria digital imersiva projetada para exibir trabalhos de
-              design e arte digital de forma limpa e direta. O projeto atua
-              como uma vitrine profissional para um artista freelancer,
-              evidenciando o aspecto visual das obras
-            </p>
-          </div>
-
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/PORT1.png" alt="perfil" />
-              <img src="./assets/image/modal/PORT2.png" alt="perfil" />
-              <img src="./assets/image/modal/PORT3.png" alt="perfil" />
-            </div>
-            <div class="gridModal right">
-              <img src="./assets/image/modal/PORT4.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/PORT5.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/PORT6.png" loading="lazy" alt="perfil" />
-            </div>
-          </div>
-        </div>
-
-        <button class="closeModal" id="closeModal5" data-close>
-          <span>Voltar</span>
-        </button>
-      </div>
-
-      <div class="modal-container" id="caseModal6">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span> FILUM FATI </span>
-            <p>
-              Uma aplicação web interativa que simula um oráculo de tarot
-              focado na leitura de três cartas (passado, presente e futuro). A
-              lógica da aplicação utiliza estruturas de arrays para gerenciar
-              o baralho completo, controlando o sorteio dinâmico das cartas e
-              exibindo suas respectivas interpretações dentro de um layout
-              místico e imersivo.
-            </p>
-          </div>
-
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/filu1.png" alt="perfil" />
-              <img src="./assets/image/modal/filu2.png" alt="perfil" />
-              <img src="./assets/image/modal/filu3.png" alt="perfil" />
-            </div>
-            <div class="gridModal right">
-              <img src="./assets/image/modal/filu4.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/filu5.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/filu6.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/filu7.png" loading="lazy" alt="perfil" />
-            </div>
-          </div>
-        </div>
-
-        <button class="closeModal" id="closeModal6" data-close>
-          <span>Voltar</span>
-        </button>
-      </div>
-
-      <div class="modal-container" id="caseModal7">
-        <div class="modal-content">
-          <div class="modalTexto">
-            <span>CARD DE PERFIL </span>
-            <p>
-              Publicado originalmente como conceito visual, este projeto
-              ilustra a capacidade de organizar dados em um espaço reduzido,
-              equilibrando hierarquia de informações e identidade visual. Ele
-              serve perfeitamente como um elemento modular pronto para
-              integrar aplicações web ou mobile mais complexas, atuando como
-              um cartão de visita digital interativo.
-            </p>
-          </div>
-
-          <div class="modalImage">
-            <div class="gridModal Left">
-              <img src="./assets/image/modal/CARD1.png" alt="perfil" />
-              <img src="./assets/image/modal/CARD2.png" alt="perfil" />
-            </div>
-            <div class="gridModal right">
-              <img src="./assets/image/modal/CARD3.png" loading="lazy" alt="perfil" />
-              <img src="./assets/image/modal/CARD4.png" loading="lazy" alt="perfil" />
-            </div>
-          </div>
-        </div>
-
-        <button class="closeModal" id="closeModal7" data-close>
-          <span>Voltar</span>
-        </button>
-      </div>
-    </section>
-
-    <!--##################### SEÇÃO "MAIS PROJETOS" DO SITE #####################-->
-    <section class="maisProjetos" id="maisProjetos">
-      <img src="./assets/icon/toolbox.png" alt="" />
-      <span>Mais Projetos em breve </span>
-    </section>
-
-    <!--##################### SEÇÃO "LINHA DO TEMPO" DO SITE #####################-->
-    <section class="timeline" id="timeline">
-      <h2 class="titulo">Linha do Tempo</h2>
-      <span class="Description"> Minha jornada até aqui</span>
-      <div class="timelineContainer">
-        <div class="timelineItemUp">
-          <div class="item">
-            <img src="./assets/icon/alison-seeklogo.svg" style="width: 200px" alt="ícone Alison" />
-            <span class="timelineDate">2019</span>
-            <p>Designer</p>
-          </div>
-
-          <div class="item">
-            <img src="./assets/icon/coding.png" alt="ícone de código" />
-            <span class="timelineDate">Hoje</span>
-            <p>Criando coisas incriveis</p>
-          </div>
-        </div>
-
-        <!--##################### ICONES ACIMA #####################-->
-
-        <div class="LinhaDoTempo">
-          <div class="trilha"></div>
-        </div>
-
-        <!--##################### ICONES ABAIXO #####################-->
-
-        <div class="timelineItemDown">
-          <div class="item">
-            <img src="./assets/image/image-9iSf9bvlKAMKSc1j4tYpRJKbRj82fv.png" alt="ícone de arte" />
-            <span class="timelineDate">Desde Sempre</span>
-            <p>Art</p>
-          </div>
-
-          <div class="item">
-            <img src="./assets/image/estacio.svg" alt="logo estacio" />
-            <span class="timelineDate">2023</span>
-            <p>
-              Analise e Desenvolvimento <br />
-              de Sistema
+              Trago uma visão focada em estruturar fluxos lógicos e eficientes
+              para garantir que cada interface de App ou layout não seja apenas
+              visualmente atraente, mas acima de tudo, única e funcional.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!--##################### SEÇÃO "CONECTAR" DO SITE #####################-->
+      <section class="conectar" id="conectar">
+        <h2 class="titulo">Vamos Criar ?</h2 class="titulo">
+      </section>
 
-    <!--##################### SEÇÃO "skills" DO SITE #####################-->
-    <section class="skillsContainer">
-      <h2 class="titulo">SKILLS</h2>
-      <span class="Description"> Meus Superpoderes</span>
+      <!--##################### SEÇÃO "FOOTER" DO SITE #####################-->
+    </main>
 
-      <div class="skills">
-        <div class="hard">
-          <div class="skilltitulo1">
-            <h3>O Que eu uso:</h3>
+    <footer class="footer">
+      <div class="email">
+           <span class="texto" class="footerText">Disponivel para projetos</span>
+
+          <a class="tooltip-container" href="mailto:rodrigo.ctto@outlook.com">
+            <span class="tooltip">Clica Ai!</span>
+            <span class="text">@</span>
+          </a>
+        </div>
+    
+
+      <div class="social">
+      <span class="texto">Meus Contatos</span>
+        <div class="content">
+        <div class="footerLogo">
+          <a  class="logo">
+            <img src="./assets/icon/GitHub Logomark.svg" alt="" />
+          </a>
+          <a href="https://github.com/rodrigosteps" target="_blank" class="type">
+            <img src="./assets/icon/GitHub Logotype.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="footerLogo">
+          <div class="logo">
+            <img src="./assets/icon/LinkedIn Logomark.svg" alt="" />
           </div>
+          <a href="https://www.linkedin.com/in/rodrigosps/" target="_blank" class="type">
+            <img src="./assets/icon/LinkedInLogotype.svg" alt="" />
+          </a>
+        </div>
 
-          <div class="hardSkills">
-            <div class="item">
-              <img src="./assets/icon/figma-original.svg" alt="logo Figma" />
-              <span>FIGMA</span>
-            </div>
-
-            <div class="item">
-              <img src="./assets/icon/photoshop-original.svg" alt="logo Photoshop" />
-              <span>PHOTOSHOP</span>
-            </div>
-            <div class="item">
-              <img src="./assets/icon/github.svg" alt="logo Git e GitHub" />
-              <span>GIT & GITHUB</span>
-            </div>
-            <div class="item">
-              <img src="./assets/icon/vscode-original-wordmark.svg" alt="logo VSCode" />
-              <span>VSCODE</span>
-            </div>
-            <div class="item">
-              <img src="./assets/icon/claude-brands-solid.svg" alt="logo Claude Code" />
-              <span>CLAUDE CODE </span>
-            </div>
+        <div class="footerLogo">
+          <div class="logo">
+            <img src="./assets/icon/Behance Logomark.svg" alt="" />
           </div>
+          <a href="https://www.behance.net/rodrigosteps" target="_blank" class="type">
+            <img src="./assets/icon/Behance Logotype.svg" alt="" />
+          </a>
         </div>
 
-        <div class="soft">
-          <div class="skilltitulo2">
-            <h3>O que eu faço:</h3>
+        <div class="footerLogo">
+          <div class="logo">
+            <img src="./assets/icon/Instagram Logomark.svg" alt="" />
           </div>
-          <div class="softSkills">
-            <div class="item">
-              <img src="./assets/icon/front.svg" alt="ícone de front-end" />
-              <span>FRONT-END</span>
-            </div>
-            <div class="item">
-              <img src="./assets/icon/browser.svg" alt="ícone de navegador/web designer" />
-              <span>WEB DESIGNER</span>
-            </div>
-            <div class="item">
-              <img src="./assets/icon/pen-nib-solid.svg" alt="ícone de caneta de design" />
-              <span>LOGO/BRAND <br />DESIGNER</span>
-            </div>
-            <div class="item">
-              <img src="./assets/icon/ux.png" alt="ícone de UI/UX" />
-              <span>UI/UX </span>
-            </div>
+          <a href="https://instagram.com/rodrigu_" target="_blank" class="type">
+            <img src="./assets/icon/Instagram Logotype.svg" alt="" />
+          </a>
+        </div>
+    
+        <div class="footerLogo">
+          <div class="logo">
+            <img src="./assets/icon/Dribbble Logomark.svg" alt="" />
           </div>
+          <a href="https://dribbble.com/RodriguP" target="_blank" class="type">
+            <img src="./assets/icon/Dribbble Logotype.svg" alt="" />
+          </a>
         </div>
       </div>
-    </section>
-
-    <!--##################### SEÇÃO "processo" DO SITE #####################-->
-    <section class="processo" id="processo">
-      <h2 class="titulo">Construindo Projetos Incriveis</h2>
-      <span class="Description"> O Passo a Passo</span>
-
-      <div class="processoCase Direita">
-        <div class="processoTexto">
-          <span class="texto"> "Uma xícara de café" </span>
-        </div>
-
-        <div class="processoimage">
-          <img src="./assets/image/cafe.jpeg" loading="lazy" alt="perfil" />
-        </div>
       </div>
 
-      <div class="processoCase Direita">
-        <div class="processoimage">
-          <img src="./assets/image/webbad.jpg" loading="lazy" alt="perfil" />
-        </div>
+    </footer>
 
-        <div class="processoTexto">
-          <span class="texto"> "Sem de layout genérico" </span>
-        </div>
-      </div>
 
-      <div class="processoCase Esquerda">
-        <div class="processoTexto">
-          <span class="texto">
-            "Comunicação rápida <br />
-            e feedbacks"
-          </span>
-        </div>
-
-        <div class="processoimage">
-          <img src="./assets/image/emails.jpg" loading="lazy" alt="perfil" />
-        </div>
-      </div>
-
-      <div class="processoCase Direita">
-        <div class="processoimage">
-          <img src="./assets/image/jobdone.jpg" loading="lazy" alt="perfil" />
-        </div>
-
-        <div class="processoTexto">
-          <span class="texto">"entender a demanda, <br />
-            entregar a solução"</span>
-        </div>
-      </div>
-    </section>
-
-    <!--##################### SEÇÃO "SOBRE" DO SITE #####################-->
-
-    <section class="sobre" id="sobre">
-      <h2 class="titulo">Por trás da tela</h2>
-
-      <div class="me">
-        <div class="meParagrafo">
-          <p>
-            E ai! <br />
-            Eu Sou o Rodrigo.
-          </p>
-          <p>
-            Na infância, descobri que desenhar era a melhor forma de dar vida
-            ao que eu imaginava, hoje em dia descobrir onde posso fazer
-            exatamente o que fazia quando criança, o desenvolvimento web,
-            criando sites, ícones e ilustrações seja criando ferramentas do
-            dia a dia ou desenvolvendo experiências temáticas e imersivas.
-          </p>
-          <p>
-            Meu foco é entregar experiências digitais únicas, visualmente
-            incríveis, funcionais e totalmente acessíveis. Criar projetos
-            incríveis é o que me move.
-          </p>
-        </div>
-
-        <div class="meFoto">
-          <img src="./assets/image/sketch2.png" loading="lazy" alt="perfil" />
-        </div>
-        <div class="stickers">
-          <img src="./assets/image/fone.png" loading="lazy" alt="perfil" />
-          <img src="./assets/image/cafe1.png" loading="lazy" alt="perfil" />
-          <img src="./assets/image/cafe2.png" loading="lazy" alt="perfil" />
-          <img src="./assets/image/coroa.svg" loading="lazy" alt="perfil" />
-        </div>
-      </div>
-
-      <h2 class="titulo">Por trás do codigo</h2>
-
-      <div class="gostos">
-        <div class="Foto">
-          <img src="./assets/image/sketch2.png" alt="perfil" />
-          <img class="stcTop" src="./assets/image/moon.jpg" alt="perfil" />
-          <img class="stc" src="./assets/image/Thriller.jpg" alt="perfil" />
-          <img class="stcTop" src="./assets/image/racionais.jpeg" alt="perfil" />
-          <img class="stcDown" src="./assets/image/ps3.png" alt="perfil" />
-          <img class="stcDown" src="./assets/image/One_Piece_Logo.png" alt="perfil" />
-        </div>
-
-        <div class="meParagrafo">
-          <p>
-            Sou um desenvolvedor web e designer apaixonado por construir
-            experiências digitais que realmente cativem quem as utiliza.
-          </p>
-          <p>
-            Como uma mente criativa, busco referências nas culturas, artes e
-            em pessoas que fazem a diferença.
-          </p>
-          <p>
-            Trago uma visão focada em estruturar fluxos lógicos e eficientes
-            para garantir que cada interface de App ou layout não seja apenas
-            visualmente atraente, mas acima de tudo, única e funcional.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!--##################### SEÇÃO "CONECTAR" DO SITE #####################-->
-    <section class="conectar" id="conectar">
-      <h2 class="titulo">Vamos Criar ?</h2>
-
-      <div class="email"> 
-        <img src="./assets/image/seta.svg" alt="Ilustração de contato" />
-        
-        <a type="submit" href="mailto:Rodrigo.ctto@outlook.com">
-          <img style="width: 10em;"src="./assets/icon/envelope_bold.svg" alt="icone email">
-        </a>
-
-    </section>
-
-  </main>
-
-  <!--##################### script DO SITE #####################-->
-  <script src="./src/jsc.js"></script>
-
-</body>
-
+  </body>
 </html>

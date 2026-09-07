@@ -45,8 +45,8 @@
 .meFoto {
   width: 70em;
   height: auto;
-  animation: turn1 2s ease forwards;
   overflow-x: hidden;
+  animation: turn1 2s ease forwards;
 }
 
 .meFoto img {
@@ -59,8 +59,9 @@
 .Foto {
   width: 70em;
   height: auto;
-  animation: turn1 2s ease forwards;
   overflow: hidden;
+  animation: turn1 2s ease forwards;
+  
 }
 
 .Foto img {
@@ -69,83 +70,21 @@
   margin:0 0 2em -28em;
   transform: rotate(5deg);
   border-radius: 14px;
-  position: relative;
 }
 
-
-.conectar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70em;
-  font-family: var(--fontQuilone);
+.conectar{
   margin: var(--margin);
-  margin-top: 8em;
-  gap: 4em;
-
-  h2 {
-    font-size: 4em;
-  }
+  align-items: center;
+  width: 70%;
+  border-top: 1px solid rgb(155, 187, 132);
+  margin-top: 10em;
 }
 
-.conectar img {
-  width: 10em;
-}
-
-.email{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: var(--containerWidth);
-  margin: var(--margin);
-  margin-top: -5em;
-
-  a{
-    margin-left: 4em;
-    background-color: transparent;
-    border: none;
-  }
-
-  a:hover{
-    	        animation: jello-vertical 0.9s both;
-
-  }
-}
-
-@-webkit-keyframes jello-vertical {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(0.85, 1.15, 1);
-            transform: scale3d(0.85, 1.15, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-}
-
-
+/* posições dos desenhos da seção sobre mim
+ */
 .stickers{
   position: absolute;
+  
 }
 .stickers img:nth-child(){
       width: 10em;
@@ -153,42 +92,61 @@
 
 .stickers img:nth-child(1){
         position: relative;
-                top: -1em;
-                left: 20em;
+                top: -4em;
+                left: 21em;
                 width: 10em;
                 mix-blend-mode: multiply;
+                will-change: transform;
+
 }
 .stickers img:nth-child(2){
       position: relative;
                 top: 19em;
-                left: 12em;
-                width: 8em;
+                left: 14em;
+                width: 5em;
                 mix-blend-mode: multiply;
+                                will-change: transform;
+
 }
 
 .stickers img:nth-child(3) {
      position: relative;
-                top: 19em;
+                top: 16em;
                 left: 20em;
-                width: 6em;
+                width: 5em;
                 mix-blend-mode: multiply;
+                                will-change: transform;
+
 }
 
 
 .stickers img:nth-child(4){
      position: relative;
                 top: -12em;
-                right: -14em;
+                right: -20em;
                 width: 6em;
                 mix-blend-mode: multiply;
+                                will-change: transform;
+}
+
+.stickers img:nth-child(5){
+     position: relative;
+                top: -1em;
+                right: -18em;
+                width: 6em;
+                mix-blend-mode: multiply;
+                                will-change: transform;
 }
 
 
 .stickers img{
-  animation: shake 2s steps(2, end) infinite both;
+  animation: shake 3s steps(1, end) infinite both;
+                  will-change: transform;
+
 }
 
-
+/* posições das fotos da seção sobre mim
+ */
 .Foto img:nth-child(2){
 width: 10em;
 position: relative;
@@ -213,6 +171,7 @@ top: -16em;
 right: -30em;
 rotate: -25deg;
 z-index: 1;
+
 }
 
 
@@ -235,31 +194,3 @@ z-index: 2;
 }
 
 
-
-
-
-
-
-
-
-
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 2em;
-}
-
-.social img {
-  width: 40px;
-  filter: invert(100%);
-}
-
-.social img:hover {
-  filter: invert(85%);
-  transform: rotate(-10deg) scale(1.1);
-}
-.footerLogo img {
-  width: 180px;
-}

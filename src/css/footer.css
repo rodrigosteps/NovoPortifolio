@@ -2,28 +2,137 @@
 .footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  margin-top: 10em;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4em auto 4em auto;
-  padding-top: 2em;
-
 }
 
-.footerLogo svg{
-    width: 16em;
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
+.footerLogo {
+  display: flex;
+  flex-direction: Column;
+  align-items: center;
 
-.social{
-    margin-left: 38em;
+  img {
+    width: 4em;
+    height: 4em;
+  }
 }
-.social svg{
-  width: 4em;
+.type {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -5em;
+  padding-bottom: 7em;
+  height: 4em;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
-.social svg:hover {
-  transform: rotate(-10deg) scale(1.1);
+.type:hover {
+  opacity: 1;
+  transform: translateY(-1.5em);
+  scale: 1.4;
 }
-.footerLogo img {
-  width: 180px;
+
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7em;
+}
+
+.texto {
+  font-family: var(--fontHandWrite);
+  font-size: 3em;
+  color: rgb(155, 187, 132);
+  padding-bottom: 1em;
+}
+
+/*estilo do icone email */
+.tooltip-container {
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.tooltip-container::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: fff;
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.tooltip-container .text {
+  color: #201e1e;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid rgb(206, 204, 204);
+  color: #201e1e;
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  background-color: rgb(128, 123, 123);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -100px;
+  opacity: 1;
+  transition-duration: 0.3s;
 }

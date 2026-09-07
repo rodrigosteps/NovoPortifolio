@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // classe correspondente ao tipo de elemento
         if (el.classList.contains("projeto")) el.classList.add("projetoAtivo");
+        if (el.classList.contains("processoCase")) el.classList.add("processoCaseAtivo");
         if (el.classList.contains("item")) el.classList.add("itemAtivo");
        if (el.classList.contains("titulo")) el.classList.add("tituloAtivo");
         if (el.classList.contains("Description")) el.classList.add("spanativo");
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //  o mesmo observer
-  const elementos = document.querySelectorAll(".projeto, .item, h2, .Description");
+  const elementos = document.querySelectorAll(".projeto, .processoCase, .item, h2, .Description");
   elementos.forEach((el) => observer.observe(el));
 });
 
@@ -88,7 +89,7 @@ gsap.to(".stc", {
     scrub: 1,
   },
   rotate: 10,
-});
+}); 
 
 gsap.to(".stcDown", {
   scrollTrigger: {

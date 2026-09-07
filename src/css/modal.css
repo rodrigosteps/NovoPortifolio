@@ -12,7 +12,6 @@
   height: 100%;
   overflow-y: auto;
   justify-content: center;
-  align-items: center;
   z-index: 90;
   background: #e6ffeb;
   transition: var(--transition);
@@ -87,13 +86,11 @@
 }
 
 .closeModal span {
-  color: #f3ede3;
   font-size: 2em;
   text-shadow: 2px 2px 8px black;;
 }
 
 .closeModal:hover  {
-
   scale: 1.1;
   cursor: pointer;
   box-shadow: 1px 1px 10px black;

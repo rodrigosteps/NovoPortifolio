@@ -6,14 +6,13 @@
 
   /*Estilo de todos H2*/
 .titulo{
-    margin-top: 1em;
+  margin-top: 1em;
   opacity: 0;
   font-family: var(--fontQuilone);
   text-align: center;
   align-items: center;
   letter-spacing: -4px;
   font-size: 6em;
-  color: #e1f3e4;
 }
 
 .tituloAtivo{
@@ -55,7 +54,7 @@ opacity: 0;
   margin-left: 6em;
   font-family: var(--fontHandWrite);
   font-size: 2.5em;
-  color: rgb(155, 187, 132);
+  color:var(--spanColor);
   overflow: hidden;
     animation: spanfade 3s steps(40);
   transform:rotate(-10deg);
@@ -145,21 +144,12 @@ opacity: 0;
 
 }
 
-
 /* Estado Inicial */
-.projetoAtivo {
-  opacity: 1;
-      animation: FadeIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-
-      
-}
 
 .projeto {
-    opacity: 0;
+  opacity: 0;
   margin: 1.5em;
-  width: min-content; 
-
- 
+  width: min-content;  
 
   img {
     border-radius: 16px;
@@ -171,7 +161,7 @@ opacity: 0;
   .tag {
     display: inline-block;
     background-color: rgba(60, 167, 72, 0.574);
-    color: rgba(144, 232, 152, 0.81);
+    color:var(--spanColor);
     padding: 0.2em 0.5em;
     margin: 0.5em;
     border-radius: 4px;
@@ -179,6 +169,10 @@ opacity: 0;
   }
 }
 
+.projetoAtivo {
+  opacity: 1;
+      animation: FadeIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;  
+}
 
 /*Mais Projetos*/
 .maisProjetos {
@@ -187,15 +181,9 @@ opacity: 0;
   align-items: center;
   flex-direction: column;
   margin: 1em auto 6em auto;
-
-  span {
-    letter-spacing: -4px;
-    font-size: 4em;
-  }
-
+  
   img {
     width: 10em;
-    border-bottom: 2px solid olivedrab;
   }
 }
 
@@ -210,12 +198,15 @@ opacity: 0;
   p {
     font-family: var(--fontQuilone);
     font-size: 1.1em;
+    color: var(--fontColor);
+
   }
 }
 .timelineContainer {
   opacity: 1;
   display: flex;
   flex-direction: column;
+  
 }
 
 .timelineItemUp {
@@ -238,6 +229,7 @@ opacity: 0;
 
 .timelineDate {
   display: flex;
+  
 }
 
 .item img {
@@ -269,15 +261,17 @@ opacity: 0;
 .LinhaDoTempo{
   width: var(--containerWidth);
   height: 12em;
+  transform: translatex(-40em);
   background-image: url(../../assets/image/Pegadas.svg);
   background-repeat:repeat-x;
   background-size:contain;
   background-position:center;
   overflow: hidden;
+  opacity: 0;
+  animation: trilha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
-  animation: trilha 4s forwards ease;
   animation-timeline:view();
-  animation-range: entry 40% cover 40%;
+  animation-range: entry 100% cover 60%;
 }
 
 
@@ -303,7 +297,9 @@ opacity: 0;
 
   span {
     font-family: var(--fontSynonym);
-    font-size: 1em;
+    font-size: 1.2em;
+    color: var(--fontColor);
+    
   }
 }
 
@@ -325,10 +321,7 @@ opacity: 0;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-
-  h3{
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .hardSkills, .softSkills{
@@ -342,19 +335,30 @@ opacity: 0;
 
 /* seção processo */
 
-.processo {
+  .processo {
   width: var(--containerWidth);
   display: flex;
   flex-direction: column;
   margin: var(--centerMargin);
 
-  .texto {
+  span {
     font-family: var(--fontQuilone);
     font-size: 2.5em;
+    color: var(--fontColor);
+
   }
 }
 
+.processoCaseAtivo{
+  opacity: 1;
+  transition: var(--transition);
+    animation: FadeIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;  
 
+}
+.processoCase{
+  opacity: 0;
+  filter: blur(4px);
+}
 
 .processoCase img {
   width: 14em;
@@ -382,5 +386,10 @@ opacity: 0;
 .processoTexto {
   width: 40em;
 }
+
+
+
+
+
 
 

@@ -19,7 +19,8 @@
   --radiusNav: 50px;
   --margin: 2em auto;
   --centerMargin: 0 auto;
-  --fontColor: #1d1f20;
+  --fontColor: #fdfffc;
+  --spanColor:#a8e081;
   --transition: all 0.3s ease-in-out;
   --containerWidth: 70em;
 }
@@ -29,11 +30,11 @@
 @font-face {
   font-family: "Telma";
   src:
-    url("/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff2")
+    url("../../fonts/Telma_Complete/Telma-Variable.woff2")
       format("woff2"),
-    url("/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.woff")
+    url("../../fonts/Telma_Complete/Telma-Variable.woff")
       format("woff"),
-    url("/NovoPortifolio/fonts/Telma_Complete/Telma-Variable.ttf")
+    url("../../fonts/Telma_Complete/Telma-Variable.ttf")
       format("truetype");
   font-weight: 300 900;
   font-display: swap;
@@ -44,11 +45,11 @@
 @font-face {
   font-family: "Quilone";
   src:
-    url("/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff2")
+    url("../../fonts/Quilon_Complete/Quilon-Variable.woff2")
       format("woff2"),
-    url("/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.woff")
+    url("../../fonts/Quilon_Complete/Quilon-Variable.woff")
       format("woff"),
-    url("/NovoPortifolio/fonts/Quilon_Complete/Quilon-Variable.ttf")
+    url("../../fonts/Quilon_Complete/Quilon-Variable.ttf")
       format("truetype");
   font-weight: 200 900;
   font-display: swap;
@@ -59,11 +60,11 @@
 @font-face {
   font-family: "Synonym";
   src:
-    url("/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff2")
+    url("../../fonts/Synonym_Complete/Synonym-Variable.woff2")
       format("woff2"),
-    url("/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.woff")
+    url("../../fonts/Synonym_Complete/Synonym-Variable.woff")
       format("woff"),
-    url("/NovoPortifolio/fonts/Synonym_Complete/Synonym-Variable.ttf")
+    url("../../fonts/Synonym_Complete/Synonym-Variable.ttf")
       format("truetype");
   font-weight: 200 700;
   font-display: swap;
@@ -84,19 +85,26 @@ html{
 }
 
 body {
-  background-color: #436e4a;
+  background-color: #5d9967;
 }
 
 .backgroundCamada {
   background-image: url(../../assets/image/granulado.png);
   opacity: 0.2;
-  filter: blur(40px);
   position: fixed;
-  filter: contrast(0%) brightness(0%);
+  filter: contrast(10%) brightness(0%);
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
   z-index: -1;
   pointer-events: none;
+}
+
+h2,h3{
+  color: var(--fontColor)
+}
+
+span{
+  color: var(--spanColor);
 }

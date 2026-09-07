@@ -8,9 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8da4c133;
+  background-color: #555d6833;
   backdrop-filter: blur(20px);
-  mask-image: linear-gradient(to bottom, rgb(16, 13, 176) 10%, transparent 100%);
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(16, 13, 176) 10%,
+    transparent 100%
+  );
   z-index: 80;
 }
 
@@ -18,63 +22,97 @@
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
+  justify-content: space-around;
   position: fixed;
+  align-items: center;
   top: 2%;
   left: 50%;
   transform: translate(-50%);
   width: 40em;
+  height: 4em;
   margin: 0em auto;
   padding: 0.5em;
   font-weight: bold;
-  color: #ecffff;
   border-radius: var(--radiusNav);
-  background: #7ea573ab;
+  border: 2px solid #b1f3ad87;
+  backdrop-filter: blur(40px);
+  background: #b7ffa462;
   z-index: 90;
 }
 
 .menu a {
-  font-size: 1.4em;
+  font-size: 1.6em;
   opacity: 0.5;
-  padding: 0 0.8em;
-  text-shadow: 0px 0px 8px #000000;
+  padding: 0.4em;
+  text-shadow: 1px 1px 4px #000000;
   transition: var(--transition);
+  color: var(--fontColor);
 }
 
 .menu a:hover {
-  opacity: 0.9;
-  background-color: #205b11e1;
+  opacity: 1;
+  background-color: #59854de1;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 24px;
 }
 
 /*primeira tela nome*/
 .name {
   width: 60em;
   min-height: 100dvh;
-  font-family: var(--fontAclonica);
   display: flex;
-  flex-direction:row;
-  flex-wrap: wrap; 
-align-content: center;
-align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
   justify-content: space-evenly;
   margin: var(--centerMargin);
+  color: #10101a;
+  
   animation: nameSteps steps(4) forwards 2s;
+
 
   h1 {
     font-size: 8vw;
     letter-spacing: -8px;
+    font-family: var(--fontAclonica);
   }
 
   p {
     font-family: var(--fontSynonym);
     font-size: 4vw;
-    color: #9bbb84;
   }
+}
+
+.nameCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  gap: 2em;
+}
+
+#dev {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 4em;
+}
+
+#designer {
+  font-family: "Oregano", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4em;
 }
 
 .name img {
   width: 14vw;
-
 }
