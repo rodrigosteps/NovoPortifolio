@@ -44,25 +44,28 @@
 .right {
   padding: 0em 10em;
 }
+
 .modalTexto {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: var(--centerMargin);
   padding: 1em;
+  
+   span {
+    font-size: 4em;
+    font-family: var(--fontQuilone);
+  }
+  
+   p {
+    font-size: 1.5em;
+    color: rgb(138, 183, 108);
+    font-family: var(--fontSynonym);
+    text-align:start;
+    font-weight: 400;
+  }
 }
 
-.modalTexto span {
-  font-size: 4em;
-  font-family: var(--fontQuilone);
-}
-.modalTexto p {
-  font-size: 1.5em;
-  color: rgb(138, 183, 108);
-  font-family: var(--fontSynonym);
-  text-align:start;
-  font-weight: 400;
-}
 
 /*estilo do nav*/
 .closeModal {
