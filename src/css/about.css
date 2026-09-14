@@ -1,32 +1,22 @@
-
 /*seção sobre mim*/
 .sobre {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: var(--margin);
-  width: var(--containerWidth);
-  font-family: var(--fontQuilone);
-  gap: 10em;
-  
-  h2 {
-    letter-spacing: -4px;
-    font-size: 4em;
-    margin-top: 0.5em;
-    text-align: center;
-  }
+  justify-content: center;
+  margin: 0;
+  width: var(--mWidth);
+  gap: 0em;
 }
 
 .me,
 .gostos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 18em;
-  margin-top: 4em;
-  margin-bottom: 10em;
-  
+ display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 18em;
+    margin-top: 15em;
+    margin-bottom: 14em;
 }
 
 .meParagrafo {
@@ -36,6 +26,7 @@
   gap: 1em;
 
   p {
+    font-family: var(--fontQuilone);
     font-size: 1.3em;
     width: 24em;
     color: rgb(149, 177, 132);
@@ -43,36 +34,31 @@
 }
 
 .meFoto {
-  width: 70em;
-  height: auto;
   overflow-x: hidden;
   animation: turn1 2s ease forwards;
 }
 
 .meFoto img {
-  width: 60em;
+  width: 34em;
   object-fit: contain;
-  margin: 8em 0em 4em 6em;
-  transform: rotate(-5deg);
 }
 
 .Foto {
-  width: 70em;
-  height: auto;
+  margin-top: 34em;
   overflow: hidden;
   animation: turn1 2s ease forwards;
-  
 }
 
 .Foto img {
-  width: 60em;
+  width: 34em;
   object-fit: contain;
-  margin:0 0 2em -28em;
-  transform: rotate(5deg);
-  border-radius: 14px;
 }
 
-.conectar{
+.mSketch1,.mSketch2{
+  display: none;
+}
+
+.conectar {
   margin: var(--margin);
   align-items: center;
   width: 70%;
@@ -82,76 +68,69 @@
 
 /* posições dos desenhos da seção sobre mim
  */
-.stickers{
+.stickers {
   position: absolute;
-  
 }
-.stickers img:nth-child(){
-      width: 10em;
+.stickers img:nth-child() {
+  width: 10em;
 }
 
-.stickers img:nth-child(1){
-        position: relative;
-                top: -4em;
-                left: 21em;
-                width: 10em;
-                mix-blend-mode: multiply;
-                will-change: transform;
-
+.stickers img:nth-child(1) {
+  position: relative;
+  top: -4em;
+  left: 21em;
+  width: 10em;
+  mix-blend-mode: multiply;
+  will-change: transform;
 }
-.stickers img:nth-child(2){
-      position: relative;
-                top: 19em;
-                left: 14em;
-                width: 5em;
-                mix-blend-mode: multiply;
-                                will-change: transform;
-
+.stickers img:nth-child(2) {
+  position: relative;
+  top: 19em;
+  left: 14em;
+  width: 5em;
+  mix-blend-mode: multiply;
+  will-change: transform;
 }
 
 .stickers img:nth-child(3) {
-     position: relative;
-                top: 16em;
-                left: 20em;
-                width: 5em;
-                mix-blend-mode: multiply;
-                                will-change: transform;
-
+  position: relative;
+  top: 16em;
+  left: 20em;
+  width: 5em;
+  mix-blend-mode: multiply;
+  will-change: transform;
 }
 
-
-.stickers img:nth-child(4){
-     position: relative;
-                top: -12em;
-                right: -20em;
-                width: 6em;
-                mix-blend-mode: multiply;
-                                will-change: transform;
+.stickers img:nth-child(4) {
+  position: relative;
+  top: -12em;
+  right: -20em;
+  width: 6em;
+  mix-blend-mode: multiply;
+  will-change: transform;
 }
 
-.stickers img:nth-child(5){
-     position: relative;
-                top: -1em;
-                right: -18em;
-                width: 6em;
-                mix-blend-mode: multiply;
-                                will-change: transform;
+.stickers img:nth-child(5) {
+  position: relative;
+  top: -1em;
+  right: -18em;
+  width: 6em;
+  mix-blend-mode: multiply;
+  will-change: transform;
 }
 
-
-.stickers img{
+.stickers img {
   animation: shake 3s steps(1, end) infinite both;
-                  will-change: transform;
-
+  will-change: transform;
 }
 
 /* posições das fotos da seção sobre mim
  */
-.Foto img:nth-child(2){
-width: 10em;
-position: relative;
-top: -20em;
-right: -10em;
+.Foto img:nth-child(2) {
+  width: 10em;
+  position: relative;
+  top: -20em;
+  right: -10em;
 }
 
 .Foto img:nth-child(3) {
@@ -163,34 +142,185 @@ right: -10em;
   z-index: 2;
 }
 
+.Foto img:nth-child(4) {
+  width: 10em;
+  position: relative;
+  top: -16em;
+  right: -30em;
+  rotate: -25deg;
+  z-index: 1;
+}
 
-.Foto img:nth-child(4){
-width: 10em;
-position: relative;
-top: -16em;
-right: -30em;
-rotate: -25deg;
-z-index: 1;
+.Foto img:nth-child(5) {
+  width: 10em;
+  position: relative;
+  top: -10em;
+  right: -46em;
+  rotate: 45deg;
+  z-index: 2;
+}
+
+.Foto img:nth-child(6) {
+  width: 14em;
+  position: relative;
+  top: -10em;
+  right: -74em;
+  rotate: -25deg;
+  z-index: 2;
+}
+
+/* MOBILE STYLE */
+@media screen and (max-width: 480px) {
+  /*seção sobre mim*/
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    width: var(--mWidth);
+    font-family: var(--fontQuilone);
+    gap: 1em;
+  }
+
+  .me,
+  .gostos {
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 1em;
+        margin-bottom: 2em;
+  }
+
+  .meParagrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    p {
+      font-size: 1.1em;
+      width: 22em;
+    }
+  }
+
+.meFoto {
+  overflow-x: hidden;
+  animation: turn1 2s ease forwards;
+}
+
+.meFoto img, .Foto img  {
+width: 26em;
+ object-fit: contain;
+}
+
+.Foto {
+    margin-top: 1em;
+    overflow: hidden;
+    animation: turn1 2s ease forwards;
+}
+/* troca das imagens da seção sobre mim
+ */
+.sketch1,.sketch2{
+  display:none
+}
+
+/* posições dos desenhos da seção sobre mim
+ */
+.stickers {
+  display: none;
+}
+
+.stcDown, .stc, .stcTop{
+  display: none;
+}
+
+.conectar {
+    margin: var(--margin);
+    align-items: center;
+    width: 70%;
+    border-top: 1px solid rgb(155, 187, 132);
+    margin-top: 2em;
+}
 
 }
 
+/* MOBILE STYLE LANDSCAPE */
 
-.Foto img:nth-child(5){
-width: 10em;
-position: relative;
-top: -10em;
-right: -46em;
-rotate: 45deg;
-z-index: 2;
+@media (min-width: 481px) and (max-width: 966px) {
+
+  /*seção sobre mim*/
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    width: var(--mWidth);
+    font-family: var(--fontQuilone);
+    gap: 1em;
+  }
+
+  .me,
+  .gostos {
+          display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 1em;
+        margin-bottom: 2em;
+  }
+
+  .meParagrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    p {
+      font-size: 1.1em;
+      width: 22em;
+    }
+  }
+
+.meFoto {
+  overflow-x: hidden;
+  animation: turn1 2s ease forwards;
 }
 
-.Foto img:nth-child(6){
-width: 14em;
-position: relative;
-top: -10em;
-right: -74em;
-rotate: -25deg;
-z-index: 2;
+.meFoto img, .Foto img  {
+width: 26em;
+ object-fit: contain;
 }
 
+.Foto {
+    margin-top: 1em;
+    overflow: hidden;
+    animation: turn1 2s ease forwards;
+}
+/* troca das imagens da seção sobre mim
+ */
+.sketch1,.sketch2{
+  display:none
+}
 
+/* posições dos desenhos da seção sobre mim
+ */
+.stickers {
+  display: none;
+}
+
+.stcDown, .stc, .stcTop{
+  display: none;
+}
+
+.conectar {
+    margin: var(--margin);
+    align-items: center;
+    width: 70%;
+    border-top: 1px solid rgb(155, 187, 132);
+    margin-top: 2em;
+}
+
+}

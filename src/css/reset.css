@@ -23,6 +23,9 @@
   --spanColor:#a8e081;
   --transition: all 0.3s ease-in-out;
   --containerWidth: 70em;
+
+  --mTitle:16vw ;
+  --mWidth:100%;
 }
 
 /*Fonte Telma*/
@@ -107,4 +110,14 @@ h2,h3{
 
 span{
   color: var(--spanColor);
+}
+
+/* MOBILE STYLE */
+@media screen and (max-width: 480px) {
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 }

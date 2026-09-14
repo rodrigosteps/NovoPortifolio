@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="keywords"
@@ -57,11 +57,21 @@
 
       <!--##################### NAVEGAÇÃO DO SITE #####################-->
       <nav class="menu" id="menu">
+        <div class="popup">
+          <a href="#inicio"><img src="./assets/icon/favicon.svg" alt=""></a>
+          <button id="openMenu"><img class="barIcon" src="./assets/icon/menu.png" alt=""> </button>
+        </div>
+
+        <div class="links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#timeline">Linha do tempo</a></li>
         <li><a href="#processo">Processo</a></li>
         <li><a href="#sobre">Sobre</a></li>
+          <button >
+            <img id="xIcon" src="./assets/icon/x-mark.svg" alt="">
+          </button>
+        </div>
       </nav>
 
 
@@ -78,8 +88,7 @@
       </section>
 
       <!--##################### PROJETOS DO SITE #####################-->
-
-      <section class="projetos" id="projetos">
+  <section class="projetos" id="projetos">
         <h2 class="titulo">Projetos Recentes</h2 class="titulo">
 
         <span class="Description"> cada projeto é unico e incriveeeeeeeel</span>
@@ -87,7 +96,7 @@
           <div class="projeto case1" id="case1" data-modal="caseModal1">
             <img src="./assets/image/thursday.social.png" alt="site" />
             <h3>Sux UI</h3>
-
+ 
             <span class="tag">Landing Page</span>
             <span class="tag">UI/UX</span>
           </div>
@@ -138,7 +147,7 @@
         </article>
       </section>
 
-      <!--##################### MODAL DO SITE #####################-->
+            <!--##################### MODAL DO SITE #####################-->
       <section class="modais">
         <div class="modal-container" id="caseModal1">
           <div class="modal-content">
@@ -437,13 +446,14 @@
         </div>
       </section>
 
+      
       <!--##################### SEÇÃO "MAIS PROJETOS" DO SITE #####################-->
       <section class="maisProjetos" id="maisProjetos">
         <img src="./assets/icon/toolbox.png" alt="" />
         <h3>Mais Projetos em breve... </h3>
       </section>
 
-      <!--##################### SEÇÃO "LINHA DO TEMPO" DO SITE #####################-->
+            <!--##################### SEÇÃO "LINHA DO TEMPO" DO SITE #####################-->
       <section class="timeline" id="timeline">
         <h2 class="titulo" class="titulo">Linha do Tempo</h2 class="titulo">
         <span class="Description"> Minha jornada até aqui</span>
@@ -462,14 +472,15 @@
             <div class="item">
               <img src="./assets/icon/coding.png" alt="ícone de código" />
               <span >Hoje</span>
-              <p>Criando coisas incriveis</p>
+              <p>Criando coisas <br/>
+                 incriveis</p>
             </div>
           </div>
 
           <!--##################### ICONES ACIMA #####################-->
 
           <div class="LinhaDoTempo">
-            <div class="trilha"></div>
+            <img class="trilha" src="./assets/image/pegadas.svg"></img>
           </div>
 
           <!--##################### ICONES ABAIXO #####################-->
@@ -488,7 +499,8 @@
               <img src="./assets/image/estacio.svg" alt="logo estacio" />
               <span class="timelineDate">2023</span>
               <p>
-                Analise e Desenvolvimento <br />
+                Analise e <br/>
+                Desenvolvimento <br/>
                 de Sistema
               </p>
             </div>
@@ -496,7 +508,7 @@
         </div>
       </section>
 
-      <!--##################### SEÇÃO "skills" DO SITE #####################-->
+            <!--##################### SEÇÃO "skills" DO SITE #####################-->
       <section class="skillsContainer">
         <h2 class="titulo" class="titulo">SKILLS</h2 class="titulo">
         <span class="Description"> Meus Superpoderes</span>
@@ -573,58 +585,6 @@
         </div>
       </section>
 
-      <!--##################### SEÇÃO "processo" DO SITE #####################-->
-      <section class="processo" id="processo">
-        <h2 class="titulo" class="titulo">Construindo Projetos Incriveis</h2 class="titulo">
-        <span class="Description"> O Passo a Passo</span>
-
-        <div class="processoCase Direita">
-          
-          <div class="processoimage">
-            <img src="./assets/image/cafe.jpeg" loading="lazy" alt="perfil" />
-          </div>
-          <div class="processoTexto">
-            <span class="texto"> "Uma pequena xícara de café" </span>
-          </div>
-        </div>
-
-        <div class="processoCase Direita">
-          <div class="processoimage">
-            <img src="./assets/image/webbad.jpg" loading="lazy" alt="perfil" />
-          </div>
-
-          <div class="processoTexto">
-            <span class="texto"> "Sem layout genérico" </span>
-          </div>
-        </div>
-
-        <div class="processoCase Esquerda">
-          <div class="processoTexto">
-            <div class="processoimage">
-              <img src="./assets/image/emails.jpg" loading="lazy" alt="perfil" />
-            </div>
-            
-            <span class="texto">
-              "Comunicação rápida <br />
-              e feedbacks"
-            </span>
-          </div>
-
-        </div>
-
-        <div class="processoCase Direita">
-          <div class="processoimage">
-            <img src="./assets/image/jobdone.jpg" loading="lazy" alt="perfil" />
-          </div>
-
-          <div class="processoTexto">
-            <span class="texto"
-              >"entender a demanda, <br />
-              entregar a solução"</span
-            >
-          </div>
-        </div>
-      </section>
 
       <!--##################### SEÇÃO "SOBRE" DO SITE #####################-->
 
@@ -652,7 +612,8 @@
           </div>
 
           <div class="meFoto">
-            <img src="./assets/image/sketch2.png" loading="lazy" alt="perfil" />
+            <img class="mSketch1" src="./assets/image/sketchL.png" loading="lazy" alt="perfil" />
+            <img class="sketch1" src="./assets/image/sketchL.png" loading="lazy" alt="perfil" />
           </div>
           <div class="stickers">
             <img src="./assets/image/fone.png" loading="lazy" alt="perfil" />
@@ -667,7 +628,8 @@
 
         <div class="gostos">
           <div class="Foto">
-            <img src="./assets/image/sketch2.png" alt="perfil" />
+            <img class="mSketch2" src="./assets/image/sketchR.png" alt="perfil" />
+            <img class="sketch2" src="./assets/image/sketchR.png" alt="perfil" />
             <img class="stcTop" src="./assets/image/moon.jpg" alt="perfil" />
             <img class="stc" src="./assets/image/Thriller.jpg" alt="perfil" />
             <img class="stcTop" src="./assets/image/racionais.jpeg" alt="perfil"/>
@@ -692,15 +654,14 @@
           </div>
         </div>
       </section>
-      <!--##################### SEÇÃO "CONECTAR" DO SITE #####################-->
+
+         <!--##################### SEÇÃO "CONECTAR" DO SITE #####################-->
       <section class="conectar" id="conectar">
         <h2 class="titulo">Vamos Criar ?</h2 class="titulo">
       </section>
-
+      
       <!--##################### SEÇÃO "FOOTER" DO SITE #####################-->
-    </main>
-
-    <footer class="footer">
+     <footer class="footer">
       <div class="email">
            <span class="texto">Disponivel para projetos</span>
 
@@ -762,6 +723,9 @@
       </div>
 
     </footer>
+
+
+    </main>
 
 
   </body>

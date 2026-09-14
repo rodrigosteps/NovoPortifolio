@@ -1,31 +1,29 @@
-
 /*estilo do Container*/
 
-.container{
-  display:block;
+.container {
+  display: block;
 
   /*Estilo de todos H2*/
-.titulo{
-  margin-top: 1em;
-  opacity: 0;
-  font-family: var(--fontQuilone);
-  text-align: center;
-  align-items: center;
-  letter-spacing: -4px;
-  font-size: 6em;
-}
+  .titulo {
+    margin-top: 1em;
+    opacity: 0;
+    font-family: var(--fontQuilone);
+    text-align: center;
+    align-items: center;
+    letter-spacing: -4px;
+    font-size: 6em;
+  }
 
-.tituloAtivo{
+  .tituloAtivo {
     opacity: 1;
-    animation: textfade  0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+    animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
 
-/*Estilo de todos H3*/
+  /*Estilo de todos H3*/
   h3 {
     font-size: 1.5em;
     margin: 0.5em 0em 0em 0em;
   }
-
 }
 
 /*seção dos projetos*/
@@ -38,12 +36,12 @@
   margin: var(--centerMargin);
 }
 
-.projetos img{
-  transition: var(--transition);  
+.projetos img {
+  transition: var(--transition);
 }
 
 .Description {
-opacity: 0;
+  opacity: 0;
 }
 
 .Description.spanativo {
@@ -54,11 +52,10 @@ opacity: 0;
   margin-left: 6em;
   font-family: var(--fontHandWrite);
   font-size: 2.5em;
-  color:var(--spanColor);
+  color: var(--spanColor);
   overflow: hidden;
-    animation: spanfade 3s steps(40);
-  transform:rotate(-10deg);
-
+  animation: spanfade 3s steps(40);
+  transform: rotate(-10deg);
 }
 
 /*container com as imagens dos projetos*/
@@ -70,14 +67,12 @@ opacity: 0;
   justify-content: center;
   gap: 2em 4em;
 
-
   /*>>>>> posições dos projetos no container*/
   .case1 {
     position: relative;
     top: 1em;
     left: 6em;
     transform: rotate(-2deg);
-    
   }
 
   .case2 {
@@ -129,19 +124,16 @@ opacity: 0;
   .case5 img:hover,
   .case6 img:hover {
     transform: rotate(3deg) scale(1.04);
-        cursor: pointer;
-
+    cursor: pointer;
   }
 
   .case2 img:hover,
   .case4 img:hover,
   .case7 img:hover {
     transform: rotate(-3deg) scale(1.04);
-        cursor: pointer;
-
+    cursor: pointer;
   }
   /*Hover das imagens <<<<<<<<*/
-
 }
 
 /* Estado Inicial */
@@ -149,7 +141,7 @@ opacity: 0;
 .projeto {
   opacity: 0;
   margin: 1.5em;
-  width: min-content;  
+  width: min-content;
 
   img {
     border-radius: 16px;
@@ -161,7 +153,7 @@ opacity: 0;
   .tag {
     display: inline-block;
     background-color: rgba(60, 167, 72, 0.574);
-    color:var(--spanColor);
+    color: var(--spanColor);
     padding: 0.2em 0.5em;
     margin: 0.5em;
     border-radius: 4px;
@@ -171,7 +163,7 @@ opacity: 0;
 
 .projetoAtivo {
   opacity: 1;
-      animation: FadeIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;  
+  animation: FadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 /*Mais Projetos*/
@@ -181,7 +173,7 @@ opacity: 0;
   align-items: center;
   flex-direction: column;
   margin: 1em auto 6em auto;
-  
+
   img {
     width: 10em;
   }
@@ -194,57 +186,50 @@ opacity: 0;
   flex-direction: column;
   margin: var(--centerMargin);
 
-
   p {
     font-family: var(--fontQuilone);
     font-size: 1.1em;
     color: var(--fontColor);
-
   }
 }
 .timelineContainer {
   opacity: 1;
   display: flex;
   flex-direction: column;
-  
 }
 
 .timelineItemUp {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   margin-left: 22em;
   position: relative;
   top: 50px;
 }
 
-.timelineItemDown{
+.timelineItemDown {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-right: 18em;
-
 }
 
 .timelineDate {
   display: flex;
-  
 }
 
 .item img {
   width: 6em;
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
 .item img:hover {
-  transform: translateY(-15px) 
-  scale(1.1);
+  transform: translateY(-15px) scale(1.1);
 }
 
 .item {
-opacity: 0;
-
+  opacity: 0;
 }
 
 .itemAtivo {
@@ -255,33 +240,33 @@ opacity: 0;
   align-items: center;
   gap: 0.5em;
   animation: fadeUp 2s ease-out normal forwards;
-
 }
 
-.LinhaDoTempo{
+.LinhaDoTempo {
   width: var(--containerWidth);
   height: 12em;
   transform: translatex(-40em);
   background-image: url(../../assets/image/Pegadas.svg);
-  background-repeat:repeat-x;
-  background-size:contain;
-  background-position:center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
   overflow: hidden;
   opacity: 0;
-  animation: trilha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: trilha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
-  animation-timeline:view();
+  animation-timeline: view();
   animation-range: entry 100% cover 60%;
 }
 
-
-.trilha img {
-  width: 18em;
+.trilha {
+  display: none;
 }
+
+
 
 /* seção skills */
 
-.skillsContainer{
+.skillsContainer {
   width: var(--containerWidth);
   display: flex;
   flex-direction: column;
@@ -299,11 +284,10 @@ opacity: 0;
     font-family: var(--fontSynonym);
     font-size: 1.2em;
     color: var(--fontColor);
-    
   }
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -312,11 +296,12 @@ opacity: 0;
   margin: var(--centerMargin);
 }
 
-.skills img{
+.skills img {
   width: 80px;
 }
 
-.hard, .soft{
+.hard,
+.soft {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,7 +309,8 @@ opacity: 0;
   text-align: center;
 }
 
-.hardSkills, .softSkills{
+.hardSkills,
+.softSkills {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -335,7 +321,7 @@ opacity: 0;
 
 /* seção processo */
 
-  .processo {
+.processo {
   width: var(--containerWidth);
   display: flex;
   flex-direction: column;
@@ -345,17 +331,15 @@ opacity: 0;
     font-family: var(--fontQuilone);
     font-size: 2.5em;
     color: var(--fontColor);
-
   }
 }
 
-.processoCaseAtivo{
+.processoCaseAtivo {
   opacity: 1;
   transition: var(--transition);
-    animation: FadeIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;  
-
+  animation: FadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
-.processoCase{
+.processoCase {
   opacity: 0;
   filter: blur(4px);
 }
@@ -387,9 +371,435 @@ opacity: 0;
   width: 40em;
 }
 
+/* MOBILE STYLE */
+@media screen and (max-width: 480px) {
+  .container {
+    display: block;
+    width: var(--mWidth);
+
+    /*Estilo de todos H2*/
+    .titulo {
+      margin-top: 0em;
+      opacity: 0;
+      font-size: 16vw;
+    }
+
+    .tituloAtivo {
+      opacity: 1;
+      animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    /*Estilo de todos H3*/
+    h3 {
+      font-size: 2em;
+      margin: 0.5em 0em 0em 0em;
+    }
+  }
+
+  /*seção dos projetos*/
+  .projetos {
+    width: var(--mWidth);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em;
+    scroll-margin-top: 4em;
+
+  }
+
+  .projetos img {
+    transition: var(--transition);
+  }
+
+  .Description.spanativo {
+    opacity: 1;
+    white-space: wrap;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin:2em 0em;
+    font-size: 6vw;
+    transform: rotate(-10deg);
+  }
+
+  /*container com as imagens dos projetos*/
+  .projetosCases {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0em;
+    padding: 0em;
+
+    .case1,
+    .case2,
+    .case3,
+    .case4,
+    .case5,
+    .case6,
+    .case7 {
+      position: relative;
+      top: 0em;
+      left: 0em;
+      transform: rotate(2deg);
+    }
+  }
 
 
+.maisProjetos {
+    font-family: var(--fontQuilone);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em auto;
+    text-align: center;
+
+        img {
+        width: 6em;
+    }
+
+            h3 {
+            font-size: 2em;
+            margin: 0em;
+        }
+
+}
+
+.timeline {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16em;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        scroll-margin-top: 4em;
+
+    .timelineContainer {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      width: 80px;
+    }
+
+    .timelineItemUp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-content: center;
+            margin: 11em 0 0 12em;
+            gap: 12em;
+}
+
+  .timelineItemDown {
+                    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-content: center;
+                   margin: -44em 7em 0 -7em;
+            gap: 12em;
+}
+    
+}
+
+.LinhaDoTempo {
+        position: relative;
+        top: -22em;
+        left: 0em;
+        width: 162%;
+        height: 6em;
+        opacity: 1;
+        transform: rotate(90deg);
+        animation: mFade 2s ease-out normal forwards;
+    
+    
+    
+        .trilha{
+     display: none;
+    
+    }
+}
+
+@keyframes mFade {
+
+   0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+}
+
+/* seção skills */
+
+.skillsContainer {
+  width: var(--mWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 4em;
+
+}
+
+.skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin: var(--centerMargin);
+        flex-wrap: nowrap;
+}
+
+.skills img {
+  width: 80px;
+}
+
+.hard,
+.soft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 4em;
+}
+
+.hardSkills,
+.softSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 22em;
+  gap: 2em;
+}
+
+}
 
 
+/* MOBILE STYLE LANDSCAPE */
+
+@media (min-width: 481px) and (max-width: 966px) {
+
+.container {
+    display: block;
+    width: var(--mWidth);
+
+    /*Estilo de todos H2*/
+    .titulo {
+      margin-top: 0em;
+      opacity: 0;
+      font-size: 8vw;
+    }
+
+    .tituloAtivo {
+      opacity: 1;
+      animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+   .Description.spanativo {
+    opacity: 1;
+    white-space: wrap;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin:1em 0em;
+    font-size: 3vw;
+    transform: rotate(-10deg);
+  }
+    /*Estilo de todos H3*/
+    h3 {
+      font-size: 2em;
+      margin: 0.5em 0em 0em 0em;
+    }
+  }
+
+  /*seção dos projetos*/
+  .projetos {
+    width: var(--mWidth);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1em;
+    scroll-margin-top: 4em; 
+  }
 
 
+.projetosCases {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0em;
+    padding: 0em;
+
+    .case1,
+    .case2,
+    .case3,
+    .case4,
+    .case5,
+    .case6,
+    .case7 {
+      position: relative;
+      top: 0em;
+      left: 0em;
+      transform: rotate(2deg);
+    }
+  }
+
+  .maisProjetos {
+    font-family: var(--fontQuilone);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em auto;
+    text-align: center;
+
+        img {
+        width: 6em;
+    }
+
+            h3 {
+            font-size: 2em;
+            margin: 0em;
+        }
+
+}
+
+
+.timeline {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10em;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        scroll-margin-top: 4em;
+
+    .timelineContainer {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+   
+    .timelineItemUp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-content: center;
+            margin: 11em 0 0 12em;
+            gap: 12em;
+}
+
+  .timelineItemDown {
+                    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-content: center;
+                   margin: -44em 7em 0 -7em;
+            gap: 12em;
+}
+    
+}
+}
+
+.LinhaDoTempo {
+        position: relative;
+        top: -22em;
+        left: 0em;
+        width: 162%;
+        height: 6em;
+        opacity: 1;
+        transform: rotate(90deg);
+        animation: mFade 2s ease-out normal forwards;
+    
+    
+    
+        .trilha{
+     display: none;
+    
+    }
+
+}
+
+
+/* seção skills */
+
+.skillsContainer {
+  width: var(--mWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 4em;
+
+}
+
+.skills {
+            display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0em;
+        margin: var(--centerMargin);
+        flex-wrap: nowrap;
+
+.skills img {
+  width: 80px;
+}
+
+.hard,
+.soft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 4em;
+}
+
+.hardSkills,
+.softSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 22em;
+  gap: 2em;
+}
+
+
+}
+
+}

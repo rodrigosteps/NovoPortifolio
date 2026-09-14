@@ -100,3 +100,91 @@
 }
   
  
+
+/* MOBILE STYLE */
+@media screen and (max-width: 480px) {
+
+.modal-content {
+  width: var(--mWidth);
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 1em;
+
+    .modalTexto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+
+        span {
+        font-size: 10vw;
+    }
+        p {
+        font-size: 1em;
+        text-align: start;
+        font-weight: 400;
+    }
+  }
+
+  .Left, .right {
+  padding: 0em 1em;
+}
+}
+
+}
+
+
+
+/* MOBILE STYLE LANDSCAPE */
+
+@media (min-width: 481px) and (max-width: 966px) {
+
+
+.modal-content {
+        width: var(--mWidth);
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0em 7em;
+
+    .modalImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+    .modalTexto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+
+        span {
+        font-size:10vw;
+    }
+        p {
+        font-size: 1.5em;
+        text-align: start;
+        font-weight: 400;
+    }
+  }
+  
+        .Left, .right {
+            padding: 0em 1em;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+}

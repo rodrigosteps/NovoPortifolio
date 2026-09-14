@@ -103,3 +103,22 @@ gsap.to(".stcDown", {
 });
 
 
+
+const open = document.getElementById("openMenu")
+
+ open.addEventListener('click', () => {
+
+document.querySelector(".menu").classList.add("menuActive")
+
+
+  });
+
+const close = document.getElementById("xIcon")
+
+ close.addEventListener('click', () => {
+
+
+document.querySelector(".menu").classList.remove("menuActive")
+
+   
+  });

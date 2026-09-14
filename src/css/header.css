@@ -10,11 +10,9 @@
   align-items: center;
   background-color: #555d6833;
   backdrop-filter: blur(20px);
-  mask-image: linear-gradient(
-    to bottom,
-    rgb(16, 13, 176) 10%,
-    transparent 100%
-  );
+  mask-image: linear-gradient(to bottom,
+      rgb(16, 13, 176) 10%,
+      transparent 100%);
   z-index: 80;
 }
 
@@ -38,6 +36,18 @@
   backdrop-filter: blur(40px);
   background: #b7ffa462;
   z-index: 90;
+
+  .links{
+    display: flex;
+
+    button{
+          display: none;
+    }
+  }
+  
+  .popup{
+   display: none;
+  }
 }
 
 .menu a {
@@ -68,9 +78,8 @@
   justify-content: space-evenly;
   margin: var(--centerMargin);
   color: #10101a;
-  
-  animation: nameSteps steps(4) forwards 2s;
 
+  animation: nameSteps steps(4) forwards 2s;
 
   h1 {
     font-size: 8vw;
@@ -89,6 +98,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
 .sub {
   display: flex;
   flex-direction: row;
@@ -115,4 +125,260 @@
 
 .name img {
   width: 14vw;
+}
+
+/* MOBILE STYLE */
+
+@media screen and (max-width: 480px) {
+
+  /*estilo do nav*/
+  .menu {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 16em;
+    height: 0em;
+    margin: 0em auto;
+    padding: 1.5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all ease-in-out 100ms;
+
+    .popup {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 32px;
+        border-radius: 6px;
+      }
+
+      button, a {
+        background-color: transparent;
+        border: none;
+        opacity: 1;
+      }
+    }
+
+    .links {
+      display: none;
+    }
+
+  }
+
+  .menuActive {
+    display: flex;
+        top: 61%;
+    left: 50%;
+    width: 16em;
+    height: 22em;
+  animation: fade 200ms ease-in-out normal forwards;
+
+    .popup {
+      display: none;
+    }
+
+    .links {
+      display: flex;
+      position: fixed;
+      align-items: center;
+      bottom: 0em;
+      left: 50%;
+      transform: translate(-50%);
+      width: 14em;
+      height: 22em;
+      padding: 0.5em;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly;
+
+      #xIcon {
+        background-color: transparent;
+      }
+
+      img {
+        width: 32px;
+        border-radius: 6px;
+      }
+
+      button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+      }
+
+      a {
+        opacity: 1;
+      }
+    }
+
+  }
+
+
+
+  @keyframes fade {
+  0% {
+    transform: translateY(4em) translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+
+.name {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0em;
+  color: #10101a;
+  animation: nameSteps steps(4) forwards 2s;
+
+  h1 {
+    font-size: 24vw;
+    letter-spacing: -10px;
+    font-family: var(--fontAclonica);
+  }
+
+  p {
+    font-family: var(--fontSynonym);
+    font-size: 9vw;
+  }
+}
+
+.name img {
+  width: 60vw;
+}
+
+.nameCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 100%;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  font-size: 3vw;
+}
+
+
+#dev {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  letter-spacing: -4px;
+}
+}
+/* MOBILE STYLE LANDSCAPE */
+
+@media (min-width: 481px) and (max-width: 966px) {
+
+  /* apenas para efeito blur do menu */
+.nav {
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  height: 6em;
+  z-index: 80;
+}
+
+
+  /*estilo do nav*/
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50vw;
+    height: 4vw;
+    margin: 0em auto;
+    padding: 0.5em;
+    font-weight: bold;
+    border-radius: var(--radiusNav);
+    border: 2px solid #b1f3ad87;
+    backdrop-filter: blur(40px);
+    background: #b7ffa462;
+    z-index: 90;
+        white-space:nowrap;
+
+}
+.links{
+  display: flex;
+  a{
+    text-align: center;
+    font-size: 2vw;
+  }
+}
+  /*primeira tela nome*/
+  .name {
+          width: 100vw;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: var(--centerMargin);
+        color: #10101a;
+        align-content: center;
+        justify-content: center;
+        animation: nameSteps steps(4) forwards 2s;
+        align-items: center;
+
+    h1 {
+      font-size: 13vw;
+      letter-spacing: -10px;
+      font-family: var(--fontAclonica);
+    }
+  }
+
+  .nameCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .sub {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5vw;
+    gap: 0.5em;
+  }
+
+  .name img {
+    width: 14vw;
+  }
 }
