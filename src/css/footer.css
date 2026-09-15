@@ -215,14 +215,21 @@ height: 2em;
   }
 }
 .type {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: 0em;
-            padding-bottom: 2em;
-            height: 1em;
+                         display: flex;
+                justify-content: center;
+                position: relative;
+                top: -5em;
+                padding-bottom: 0em;
+                padding-top: 4em;
+                height: 10em;
             opacity: 1;
             transition: all 0.3s ease-in-out;
+}
+
+.type:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  scale: 1;
 }
 }
 
@@ -309,14 +316,21 @@ height: 2em;
   }
 }
 .type {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: 0em;
-            padding-bottom: 2em;
-            height: 1em;
+                         display: flex;
+                justify-content: center;
+                position: relative;
+                top: -5em;
+                padding-bottom: 0em;
+                padding-top: 4em;
+                height: 10em;
             opacity: 1;
             transition: all 0.3s ease-in-out;
+}
+
+.type:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  scale: 1;
 }
 }
 

@@ -176,7 +176,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
+    margin-top: 6em;
     width: var(--mWidth);
     font-family: var(--fontQuilone);
     gap: 1em;
@@ -222,6 +222,9 @@ width: 26em;
 }
 /* troca das imagens da seção sobre mim
  */
+.mSketch1,.mSketch2{
+  display:flex
+}
 .sketch1,.sketch2{
   display:none
 }
@@ -255,7 +258,7 @@ width: 26em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
+    margin-top: 6em;
     width: var(--mWidth);
     font-family: var(--fontQuilone);
     gap: 1em;
@@ -301,6 +304,9 @@ width: 26em;
 }
 /* troca das imagens da seção sobre mim
  */
+.mSketch1,.mSketch2{
+  display:flex
+}
 .sketch1,.sketch2{
   display:none
 }
