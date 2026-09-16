@@ -296,7 +296,7 @@ border: 3px solid #c2ebc087;
 }
 /* MOBILE STYLE LANDSCAPE */
 
-@media (min-width: 481px) and (max-width: 966px) {
+@media (min-width: 581px) and (max-width: 966px) {
 
   /* apenas para efeito blur do menu */
 .nav {
