@@ -110,7 +110,6 @@ const open = document.getElementById("openMenu")
 
 document.querySelector(".menu").classList.add("menuActive")
 
-
   });
 
 const close = document.getElementById("xIcon")

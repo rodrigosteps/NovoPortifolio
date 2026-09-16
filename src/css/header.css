@@ -181,8 +181,10 @@
     left: 50%;
     width: 16em;
     height: 22em;
+
   animation: fade 200ms ease-in-out normal forwards;
 
+  
     .popup {
       display: none;
     }
@@ -226,14 +228,13 @@
 
 
   @keyframes fade {
+
+
   0% {
-    transform: translateY(4em) translateX(-50%);
     opacity: 0;
   }
-
   100% {
-    transform: translateY(0) translateX(-50%);
-    opacity: 1;
+   top: 50%;    opacity: 1;
   }
 }
 
