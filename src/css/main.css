@@ -376,7 +376,7 @@
   .container {
     display: block;
     width: var(--mWidth);
-
+padding: 0 2em;
     /*Estilo de todos H2*/
     .titulo {
       margin-top: 0em;

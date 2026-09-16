@@ -207,6 +207,8 @@
 
 .meFoto {
   overflow-x: hidden;
+          margin-left: 4em;
+
   animation: turn1 2s ease forwards;
 }
 
@@ -217,6 +219,8 @@ width: 26em;
 
 .Foto {
     margin-top: 1em;
+            margin-right: 4em;
+
     overflow: hidden;
     animation: turn1 2s ease forwards;
 }

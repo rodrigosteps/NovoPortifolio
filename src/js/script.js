@@ -103,21 +103,45 @@ gsap.to(".stcDown", {
 });
 
 
+// função para o NAV
+const menu = document.getElementById('menu');
+const btnOpenMenu = document.getElementById('openMenu');
 
-const open = document.getElementById("openMenu")
+const btnCloseMenu = document.getElementById('xIcon').closest('button');
 
- open.addEventListener('click', () => {
+const navLinks = document.querySelectorAll('.links a');
 
-document.querySelector(".menu").classList.add("menuActive")
+btnOpenMenu.addEventListener('click', () => {
+  menu.classList.add('menuActive');
+  document.body.style.overflow = 'hidden'; 
+});
 
+btnCloseMenu.addEventListener('click', () => {
+  menu.classList.remove('menuActive');
+  document.body.style.overflow = ''; 
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    
+    menu.classList.remove('menuActive');
+    document.body.style.overflow = '';
+
+    
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    
+    if (targetSection) {
+      setTimeout(() => {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100); 
+    }
   });
-
-const close = document.getElementById("xIcon")
-
- close.addEventListener('click', () => {
-
-
-document.querySelector(".menu").classList.remove("menuActive")
-
-   
-  });
+});
