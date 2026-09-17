@@ -43,14 +43,9 @@
   object-fit: contain;
 }
 
-.Foto {
-  margin-top: 34em;
-  overflow: hidden;
-  animation: turn1 2s ease forwards;
-}
-
 .Foto img {
   width: 34em;
+  border-radius: 14px;
   object-fit: contain;
 }
 
@@ -70,23 +65,24 @@
  */
 .stickers {
   position: absolute;
+  width: 0em;
 }
 .stickers img:nth-child() {
   width: 10em;
 }
 
 .stickers img:nth-child(1) {
-  position: relative;
-  top: -4em;
-  left: 21em;
-  width: 10em;
-  mix-blend-mode: multiply;
-  will-change: transform;
+ position: relative;
+    top: 4em;
+    left: 4em;
+    width: 10em;
+    mix-blend-mode: multiply;
+    will-change: transform;
 }
 .stickers img:nth-child(2) {
   position: relative;
   top: 19em;
-  left: 14em;
+    left: 8em;
   width: 5em;
   mix-blend-mode: multiply;
   will-change: transform;
@@ -94,26 +90,26 @@
 
 .stickers img:nth-child(3) {
   position: relative;
-  top: 16em;
-  left: 20em;
-  width: 5em;
+ top: 15em;
+    left: 16em;
+    width: 6em;
   mix-blend-mode: multiply;
   will-change: transform;
 }
 
 .stickers img:nth-child(4) {
   position: relative;
-  top: -12em;
-  right: -20em;
-  width: 6em;
+      top: -24em;
+    right: -23em;
+    width: 6em;
   mix-blend-mode: multiply;
   will-change: transform;
 }
 
 .stickers img:nth-child(5) {
   position: relative;
-  top: -1em;
-  right: -18em;
+    top: 1em;
+    right: -28em;
   width: 6em;
   mix-blend-mode: multiply;
   will-change: transform;
@@ -127,46 +123,54 @@
 /* posições das fotos da seção sobre mim
  */
 .Foto img:nth-child(2) {
-  width: 10em;
-  position: relative;
-  top: -20em;
-  right: -10em;
+  width: 34em;
+      position: relative;
+    top: 20em;
+    right: 1em;
 }
 
 .Foto img:nth-child(3) {
-  width: 16em;
-  position: relative;
-  top: -10em;
-  right: -22em;
-  rotate: 25deg;
-  z-index: 2;
+width: 10em;
+    position: relative;
+     top: -19em;
+    right: -18em;
+    rotate: 25deg;
+    z-index: 0;
 }
 
 .Foto img:nth-child(4) {
-  width: 10em;
-  position: relative;
-  top: -16em;
-  right: -30em;
-  rotate: -25deg;
-  z-index: 1;
+width: 18em;
+    position: relative;
+    top: -10em;
+    right: 5em;
+    rotate: -25deg;
+    z-index: 1;
 }
 
 .Foto img:nth-child(5) {
-  width: 10em;
-  position: relative;
-  top: -10em;
-  right: -46em;
-  rotate: 45deg;
-  z-index: 2;
+    width: 10em;
+    position: relative;
+    top: -21em;
+    right: 23em;
+    rotate: -10deg;
+    z-index: 0;
 }
 
 .Foto img:nth-child(6) {
-  width: 14em;
-  position: relative;
-  top: -10em;
-  right: -74em;
-  rotate: -25deg;
-  z-index: 2;
+     width: 10em;
+    position: relative;
+    top: -16em;
+    right: -18em;
+    rotate: -15deg;
+    z-index: 2;
+}
+    .Foto img:nth-child(7) {
+      width: 10em;
+    position: relative;
+    top: -20em;
+    right: 5em;
+    rotate: 25deg;
+    z-index: 2;
 }
 
 /* MOBILE STYLE */

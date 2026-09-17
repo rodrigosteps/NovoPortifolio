@@ -54,7 +54,7 @@
     font-size: 1.6em;
     opacity: 0.5;
     padding: 0.4em;
-    text-shadow: 4px 4px 6px #07230d;
+text-shadow: 3px 2px 0px #07230d;
     transition: var(--transition);
     color: var(--fontColor);
 }
