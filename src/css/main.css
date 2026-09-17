@@ -372,7 +372,7 @@
 }
 
 /* MOBILE STYLE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .container {
     display: block;
     width: var(--mWidth);
@@ -599,7 +599,7 @@ padding: 0 2em;
 
 /* MOBILE STYLE LANDSCAPE */
 
-@media (min-width: 481px) and (max-width: 966px) {
+@media (min-width: 581px) and (max-width: 966px) {
 
 .container {
     display: block;

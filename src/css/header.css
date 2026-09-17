@@ -185,7 +185,7 @@
   border: 2px solid #b1f3ad87;
   backdrop-filter: blur(14px);
   background: #b7ffa462;
-    
+    touch-action: none;
 
   animation: none;
 

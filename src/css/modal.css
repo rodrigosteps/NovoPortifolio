@@ -102,7 +102,7 @@
  
 
 /* MOBILE STYLE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 
 .modal-content {
   width: var(--mWidth);
@@ -138,7 +138,7 @@
 
 /* MOBILE STYLE LANDSCAPE */
 
-@media (min-width: 481px) and (max-width: 966px) {
+@media (min-width: 581px) and (max-width: 966px) {
 
 
 .modal-content {

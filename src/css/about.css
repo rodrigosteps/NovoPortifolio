@@ -170,7 +170,7 @@
 }
 
 /* MOBILE STYLE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   /*seção sobre mim*/
   .sobre {
     display: flex;
@@ -255,7 +255,7 @@ width: 26em;
 
 /* MOBILE STYLE LANDSCAPE */
 
-@media (min-width: 481px) and (max-width: 966px) {
+@media (min-width: 581px) and (max-width: 966px) {
 
   /*seção sobre mim*/
   .sobre {
