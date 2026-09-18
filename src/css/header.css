@@ -10,9 +10,11 @@
   align-items: center;
   background-color: #555d6833;
   backdrop-filter: blur(20px);
-  mask-image: linear-gradient(to bottom,
-      rgb(16, 13, 176) 10%,
-      transparent 100%);
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(16, 13, 176) 10%,
+    transparent 100%
+  );
   z-index: 80;
 }
 
@@ -37,26 +39,26 @@
   background: #b7ffa462;
   z-index: 90;
 
-  .links{
+  .links {
     display: flex;
 
-    button{
-          display: none;
+    button {
+      display: none;
     }
   }
-  
-  .popup{
-   display: none;
+
+  .popup {
+    display: none;
   }
 }
 
 .menu a {
-    font-size: 1.6em;
-    opacity: 0.5;
-    padding: 0.4em;
-text-shadow: 3px 2px 0px #07230d;
-    transition: var(--transition);
-    color: var(--fontColor);
+  font-size: 1.6em;
+  opacity: 0.5;
+  padding: 0.4em;
+  text-shadow: 1px 2px 1px #07230d;
+  transition: var(--transition);
+  color: var(--fontColor);
 }
 
 .menu a:hover {
@@ -75,15 +77,16 @@ text-shadow: 3px 2px 0px #07230d;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  text-align: center;
+  justify-content: center;
   margin: var(--centerMargin);
   color: #10101a;
 
   animation: nameSteps steps(4) forwards 2s;
 
   h1 {
-    font-size: 8vw;
-    letter-spacing: -8px;
+    font-size: clamp(6vw, 10em, 6vw);
+    letter-spacing: -6%;
     font-family: var(--fontAclonica);
   }
 
@@ -103,24 +106,22 @@ text-shadow: 3px 2px 0px #07230d;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
 
 #dev {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 900;
   font-style: bold;
-  font-size: 4em;
 }
 
 #designer {
   font-family: "Oregano", cursive;
   font-weight: 900;
   font-style: normal;
-  font-size: 4em;
 }
 
 .name img {
@@ -130,7 +131,6 @@ text-shadow: 3px 2px 0px #07230d;
 /* MOBILE STYLE */
 
 @media screen and (max-width: 580px) {
-
   /*estilo do nav*/
   .menu {
     display: flex;
@@ -162,7 +162,8 @@ text-shadow: 3px 2px 0px #07230d;
         border-radius: 6px;
       }
 
-      button, a {
+      button,
+      a {
         background-color: transparent;
         border: none;
         opacity: 1;
@@ -172,7 +173,6 @@ text-shadow: 3px 2px 0px #07230d;
     .links {
       display: none;
     }
-
   }
 
   .menuActive {
@@ -181,36 +181,34 @@ text-shadow: 3px 2px 0px #07230d;
     left: 50%;
     width: 100%;
     height: 100dvh;
-      border-radius: 0;
-  border: 2px solid #b1f3ad87;
-  backdrop-filter: blur(14px);
-  background: #b7ffa462;
+    border-radius: 0;
+    border: 2px solid #b1f3ad87;
+    backdrop-filter: blur(14px);
+    background: #b7ffa462;
     touch-action: none;
+    animation: none;
 
-  animation: none;
-
-  
     .popup {
       display: none;
     }
 
     .links {
-   display: flex;
-            position: fixed;
-            align-items: center;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%);
-            width: 22em;
-            height: 31em;
-            padding: 0.5em;
-            flex-direction: column;
-            align-content: center;
-            justify-content: space-evenly;
-            border-radius: var(--radiusNav);
-border: 3px solid #c2ebc087;
-            backdrop-filter: blur(10px);
-            background: #6e9e628c;
+      display: flex;
+      position: fixed;
+      align-items: center;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 22em;
+      height: 31em;
+      padding: 0.5em;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly;
+      border-radius: var(--radiusNav);
+      border: 3px solid #c2ebc087;
+      backdrop-filter: blur(10px);
+      background: #6e9e628c;
 
       #xIcon {
         background-color: transparent;
@@ -228,86 +226,80 @@ border: 3px solid #c2ebc087;
       }
 
       a {
-                    opacity: 1;
-                font-size: 2.2em;
-                font-family: var(--fontQuilone);
+        opacity: 1;
+        font-size: 2.2em;
+        font-family: var(--fontQuilone);
       }
     }
-
   }
 
+  .name {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0em;
+    color: #10101a;
+    animation: nameSteps steps(4) forwards 2s;
 
+    h1 {
+      font-size: 24vw;
+      letter-spacing: -10px;
+      font-family: var(--fontAclonica);
+    }
 
-.name {
-  width: 100%;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 0em;
-  color: #10101a;
-  animation: nameSteps steps(4) forwards 2s;
-
-  h1 {
-    font-size: 24vw;
-    letter-spacing: -10px;
-    font-family: var(--fontAclonica);
+    p {
+      font-family: var(--fontSynonym);
+      font-size: 9vw;
+    }
   }
 
-  p {
-    font-family: var(--fontSynonym);
-    font-size: 9vw;
+  .name img {
+    width: 60vw;
   }
-}
 
-.name img {
-  width: 60vw;
-}
+  .nameCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 100%;
+  }
 
-.nameCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: nowrap;
-  text-align: center;
-  width: 100%;
-}
+  .sub {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+    font-size: 3vw;
+  }
 
-.sub {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  gap: 0.5em;
-  width: 100%;
-  font-size: 3vw;
-}
-
-
-#dev {
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 900;
-  font-style: bold;
-  letter-spacing: -4px;
-}
+  #dev {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    letter-spacing: -4px;
+  }
 }
 /* MOBILE STYLE LANDSCAPE */
 
 @media (min-width: 581px) and (max-width: 966px) {
-
   /* apenas para efeito blur do menu */
-.nav {
-  position: fixed;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 6em;
-  z-index: 80;
-}
-
+  .nav {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    width: 100%;
+    height: 6em;
+    z-index: 80;
+  }
 
   /*estilo do nav*/
   .menu {
@@ -329,29 +321,28 @@ border: 3px solid #c2ebc087;
     backdrop-filter: blur(40px);
     background: #b7ffa462;
     z-index: 90;
-        white-space:nowrap;
-
-}
-.links{
-  display: flex;
-  a{
-    text-align: center;
-    font-size: 2vw;
+    white-space: nowrap;
   }
-}
+  .links {
+    display: flex;
+    a {
+      text-align: center;
+      font-size: 2vw;
+    }
+  }
   /*primeira tela nome*/
   .name {
-          width: 100vw;
-        min-height: 100dvh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: var(--centerMargin);
-        color: #10101a;
-        align-content: center;
-        justify-content: center;
-        animation: nameSteps steps(4) forwards 2s;
-        align-items: center;
+    width: 100vw;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: var(--centerMargin);
+    color: #10101a;
+    align-content: center;
+    justify-content: center;
+    animation: nameSteps steps(4) forwards 2s;
+    align-items: center;
 
     h1 {
       font-size: 13vw;

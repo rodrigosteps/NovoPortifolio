@@ -140,7 +140,7 @@
 
 
 /* MOBILE STYLE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
  .footer {
         display: flex;
         flex-direction: column;
@@ -155,8 +155,9 @@
     padding-bottom: 2em;
 
     .texto {
-    font-size: 2.5em;
-    padding-bottom: 1em;
+                text-align: center;
+                font-size: 2.5em;
+                padding-bottom: 1em;
 }
 
 .tooltip-container {
@@ -255,8 +256,9 @@ height: 2em;
     padding-bottom: 2em;
 
     .texto {
-    font-size: 2.5em;
-    padding-bottom: 1em;
+                text-align: center;
+                font-size: 2.5em;
+                padding-bottom: 1em;
 }
 
 .tooltip-container {
@@ -295,8 +297,8 @@ height: 2em;
 }
 
 .content {
-                    display: flex;
-                gap: 1em;
+  display: flex;
+                gap: 6em 2em;
                 flex-wrap: wrap;
                 align-content: center;
                 justify-content: center;
