@@ -204,10 +204,10 @@
   }
 
   .meParagrafo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1.5em;
 
     p {
       font-size: 1.1em;
@@ -237,9 +237,13 @@
 
   /* troca das imagens da seção sobre mim
  */
-  .mSketch1,
+  .mSketch1 {
+    display: flex;
+  }
+
   .mSketch2 {
     display: flex;
+        transform: rotate(349deg);
   }
 
   .sketch1,
@@ -295,10 +299,10 @@
   }
 
   .meParagrafo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1.5em;
 
     p {
       font-size: 1.1em;
