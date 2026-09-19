@@ -82,19 +82,25 @@
   margin: var(--centerMargin);
   color: #10101a;
 
-  animation: nameSteps steps(4) forwards 2s;
+  -webkit-animation: nameSteps 0.8s steps(5, end) both;
+	        animation: nameSteps 0.8s steps(5, end) both;
 
   h1 {
     font-size: clamp(6vw, 10em, 6vw);
     letter-spacing: -6%;
     font-family: var(--fontAclonica);
+        text-shadow: -6px 0 18px rgba(0, 0, 0, 0.35);
+        
+
   }
 
   p {
     font-family: var(--fontSynonym);
     font-size: 4vw;
+
   }
 }
+
 
 .nameCard {
   display: flex;
@@ -116,12 +122,17 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 900;
   font-style: bold;
+          text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.35);
+
 }
 
 #designer {
   font-family: "Oregano", cursive;
   font-weight: 900;
   font-style: normal;
+  color:rgb(12, 248, 91);
+          text-shadow: -6px 0 18px rgba(167, 200, 45, 0.35);
+
 }
 
 .name img {

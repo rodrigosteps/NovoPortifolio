@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  width: var(--width);
-  margin: var(--margin);
+  width: var(--containerWidth);
+  margin: var(--centerMargin);
   gap: 0em;
 }
 
@@ -211,7 +211,7 @@
 
     p {
       font-size: 1.1em;
-      width: 22em;
+      width: var(--mWidth);
     }
   }
 

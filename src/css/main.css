@@ -479,7 +479,7 @@ padding: 0 2em;
         flex-wrap: nowrap;
         align-content: center;
         align-items: center;
-        justify-content: center;
+        justify-content: center; 
 
     .timelineContainer {
     opacity: 1;
@@ -567,6 +567,7 @@ padding: 0 2em;
         justify-content: center;
         align-items: center;
         gap: 2em;
+        width: var(--mWidth);
         margin: var(--centerMargin);
         flex-wrap: nowrap;
 }

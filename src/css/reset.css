@@ -88,21 +88,10 @@ html{
 }
 
 body {
-  background-color: #5d9967;
+      background-image: url(../../assets/image/blend.svg);
+  z-index: -1;
 }
 
-.backgroundCamada {
-  background-image: url(../../assets/image/granulado.png);
-  opacity: 0.2;
-  position: fixed;
-  filter: contrast(10%) brightness(0%);
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
 
 h2,h3{
   color: var(--fontColor)
