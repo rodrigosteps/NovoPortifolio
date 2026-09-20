@@ -17,6 +17,8 @@
   .tituloAtivo {
     opacity: 1;
     animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    text-shadow:var(--txtShadow);
+;
   }
 
   /*Estilo de todos H3*/
@@ -52,6 +54,7 @@
   margin-left: 6em;
   font-family: var(--fontHandWrite);
   font-size: 2.5em;
+  text-shadow:var(--txtShadow);
   color: var(--spanColor);
   overflow: hidden;
   animation: spanfade 3s steps(40);

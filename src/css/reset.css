@@ -19,8 +19,10 @@
   --radiusNav: 50px;
   --margin: 2em auto;
   --centerMargin: 0 auto;
-  --fontColor: #fdfffc;
-  --spanColor:#a8e081;
+  --fontColor: #d5f3c8;
+  --spanColor:#9fe76b;
+  --txtShadow: 1px 2px 4px #07230d;
+
   --transition: all 0.3s ease-in-out;
   --containerWidth: 70em;
 
@@ -81,29 +83,48 @@
 a:visited {
   color: inherit;
 }
-/*estilos html e body*/
+/*estilos html e .container*/
 html{
     scroll-behavior: smooth;
     font-size: 16px;
 }
-
 body {
-      background-image: url(../../assets/image/blend.svg);
-  z-index: -1;
+  margin: 0;
+  background: linear-gradient(180deg, #007B43 19.6%, #68BE8D 42.1%, #68BE8D 49.3%, #007B43 76.7%); /* fallback: engines without oklab interpolation */
+    background-repeat: no-repeat;
 }
 
+.backgroundCamada {
+  background-image: url(../../assets/image/granulado.png);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+    image-rendering: pixelated;
+  mix-blend-mode: multiply;
+  z-index: -1;
+  pointer-events: none;
+}
 
 h2,h3{
-  color: var(--fontColor)
+  color: var(--fontColor);
+      text-shadow:var(--txtShadow);
+
 }
 
 span{
   color: var(--spanColor);
-}
+      text-shadow:var(--txtShadow);
 
+}
+p{
+      text-shadow:var(--txtShadow);
+
+}
 /* MOBILE STYLE */
 @media screen and (max-width: 480px) {
-html,body{
+html,.container{
   width: 100%;
   overflow-x: hidden;
     scroll-behavior: smooth;

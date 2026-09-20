@@ -30,7 +30,7 @@
     font-family: var(--fontQuilone);
     font-size: 1.3em;
     width: 24em;
-    color: rgb(149, 177, 132);
+    color:var(--fontColor);
   }
 }
 
