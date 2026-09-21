@@ -60,10 +60,11 @@
   
   p {
     text-align:start;
-     text-shadow:none;
+     text-shadow:var(--txtShadow);
     font-family: var(--fontQuilone);
     font-size: 1.3em;
-    color:var(--fontColor);
+    color:var(--spanColor);
+  
   }
 }
 
