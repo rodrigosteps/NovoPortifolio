@@ -87,11 +87,13 @@ a:visited {
 html{
     scroll-behavior: smooth;
     font-size: 16px;
+    min-width: 100%;
 }
 body {
   margin: 0;
-  background: linear-gradient(180deg, #007B43 19.6%, #68BE8D 42.1%, #68BE8D 49.3%, #007B43 76.7%); /* fallback: engines without oklab interpolation */
+  background: linear-gradient(180deg, #007B43 19.6%, #68BE8D 42.1%, #68BE8D 49.3%, #007B43 76.7%); 
     background-repeat: no-repeat;
+    min-width: 100%;
 }
 
 .backgroundCamada {
@@ -103,8 +105,9 @@ body {
   height: 100%;
     image-rendering: pixelated;
   mix-blend-mode: multiply;
-  z-index: -1;
+  z-index: -99;
   pointer-events: none;
+  overflow: hidden;
 }
 
 h2,h3{
@@ -123,7 +126,21 @@ p{
 
 }
 /* MOBILE STYLE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
+html,.container{
+  width: 100%;
+  overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    img{
+      width: 40dvw;
+    }
+}
+
+}
+/* MOBILE LANDSCAPE */
+@media (min-width: 581px) and (max-width: 966px) {
+
 html,.container{
   width: 100%;
   overflow-x: hidden;

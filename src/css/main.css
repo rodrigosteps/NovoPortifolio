@@ -380,6 +380,7 @@
     display: block;
     width: var(--mWidth);
 padding: 0 2em;
+
     /*Estilo de todos H2*/
     .titulo {
       margin-top: 0em;
@@ -423,7 +424,7 @@ padding: 0 2em;
     margin:2em 0em;
     font-size: 6vw;
     transform: rotate(-10deg);
-          animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+    animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
 
   }
 
@@ -527,13 +528,6 @@ padding: 0 2em;
         opacity: 1;
         transform: rotate(90deg);
         animation: mFade 2s ease-out normal forwards;
-    
-    
-    
-        .trilha{
-     display: none;
-    
-    }
 }
 
 @keyframes mFade {
@@ -678,6 +672,8 @@ display: flex;
     margin:1em 0em;
     font-size: 3vw;
     transform: rotate(-10deg);
+              animation: textfade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+
   }
     /*Estilo de todos H3*/
     h3 {

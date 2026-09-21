@@ -103,7 +103,7 @@ gsap.to(".stcDown", {
 });
 
 
-// função para o NAV
+// função para abrir/fechar NAV
 const menu = document.getElementById('menu');
 const btnOpenMenu = document.getElementById('openMenu');
 
@@ -144,4 +144,43 @@ navLinks.forEach(link => {
       }, 100); 
     }
   });
+});
+
+
+
+// função para o descatar o NAV
+
+const Links = document.querySelectorAll('.links a');
+
+const sections = Array.from(navLinks).map(link => {
+  const id = link.getAttribute('href');
+  return document.querySelector(id);
+})
+
+const options = {
+  root: null,
+  rootMargin: '-20% 0px -60% 0px', 
+  threshold: 0 
+};
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const currentId = entry.target.getAttribute('id');
+      
+
+      Links.forEach(link => {
+        link.classList.remove('ativo');
+      });
+      
+
+      const activeLink = document.querySelector(`.links a[href="#${currentId}"]`);
+      if (activeLink) {
+        activeLink.classList.add('ativo');
+      }
+    }
+  });
+}, options);
+
+sections.forEach(section => {
+  observer.observe(section);
 });
