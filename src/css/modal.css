@@ -59,12 +59,11 @@
   }
   
   p {
-    font-size: 1.5em;
-    color: rgb(138, 183, 108);
-    font-family: var(--fontSynonym);
     text-align:start;
-    font-weight: 400;
      text-shadow:none;
+    font-family: var(--fontQuilone);
+    font-size: 1.3em;
+    color:var(--fontColor);
   }
 }
 
