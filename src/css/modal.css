@@ -55,14 +55,16 @@
    span {
     font-size: 4em;
     font-family: var(--fontQuilone);
+     text-shadow:none;
   }
   
-   p {
+  p {
     font-size: 1.5em;
     color: rgb(138, 183, 108);
     font-family: var(--fontSynonym);
     text-align:start;
     font-weight: 400;
+     text-shadow:none;
   }
 }
 
