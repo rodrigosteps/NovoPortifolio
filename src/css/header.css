@@ -100,9 +100,6 @@
     font-size: clamp(6vw, 10em, 6vw);
     letter-spacing: -6%;
     font-family: var(--fontAclonica);
-        text-shadow: var(--txtShadow);
-        
-
   }
 
   p {
@@ -133,7 +130,7 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 900;
   font-style: bold;
-          text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.35);
+          
 
 }
 
@@ -141,7 +138,6 @@
   font-family: "Oregano", cursive;
   font-weight: 900;
   font-style: normal;
-  text-shadow: var(--txtShadow);
 
 }
 
