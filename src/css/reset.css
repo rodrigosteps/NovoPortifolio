@@ -6,7 +6,7 @@
   text-decoration: none;
   user-select: none;
   caret-color: transparent;
-  list-style:none;
+  list-style: none;
 }
 
 /*variaveis*/
@@ -20,14 +20,16 @@
   --margin: 2em auto;
   --centerMargin: 0 auto;
   --fontColor: #d5f3c8;
-  --spanColor:#9fe76b;
+  --spanColor: #9fe76b;
+  --BgMainColorLight: #68be8d;
+  --BgMainColorDark: #007b43;
   --txtShadow: 1px 2px 4px #07230d;
 
   --transition: all 0.3s ease-in-out;
   --containerWidth: 70em;
 
-  --mTitle:16vw ;
-  --mWidth:100%;
+  --mTitle: 16vw;
+  --mWidth: 100%;
 }
 
 /*Fonte Telma*/
@@ -35,12 +37,9 @@
 @font-face {
   font-family: "Telma";
   src:
-    url("../../fonts/Telma_Complete/Telma-Variable.woff2")
-      format("woff2"),
-    url("../../fonts/Telma_Complete/Telma-Variable.woff")
-      format("woff"),
-    url("../../fonts/Telma_Complete/Telma-Variable.ttf")
-      format("truetype");
+    url("../../fonts/Telma_Complete/Telma-Variable.woff2") format("woff2"),
+    url("../../fonts/Telma_Complete/Telma-Variable.woff") format("woff"),
+    url("../../fonts/Telma_Complete/Telma-Variable.ttf") format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -50,12 +49,9 @@
 @font-face {
   font-family: "Quilone";
   src:
-    url("../../fonts/Quilon_Complete/Quilon-Variable.woff2")
-      format("woff2"),
-    url("../../fonts/Quilon_Complete/Quilon-Variable.woff")
-      format("woff"),
-    url("../../fonts/Quilon_Complete/Quilon-Variable.ttf")
-      format("truetype");
+    url("../../fonts/Quilon_Complete/Quilon-Variable.woff2") format("woff2"),
+    url("../../fonts/Quilon_Complete/Quilon-Variable.woff") format("woff"),
+    url("../../fonts/Quilon_Complete/Quilon-Variable.ttf") format("truetype");
   font-weight: 200 900;
   font-display: swap;
   font-style: normal;
@@ -65,18 +61,13 @@
 @font-face {
   font-family: "Synonym";
   src:
-    url("../../fonts/Synonym_Complete/Synonym-Variable.woff2")
-      format("woff2"),
-    url("../../fonts/Synonym_Complete/Synonym-Variable.woff")
-      format("woff"),
-    url("../../fonts/Synonym_Complete/Synonym-Variable.ttf")
-      format("truetype");
+    url("../../fonts/Synonym_Complete/Synonym-Variable.woff2") format("woff2"),
+    url("../../fonts/Synonym_Complete/Synonym-Variable.woff") format("woff"),
+    url("../../fonts/Synonym_Complete/Synonym-Variable.ttf") format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
 }
-
-
 
 /*estilos para os links*/
 
@@ -84,16 +75,22 @@ a:visited {
   color: inherit;
 }
 /*estilos html e .container*/
-html{
-    scroll-behavior: smooth;
-    font-size: 16px;
-    min-width: 100%;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  min-width: 100%;
 }
 body {
   margin: 0;
-  background: linear-gradient(180deg, #007B43 19.6%, #68BE8D 42.1%, #68BE8D 49.3%, #007B43 76.7%); 
-    background-repeat: no-repeat;
-    min-width: 100%;
+  background: linear-gradient(
+    180deg,
+    #007b43 19.6%,
+    #68be8d 42.1%,
+    #68be8d 49.3%,
+    #007b43 76.7%
+  );
+  background-repeat: no-repeat;
+  min-width: 100%;
 }
 
 .backgroundCamada {
@@ -103,52 +100,49 @@ body {
   left: 0%;
   width: 100%;
   height: 100%;
-    image-rendering: pixelated;
+  image-rendering: pixelated;
   mix-blend-mode: multiply;
   z-index: -99;
   pointer-events: none;
   overflow: hidden;
 }
 
-h2,h3{
+h2,
+h3 {
   color: var(--fontColor);
-      text-shadow:var(--txtShadow);
-
+  text-shadow: var(--txtShadow);
 }
 
-span{
+span {
   color: var(--spanColor);
-      text-shadow:var(--txtShadow);
-
+  text-shadow: var(--txtShadow);
 }
-p{
-      text-shadow:var(--txtShadow);
-
+p {
+  text-shadow: var(--txtShadow);
 }
 /* MOBILE STYLE */
 @media screen and (max-width: 580px) {
-html,.container{
-  width: 100%;
-  overflow-x: hidden;
+  html,
+  .container {
+    width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 
-    img{
+    img {
       width: 40dvw;
     }
-}
-
+  }
 }
 /* MOBILE LANDSCAPE */
 @media (min-width: 581px) and (max-width: 966px) {
-
-html,.container{
-  width: 100%;
-  overflow-x: hidden;
+  html,
+  .container {
+    width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 
-    img{
+    img {
       width: 40dvw;
     }
-}
-
+  }
 }

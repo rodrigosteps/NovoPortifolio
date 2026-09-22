@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (el.classList.contains("item")) el.classList.add("itemAtivo");
        if (el.classList.contains("titulo")) el.classList.add("tituloAtivo");
         if (el.classList.contains("Description")) el.classList.add("spanativo");
+        if (el.classList.contains("meParagrafo")) el.classList.add("meParagrafoAtivo");
 
         // Trava o elemento no estado final e desliga a observação
         observerInstance.unobserve(el);
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //  o mesmo observer
-  const elementos = document.querySelectorAll(".projeto, .processoCase, .item, h2, .Description");
+  const elementos = document.querySelectorAll(".projeto, .processoCase, .item, h2, .Description, .meParagrafo");
   elementos.forEach((el) => observer.observe(el));
 });
 

@@ -1,4 +1,3 @@
-
 .modal-container:focus {
   top: 0;
 }
@@ -13,7 +12,7 @@
   overflow-y: auto;
   justify-content: center;
   z-index: 90;
-  background: #e6ffeb;
+  background: var(--BgMainColorLight);
   transition: var(--transition);
   animation: fadeUp 0.2s ease-out normal forwards;
 }
@@ -31,7 +30,6 @@
   width: 100%;
   object-fit: contain;
   border-radius: 16px;
-  
 }
 
 .modalImage {
@@ -42,7 +40,7 @@
 
 .Left,
 .right {
-  padding: 0em 10em;
+  padding: 0em 4em;
 }
 
 .modalTexto {
@@ -51,23 +49,20 @@
   width: 100%;
   margin: var(--centerMargin);
   padding: 1em;
-  
-   span {
-    font-size: 4em;
-    font-family: var(--fontQuilone);
-    
+  color: var(--fontColor);
+  font-family: var(--fontQuilone);
+
+  span {
+    font-size: 6em;
+    color: var(--fontColor);
   }
-  
+
   p {
-    text-align:start;
-     text-shadow:var(--txtShadow);
-    font-family: var(--fontQuilone);
-    font-size: 1.3em;
-    color:var(--spanColor);
-  
+    text-align: start;
+    text-shadow: var(--txtShadow);
+    font-size: 1.8em;
   }
 }
-
 
 /*estilo do nav*/
 .closeModal {
@@ -86,107 +81,90 @@
   font-family: var(--fontSynonym);
   margin: var(--centerMargin);
   gap: 10em;
-    transition: var(--transition); 
-
+  transition: var(--transition);
 }
 
 .closeModal span {
   font-size: 2em;
-  text-shadow: 2px 2px 8px black;;
+  text-shadow: 2px 2px 8px black;
 }
 
-.closeModal:hover  {
+.closeModal:hover {
   scale: 1.1;
   cursor: pointer;
   box-shadow: 1px 1px 10px black;
 }
-  
- 
 
 /* MOBILE STYLE */
 @media screen and (max-width: 580px) {
-
-.modal-content {
-  width: var(--mWidth);
+  .modal-content {
+    width: var(--mWidth);
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     padding: 0 1em;
 
     .modalTexto {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 1em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1em;
 
-        span {
+      span {
         font-size: 10vw;
-    }
-        p {
+      }
+      p {
         font-size: 1em;
         text-align: start;
         font-weight: 400;
+      }
+    }
+
+    .Left,
+    .right {
+      padding: 0em 1em;
     }
   }
-
-  .Left, .right {
-  padding: 0em 1em;
 }
-}
-
-}
-
-
 
 /* MOBILE STYLE LANDSCAPE */
 
 @media (min-width: 581px) and (max-width: 966px) {
-
-
-.modal-content {
-        width: var(--mWidth);
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
-        padding: 0em 7em;
+  .modal-content {
+    width: var(--mWidth);
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0em 7em;
 
     .modalImage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
 
     .modalTexto {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 1em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1em;
 
-        span {
-        font-size:10vw;
-    }
-        p {
+      span {
+        font-size: 10vw;
+      }
+      p {
         font-size: 1.5em;
         text-align: start;
         font-weight: 400;
+      }
+    }
+
+    .Left,
+    .right {
+      padding: 0em 1em;
     }
   }
-  
-        .Left, .right {
-            padding: 0em 1em;
-        }
-}
-
-
-
-
-
-
-
-
-
-
 }

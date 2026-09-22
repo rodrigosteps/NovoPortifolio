@@ -59,7 +59,6 @@
   padding: 0.4em;
   text-shadow: var(--txtShadow);
   color: var(--fontColor);
-
 }
 
 .menu a:hover {
@@ -74,7 +73,7 @@
   opacity: 1;
   background-color: #37b41488;
   overflow: hidden;
-    transition: var(--transition);
+  transition: var(--transition);
 
   border-radius: 24px;
 }
@@ -94,7 +93,7 @@
   color: #000000;
 
   -webkit-animation: nameSteps 0.8s steps(5, end) both;
-	        animation: nameSteps 0.8s steps(5, end) both;
+  animation: nameSteps 0.8s steps(5, end) both;
 
   h1 {
     font-size: clamp(6vw, 10em, 6vw);
@@ -105,10 +104,8 @@
   p {
     font-family: var(--fontSynonym);
     font-size: 4vw;
-
   }
 }
-
 
 .nameCard {
   display: flex;
@@ -130,15 +127,12 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 900;
   font-style: bold;
-          
-
 }
 
 #designer {
   font-family: "Oregano", cursive;
   font-weight: 900;
   font-style: normal;
-
 }
 
 .name img {
@@ -278,12 +272,12 @@
   }
 
   .nameCard {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        text-align: center;
-        width: 100%;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 100%;
+    align-items: center;
   }
 
   .sub {

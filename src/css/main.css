@@ -157,6 +157,7 @@
     display: inline-block;
     background-color: rgba(60, 167, 72, 0.574);
     color: var(--spanColor);
+    text-shadow: none;
     padding: 0.2em 0.5em;
     margin: 0.5em;
     border-radius: 4px;

@@ -1,13 +1,13 @@
 /* Hero animação */
 @keyframes nameSteps {
-   0% {
+  0% {
     -webkit-transform: translateZ(-80px);
-            transform: translateZ(-80px);
+    transform: translateZ(-80px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
@@ -16,20 +16,20 @@
 @keyframes FadeIn {
   0% {
     -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
@@ -38,27 +38,25 @@
 @keyframes textfade {
   0% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
-
 }
 
 /* Span Fade animação */
 @keyframes spanfade {
- 
-  from { 
-  width: 0;   
-}
+  from {
+    width: 0;
+  }
 }
 
 /* Modal Fade animação */
@@ -76,79 +74,58 @@
 
 /* Animação de entrada das fotos na seção Sobre */
 @keyframes trilha {
-
-   0% {
+  0% {
     -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
 /* Animação de desenhos seção Sobre */
 
-
 @keyframes shake {
-   0% {
+  0% {
     -webkit-transform: translate(0);
-            transform: translate(0) rotate(-1deg);
+    transform: translate(0) rotate(-1deg);
   }
   20% {
     -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px) rotate(1deg);
+    transform: translate(-2px, 2px) rotate(1deg);
   }
   40% {
     -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px) rotate(-5deg);
+    transform: translate(-2px, -2px) rotate(-5deg);
   }
   60% {
     -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px) rotate(4deg);
+    transform: translate(2px, 2px) rotate(4deg);
   }
   80% {
     -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px rotate(-3deg));
+    transform: translate(2px, -2px rotate(-3deg));
   }
   100% {
     -webkit-transform: translate(0);
-            transform: translate(0) rotate(2deg);
+    transform: translate(0) rotate(2deg);
   }
-
 }
 
-/* animação do hover sobre o email */
-
-@-webkit-keyframes jello-vertical {
+/* meParagrafo  */
+@keyframes focusIn {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(0.85, 1.15, 1);
-            transform: scale3d(0.85, 1.15, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
+    transform: translateY(1em);
+    filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: translateY(0px);
+
+    filter: blur(0px);
+    opacity: 1;
   }
 }
