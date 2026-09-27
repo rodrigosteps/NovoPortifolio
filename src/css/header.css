@@ -87,17 +87,18 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  gap: 1em;
   text-align: center;
   justify-content: center;
   margin: var(--centerMargin);
-  color: #000000;
+  color: var(--fontColor);
+  text-shadow: var(--txtShadow);
 
-  -webkit-animation: nameSteps 0.8s steps(5, end) both;
-  animation: nameSteps 0.8s steps(5, end) both;
+  -webkit-animation: nameSteps 2s steps(5, end) both;
+  animation: nameSteps 2s steps(5, end) both;
 
   h1 {
     font-size: clamp(6vw, 10em, 6vw);
-    letter-spacing: -6%;
     font-family: var(--fontAclonica);
   }
 
@@ -133,10 +134,16 @@
   font-family: "Oregano", cursive;
   font-weight: 900;
   font-style: normal;
+
+  background-image: linear-gradient(to right, #1ecf5f, #08f8d4);
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
 }
 
 .name img {
   width: 14vw;
+filter: drop-shadow(1px 0px 2px rgba(0, 0, 0, 0.616)) ;
 }
 
 /* MOBILE STYLE */
@@ -252,12 +259,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0em;
-    color: #10101a;
     animation: nameSteps steps(4) forwards 2s;
 
     h1 {
-      font-size: 24vw;
-      letter-spacing: -10px;
+      font-size: 20vw;
       font-family: var(--fontAclonica);
     }
 
@@ -349,7 +354,6 @@
     flex-direction: column;
     flex-wrap: nowrap;
     margin: var(--centerMargin);
-    color: #10101a;
     align-content: center;
     justify-content: center;
     animation: nameSteps steps(4) forwards 2s;
@@ -357,7 +361,6 @@
 
     h1 {
       font-size: 13vw;
-      letter-spacing: -10px;
       font-family: var(--fontAclonica);
     }
   }

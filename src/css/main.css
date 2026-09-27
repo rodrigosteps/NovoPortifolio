@@ -554,7 +554,6 @@ padding: 0 2em;
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding-top: 4em;
 
 }
 
@@ -791,14 +790,6 @@ display: flex;
         opacity: 1;
         transform: rotate(90deg);
         animation: mFade 2s ease-out normal forwards;
-    
-    
-    
-        .trilha{
-     display: none;
-    
-    }
-
 }
 
 
@@ -810,7 +801,6 @@ display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding-top: 4em;
 
 }
 

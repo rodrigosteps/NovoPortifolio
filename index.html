@@ -48,6 +48,7 @@
   <main class="container" id="container">
 
     <!--apenas para efeito granulado-->
+    <div class="backgroundCamada1"></div>
     <div class="backgroundCamada"></div>
 
     <!--apenas para efeito blur-->
@@ -57,7 +58,7 @@
     <nav class="menu" id="menu">
       <div class="popup">
         <a href="#inicio"><img src="./assets/icon/favicon.svg" alt=""></a>
-        <button id="openMenu"><img class="barIcon" src="./assets/icon/menu.png" alt=""> </button>
+        <button id="openMenu"><img class="barIcon" src="./assets/icon/menu.png" loading="eager" alt=""> </button>
       </div>
 
       <div class="links">
@@ -76,7 +77,8 @@
     <!--##################### HERO SECTION DO SITE #####################-->
 
     <section class="name" id="inicio">
-      <img src="./assets/image/logo.svg" loading="lazy" alt="perfil" />
+
+      <img src="./assets/image/logo.svg" loading="eager" alt="perfil" />
       <div class="nameCard">
         <h1>Rodrigo Passos</h1>
         <div class="sub">
@@ -603,6 +605,9 @@
     <section class="conectar" id="conectar">
       <h2 class="titulo">Vamos Criar ?</h2 class="titulo">
     </section>
+
+    <!--##################### Efeito de passos no scroll #####################-->
+  <audio src="./assets/8bit.mp3" autoplay preload="auto" id="steps"></audio>
 
     <!--##################### SEÇÃO "FOOTER" DO SITE #####################-->
     <footer class="footer">

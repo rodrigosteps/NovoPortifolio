@@ -19,7 +19,7 @@
   --radiusNav: 50px;
   --margin: 2em auto;
   --centerMargin: 0 auto;
-  --fontColor: #d5f3c8;
+  --fontColor: #cdefdb;
   --spanColor: #9fe76b;
   --BgMainColorLight: #68be8d;
   --BgMainColorDark: #007b43;
@@ -84,11 +84,14 @@ body {
   margin: 0;
   background: linear-gradient(
     180deg,
-    #007b43 19.6%,
-    #68be8d 42.1%,
-    #68be8d 49.3%,
-    #007b43 76.7%
+    #004f40 8.3%,
+    #007b43 25%,
+    #58c689 41.7%,
+    #68be8d 58.3%,
+    #58c689 79.5%,
+    #02231c 96.1%
   );
+
   background-repeat: no-repeat;
   min-width: 100%;
 }

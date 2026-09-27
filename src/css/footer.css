@@ -27,7 +27,7 @@
   align-items: center;
 
   img {
-    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.6)) ;
     width: 4em;
     height: 4em;
   }
