@@ -276,7 +276,6 @@
   flex-direction: column;
   justify-content: center;
   margin: var(--centerMargin);
-  padding-top: 4em;
 
   h3 {
     font-family: var(--fontQuilone);
