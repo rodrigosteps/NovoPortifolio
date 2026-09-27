@@ -522,21 +522,7 @@ padding: 0 2em;
         height: 6em;
         opacity: 1;
         transform: rotate(90deg);
-        animation: mFade 2s ease-out normal forwards;
-}
-
-@keyframes mFade {
-
-   0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
+        animation: none;
 }
 
 }
@@ -784,7 +770,7 @@ display: flex;
         height: 6em;
         opacity: 1;
         transform: rotate(90deg);
-        animation: mFade 2s ease-out normal forwards;
+        animation: none;
 }
 
 
