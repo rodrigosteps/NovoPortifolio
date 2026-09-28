@@ -80,7 +80,7 @@
 
 /*primeira tela nome*/
 .name {
-  width: 60em;
+  width: 80em;
   min-height: 100dvh;
   display: flex;
   flex-direction: row;
