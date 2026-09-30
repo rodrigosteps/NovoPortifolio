@@ -289,15 +289,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: baseline;
   gap: 10em;
   margin: var(--centerMargin);
 }
 
 .skills img {
-  width: 80px;
+  width: 100px;
+  filter: drop-shadow(1px 1px 1px rgba(43, 42, 42, 0.829));
 }
-
+ 
 .hard,
 .soft {
   display: flex;
@@ -312,6 +313,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: baseline;
   flex-wrap: wrap;
   width: 22em;
   gap: 2em;
@@ -346,6 +348,8 @@
   width: 14em;
   object-fit: contain;
   border-radius: 18px;
+    filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+
 }
 
 .Direita {

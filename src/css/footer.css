@@ -121,6 +121,8 @@
   letter-spacing: 0.5px;
   font-size: 18px;
   font-weight: 600;
+  text-shadow: none;
+
 }
 .tooltip-container:hover {
   border-top-left-radius: 0;
