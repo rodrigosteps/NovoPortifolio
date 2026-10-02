@@ -247,16 +247,19 @@
 }
 
 .LinhaDoTempo {
+  background-image: url(../../assets/image/pegadas.svg);
   width: var(--containerWidth);
   height: 12em;
   transform: translatex(-40em);
-  background-image: url(../../assets/image/Pegadas.svg);
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
   overflow: hidden;
   opacity: 0;
   animation: trilha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  -webkit-animation-timeline: view();
+  -webkit-animation-range: entry 100% cover 60%;
 
   animation-timeline: view();
   animation-range: entry 100% cover 60%;
